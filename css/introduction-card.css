@@ -1,0 +1,15 @@
+/*** INTRODUCTION-CARD ***/
+
+.card-body {
+    background-color: #f00e0ef1;
+}
+
+.card .card-body .card-title .card-text p {
+    text-align: center;
+    color: #fff;
+}
+
+.btn-lg {
+    color: #fff;
+    background-color: rgb(233, 192, 13);
+}

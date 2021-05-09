@@ -1,15 +1,29 @@
 /*** INTRODUCTION-CARD ***/
 
 .card-body {
-    background-color: #f00e0ef1;
+    background: #F00000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #DC281E, #F00000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #DC281E, #F00000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.card .card-body .card-title .card-text p {
+.card  {
     text-align: center;
     color: #fff;
 }
 
+.card-title {
+    text-align: center;
+    color: #fff;   
+    font-family: 'Hammersmith One', sans-serif;
+}
+
 .btn-lg {
     color: #fff;
-    background-color: rgb(233, 192, 13);
+    background-color: #fe8c00
+}
+
+.list {
+    display: block;
+    text-decoration: none;
+    
 }

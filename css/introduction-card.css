@@ -1,0 +1,36 @@
+/*** INTRODUCTION-CARD ***/
+
+.card-body {
+    background: #480048;
+}
+
+.card  {
+    text-align: center;
+    color: #fff;
+}
+
+.card-title {
+    text-align: center;
+    color: #fff;   
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+.btn-introduction {
+    font-family: 'Comfortaa';
+    font-weight: bold;
+    background-color: #02f70a;
+    border: none;
+    color: white;
+    text-align: center;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.btn-introduction:hover {
+    background-color: rgb(3, 236, 186);
+    color: #fff;
+}

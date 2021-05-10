@@ -1,9 +1,7 @@
 /*** INTRODUCTION-CARD ***/
 
 .card-body {
-    background: #F00000;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #DC281E, #F00000);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #DC281E, #F00000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #480048;
 }
 
 .card  {
@@ -17,13 +15,22 @@
     font-family: 'Hammersmith One', sans-serif;
 }
 
-.btn-lg {
-    color: #fff;
-    background-color: #fe8c00
+.btn-introduction {
+    font-family: 'Comfortaa';
+    font-weight: bold;
+    background-color: #02f70a;
+    border: none;
+    color: white;
+    text-align: center;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 
-.list {
-    display: block;
-    text-decoration: none;
-    
+.btn-introduction:hover {
+    background-color: rgb(3, 236, 186);
+    color: #fff;
 }

@@ -1,5 +1,6 @@
 .card-subintro {
     color: #000;
+    border: 1px solid red;
 }
 
 .card-title-intro {
@@ -20,3 +21,4 @@
     font-weight: bold;
     font-family: 'Comfortaa';
 }
+

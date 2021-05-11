@@ -1,4 +1,8 @@
-.dropdown-divider {
-    color: red;
-    width: 70%;
+.card-about {
+    color: #fff;
+}
+
+.list-group-about{
+    color: white;
+    font-family: "Comfortaa";
 }

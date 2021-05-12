@@ -15,7 +15,7 @@
     font-family: 'Hammersmith One', sans-serif;
 }
 
-.btn-link {
+.btn-links {
     font-family: 'Comfortaa';
     font-weight: bold;
     background-color: #02f70a;
@@ -30,7 +30,7 @@
     cursor: pointer;
 }
 
-.btn-introduction:hover {
+.btn-links:hover {
     background-color: rgb(3, 236, 186);
     color: #fff;
 }

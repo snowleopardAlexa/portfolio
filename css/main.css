@@ -3,3 +3,10 @@
 .container {
     border-color: none;
 }
+
+/* Rounded border - DIVIDER */
+hr.rounded {
+    border-top: 2px solid rgb(60, 255, 0);
+    border-radius: 5px;
+    margin-top: 40px;
+  }

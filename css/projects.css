@@ -1,0 +1,33 @@
+/* PROJECTS */
+
+/* Project screenshot image */
+.project-img {
+    width: 100px;
+    height: 100px;
+}
+
+.card-title-num {
+    color: #000;
+}
+
+.card-title-project {
+    color: #000;
+}
+
+.card-text-project {
+    color: #000;
+}
+
+.card-body-projects {
+    color: #000;
+}
+
+.project-title {
+  font-size: 1.2rem;
+  color: '#000';
+}
+
+.project-desc {
+  font-size: 1rem;
+  color: '#000';
+}

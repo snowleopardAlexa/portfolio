@@ -14,8 +14,57 @@ hr.rounded {
     margin-right: auto;
   }
 
+  /* List group - about */
 .list-group-item {
     border-top: none;
     border-left: none;
     border-right: none;
 }
+
+/* Email */
+.contact {
+    font-size: 1.2rem;
+    font-family: 'Comfortaa';
+}
+
+/* buttons */
+.btn-links {
+    font-family: 'Comfortaa';
+    font-weight: bold;
+    background-color: #02f70a;
+    border: none;
+    color: white;
+    text-align: center;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.3rem;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.btn-links:hover {
+    background-color: rgb(3, 236, 186);
+    color: #fff;
+}
+
+.btn-github {
+    font-family: 'Comfortaa';
+    font-weight: bold;
+    background-color: #d62506;
+    border: none;
+    color: white;
+    text-align: center;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.3rem;
+    margin: 4px 2px;
+    cursor: pointer;  
+}
+
+.btn-github:hover {
+    background-color: rgb(243, 160, 6);
+    color: #fff;
+}
+

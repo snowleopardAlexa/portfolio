@@ -69,8 +69,28 @@ hr.rounded {
     color: #fff;
 }
 
+.btn-fulllist {
+    font-family: 'Comfortaa';
+    font-weight: bold;
+    background-color: #d62506;
+    border: none;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 4px 2px;
+    cursor: pointer;   
+}
+
+.btn-fulllist:hover {
+    color: #fff;
+    background-color: #f35d06;
+}
+
 .link {
-    color: rgb(10, 2, 8);
+    color: rgb(15, 2, 2);
     font-family: 'Poppins';
     font-weight: bold;
     text-decoration: none;
@@ -80,3 +100,4 @@ hr.rounded {
 .link:hover {
     color: #02f70a;
 }
+

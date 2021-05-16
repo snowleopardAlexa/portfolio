@@ -101,3 +101,12 @@ hr.rounded {
     color: #02f70a;
 }
 
+.card-body-certificate {
+    background-color: rgb(9, 15, 104);
+    color: #fff;
+}
+
+.card-title-certificate {
+    font-size: 2.5rem;
+    font-family: 'Comfortaa';
+}

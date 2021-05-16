@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Hammersmith+One&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&display=swap');
 
 .container {
     border-color: none;
@@ -68,42 +69,14 @@ hr.rounded {
     color: #fff;
 }
 
-.btn-certificate {
-    font-family: 'Comfortaa';
+.link {
+    color: rgb(10, 2, 8);
+    font-family: 'Poppins';
     font-weight: bold;
-    background-color: #d62506;
-    border: none;
-    color: white;
-    text-align: center;
-    padding: 10px 25px;
     text-decoration: none;
-    display: inline-block;
     font-size: 1rem;
-    margin: 4px 2px;
-    cursor: pointer;  
 }
 
-.btn-certificate:hover {
-    background-color:rgb(243, 81, 6);
-    color: #fff;
-}
-
-.btn-courses {
-    font-family: 'Comfortaa';
-    font-weight: bold;
-    background-color: #d62506;
-    border: none;
-    color: white;
-    text-align: center;
-    padding: 10px 25px;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1rem;
-    margin: 4px 2px;
-    cursor: pointer;  
-}
-
-.btn-courses:hover {
-    background-color:rgb(243, 81, 6);
-    color: #fff;
+.link:hover {
+    color: #02f70a;
 }

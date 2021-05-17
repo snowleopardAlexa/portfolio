@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Hammersmith+One&family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&display=swap');
 
+.navbar {
+    font-family: 'Comfortaa';
+}
 .container {
     border-color: none;
 }

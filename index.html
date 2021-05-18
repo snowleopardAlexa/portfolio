@@ -19,7 +19,7 @@
   </head>
   <body>
   <!--navbar-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">Alexa's Portfolio</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,17 +37,23 @@
             <a class="nav-link" aria-current="page" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" aria-current="page" href="#selfstudying">Self-Studying</a>
+          </li>
+          <li class="nav-item me-5">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+           <a href=""><button class="btn btn-outline-primary me-2 mr-auto" type="submit">LinkedIn</button></a>
           </li>
           <li class="nav-item" >
-           <a href=""><button class="btn btn-outline-primary" type="submit" style="float:left;">LinkedIn</button></a>
+           <a href=""><button class="btn btn-outline-danger mr-auto" type="submit">Github</button></a>
           </li>
         </ul>
       </div>
     </div>
   </nav>  
   <!--introduce-yourself-card-->
-  <div class="card card-intro" id="technologies">
+  <div class="card card-intro">
     <div class="card-body card-body-intro">
       <h1 class="card-title mt-5 mb-4">Alexa's Portfolio</h1> 
       <div class="container mb-4">
@@ -56,7 +62,7 @@
     </div>
   </div>
   <!--experience with technologies-->
-  <div class="card card-subintro border-0 mt-4">
+  <div class="card card-subintro border-0 mt-4" id="technologies">
     <div class="card-body">
       <h1 class="card-title card-title-intro">Technologies</h1>
       <p class="card-text card-text-subintro">Experience with technologies</p>
@@ -145,7 +151,7 @@
   <hr class="rounded">
 </small>
 <!--about-->
-<div class="card border-0 mx-auto d-block mt-4" style="font-family: 'Comfortaa'; font-size: 1.2rem; width: 90%;">
+<div class="card border-0 mx-auto d-block mt-4" id="about" style="font-family: 'Comfortaa'; font-size: 1.2rem; width: 90%;">
   <div class="card-body mt-4" style="border: none;">
     <h1 class="card-title card-title-intro" style="margin-bottom: 40px;">About</h1>
     <ul class="list-group mt-4 mb-4" style="text-align: left;">
@@ -169,7 +175,7 @@
 </small>
 <!--projects-->
 <!--first project-->
-  <div class="card border-0 mt-4" style="font-family: 'Comfortaa'; font-size: 1.2rem;">
+  <div class="card border-0 mt-4" id="projects" style="font-family: 'Comfortaa'; font-size: 1.2rem;">
     <h1 class="card-title card-title-num" style="margin-bottom: 40px;">Projects</h1>
     <img src="img/atom.png" class="project-img mx-auto d-block" alt="...">
     <div class="card-body">
@@ -317,7 +323,7 @@
     </div>
   </div>
   <!--self-studying-->
-  <div class="card mx-auto d-block mt-5 mb-5" style="width: 85%; border: transparent;">
+  <div class="card mx-auto d-block mt-5 mb-5" id="selfstudying" style="width: 85%; border: transparent;">
     <div class="card-body">
       <h1 class="card-title card-title-self-studying mt-5 mb-4">Self-studying</h1> 
       <p class="self-studying">I studied how to code from these courses. 
@@ -364,7 +370,7 @@
     </div>
   </div>
   <!--contact-->
-  <div class="card card-intro">
+  <div class="card card-intro" id="contact">
     <div class="card-body card-body-intro">
       <h1 class="card-title mt-5 mb-4">Contact</h1> 
       <div class="container mb-4">

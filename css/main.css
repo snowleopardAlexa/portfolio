@@ -128,3 +128,6 @@ hr.rounded {
 }
 
 
+.btn-outline-light:hover {
+    color: rgb(221, 23, 221);
+}

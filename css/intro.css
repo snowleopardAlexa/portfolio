@@ -2,6 +2,7 @@
 
 .card-body-intro {
     background: rgb(135, 14, 172);
+    margin-top: -5px;
 }
 
 .card  {

@@ -148,3 +148,28 @@ hr.rounded {
 .btn-outline-light:hover {
     color: rgb(221, 23, 221);
 }
+
+.card-subintro {
+    color: #000;
+    border: 1px solid red;
+}
+
+.card-title-intro {
+    color: #000;
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+
+.card-text {
+    font-family: 'Poppins';
+}
+
+.card-text-subintro {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.under-icon-text {
+    font-weight: bold;
+    font-family: 'Comfortaa';
+}

@@ -4,7 +4,7 @@
 
 .navbar {
     font-family: 'Comfortaa';
-    background-color: rgb(221, 23, 221);
+    background-color: #dd17dd;
 }
 .container {
     border-color: none;
@@ -66,7 +66,7 @@ hr.rounded {
 }
 
 .btn-links:hover {
-    background-color: 
+    background-color: #dd17dd;
     color: #fff;
 }
 

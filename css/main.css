@@ -12,7 +12,7 @@
 
 /* Rounded border - DIVIDER */
 hr.rounded {
-    border: 2px solid rgb(60, 255, 0);
+    border: 2px solid #3cff00;
     border-radius: 5px;
     margin-top: 40px;
     width: 90%;
@@ -21,7 +21,7 @@ hr.rounded {
   }
 
   .card-body-intro {
-    background: rgb(135, 14, 172);
+    background: #870eac;
     margin-top: -5px;
 }
 
@@ -90,10 +90,10 @@ hr.rounded {
     color: #fff;
 }
 
-.btn-fulllist {
+.btn-self-studying {
     font-family: 'Comfortaa';
     font-weight: bold;
-    background-color: #d62506;
+    background-color: #3cff00;
     border: none;
     color: white;
     text-align: center;
@@ -107,7 +107,7 @@ hr.rounded {
 
 .btn-fulllist:hover {
     color: #fff;
-    background-color: #f35d06;
+    background-color: #dd17dd;
 }
 
 .link {

@@ -53,7 +53,7 @@ hr.rounded {
 .btn-links {
     font-family: 'Comfortaa';
     font-weight: bold;
-    background-color: #02f70a;
+    background-color: #03ecba;
     border: none;
     color: white;
     text-align: center;
@@ -66,7 +66,7 @@ hr.rounded {
 }
 
 .btn-links:hover {
-    background-color: rgb(3, 236, 186);
+    background-color: 
     color: #fff;
 }
 

@@ -122,17 +122,6 @@ hr.rounded {
     color: #02f70a;
 }
 
-/* certificate page */
-.card-body-certificate {
-    background-color: rgb(9, 15, 104);
-    color: #fff;
-}
-
-.card-title-certificate {
-    font-size: 2.5rem;
-    font-family: 'Comfortaa';
-}
-
 .link-note {
     text-decoration: none;
     color: #000;
@@ -143,7 +132,6 @@ hr.rounded {
 .link-note:hover {
     color:rgb(104, 9, 99);
 }
-
 
 .btn-outline-light:hover {
     color: rgb(221, 23, 221);

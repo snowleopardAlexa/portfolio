@@ -36,6 +36,12 @@ hr.rounded {
     font-family: 'Hammersmith One', sans-serif;
 }
 
+.card-subtitle-num {
+    color: #000;
+    font-weight: bold;
+    font-family: 'Hammersmith One', sans-serif;
+}
+
   /* List group - about */
 .list-group-item {
     border-top: none;

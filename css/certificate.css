@@ -21,3 +21,15 @@
     color: #000;
     font-family: 'Comfortaa';
 }
+
+.cert_subtitle {
+    color: #000;
+    font-family: 'Comfortaa';
+}
+
+.cert_list {
+    color: #000;
+    font-family: 'Comfortaa';
+    list-style-type: none;
+    text-decoration: none;
+}

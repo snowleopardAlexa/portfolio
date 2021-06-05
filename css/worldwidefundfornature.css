@@ -1,3 +1,7 @@
 .card-body-design-project > .card-title {
     color: #000;
 }
+
+.projects < li {
+    display: inline-block;
+}

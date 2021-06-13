@@ -10,6 +10,10 @@
     border-color: none;
 }
 
+.navbar > .container-fluid > .navbar-collapse > .navbar-nav > .nav-item > .btn-outline-light {
+    margin-top: 10px;
+}
+
 /* Rounded border - DIVIDER */
 hr.rounded {
     border: 2px solid #3cff00;
@@ -51,7 +55,7 @@ hr.rounded {
 
 /* Email */
 .contact {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: 'Comfortaa';
 }
 

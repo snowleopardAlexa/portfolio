@@ -1,4 +1,14 @@
 .card-img-top {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
+}
+
+.footer {
+    background-color: #dd17dd;
+    padding: 30px;
+}
+
+.fa-linkedin-in, .fa-facebook, .fa-twitter {
+    color: white;
+    font-size: 2rem;
 }

@@ -212,3 +212,7 @@ hr.rounded {
     color: white;
     font-family: "Comfortaa";
 }
+
+#active {
+    color: yellow;
+}

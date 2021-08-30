@@ -72,9 +72,9 @@ hr.rounded {
 .btn-links {
     font-family: 'Comfortaa';
     font-weight: bold;
-    background-color: #03ecba;
+    background-color: #dd17dd;
     border: none;
-    color: white;
+    color: #fbff00;
     text-align: center;
     padding: 15px 32px;
     text-decoration: none;
@@ -85,8 +85,8 @@ hr.rounded {
 }
 
 .btn-links:hover {
-    background-color: #dd17dd;
-    color: #fff;
+    background-color: #03ecba;
+    color: #870eac;
 }
 
 .btn-github {
@@ -105,28 +105,8 @@ hr.rounded {
 }
 
 .btn-github:hover {
-    background-color: #dd17dd;
-    color: #fff;
-}
-
-.btn-self-studying {
-    font-family: 'Comfortaa';
-    font-weight: bold;
-    background-color: #3cff00;
-    border: none;
-    color: white;
-    text-align: center;
-    padding: 15px 32px;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1.3rem;
-    margin: 4px 2px;
-    cursor: pointer;   
-}
-
-.btn-self-studying:hover {
-    color: #fff;
-    background-color: #dd17dd;
+    background-color: #fbff00;
+    color: #dd17dd;
 }
 
 .link {

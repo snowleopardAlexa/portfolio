@@ -3,4 +3,13 @@
     height: 250px;
 }
 
+.title {
+    font-family: 'Hammersmith One', sans-serif;
+    text-align: center;
+}
 
+.small-title {
+    color: black;
+    font-size: 1.2rem;
+    font-family: 'Hammersmith One', sans-serif;
+}

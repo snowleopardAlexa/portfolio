@@ -6,6 +6,11 @@
     font-family: 'Comfortaa';
     background-color: #dd17dd;
 }
+
+.navbar-brand {
+    font-size: 1rem;
+}
+
 .container {
     border-color: none;
 }
@@ -44,6 +49,10 @@ hr.rounded {
     color: #000;
     font-weight: bold;
     font-family: 'Hammersmith One', sans-serif;
+}
+
+.card-text {
+    font-size: 1.2rem;
 }
 
   /* List group - about */
@@ -262,4 +271,8 @@ small {
 
 .fa-linkedin-in:hover, .fa-facebook:hover, .fa-twitter:hover {
     color: #03ecba;
+}
+
+.experience-list li {
+    display: inline;
 }

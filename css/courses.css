@@ -1,3 +1,14 @@
+.title {
+    text-align: center;
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Comfortaa';
+}
+
 .card-title-self-studying {
   color: #000;
   font-family: 'Hammersmith One', sans-serif;

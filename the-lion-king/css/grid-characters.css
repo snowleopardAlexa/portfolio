@@ -1,0 +1,125 @@
+/* GRID-CHARACTERS */
+
+.container {
+    /* fr - fraction unit, it represents a fraction of the available space in the grid container */
+    height: 100vh;
+    margin: 2rem;
+    display: grid;
+    /* 3 equal columns */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* 4 equal rows */
+    grid-row: 1fr 1fr 1fr 1fr;
+    /* gap between grid cells */
+    grid-gap: 10px 10px
+}
+
+.character {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    padding: 4rem;
+}
+
+.name {
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+    font-size: 1.8rem;
+    font-family: 'Waltograph';
+}
+
+.character-1 {
+    background-color: #91080d;
+    background-image: url("../img/icons/lion.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px;
+}
+
+.character-2 {
+    background-color: #6B120E;
+    background-image: url("../img/icons/lioness.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px;
+}
+
+.character-3 {
+    background-color: #BB3D02;
+    background-image: url("../img/icons/smalllion.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px;
+}
+
+.character-4 {
+    background-color: #FF9B15;
+    background-image: url("../img/icons/smalllion.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px;
+}
+
+.character-5 {
+    background-color: #FCF03C;
+    background-image: url("../img/icons/lion.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px;
+}
+
+.character-6 {
+    background-color: #F95404;
+    background-image: url("../img/icons/meerkat.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px;
+}
+
+.character-7 {
+    background-color: #91080d;
+    background-image: url("../img/icons/hog.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px;
+}
+
+.character-8 {
+    background-color: #6B120E;
+    background-image: url("../img/icons/mandrill.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px;
+}
+
+.character-9 {
+    background-color: #BB3D02;
+    background-image: url("../img/icons/hornbill.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px;
+}
+
+.character-10 {
+    background-color: #FF9B15;
+    background-image: url("../img/icons/hyena.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px;
+}
+
+.character-11 {
+    background-color: #FCF03C;
+    background-image: url("../img/icons/lion.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px;
+}
+
+.character-12 {
+    background-color: #F95404;
+    background-image: url("../img/icons/lioness.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px;
+}

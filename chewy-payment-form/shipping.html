@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/shipping.css" />
+    <title>Shipping</title>
+</head>
+<body>
+        <!--header-->    
+        <header>
+            <h1 id="header-title">Chewy</h1>
+            <h3 id="header-subtitle">Payment Form</h3>
+       </header>   
+    
+    <!--navigation checkout stepper-->
+       <nav class="checkoutStepper">
+           <ul>
+               <li><a href="cart.html">Cart</a></li>
+               <li><a href="personalDetails.html">Personal Details</a></li>
+               <li class="active"><a href="shipping.html">Shipping</a></li>
+               <li><a href="orderSummary.html">Payment</a></li>
+           </ul>
+       </nav>
+
+<!--personal details summary-->
+<div id="shipping" style="margin: 50px 20px 50px 20px">
+    <div class="entireShippingForm">
+    <div class="shippingInfo">
+       <h2>Shipping to</h2>
+       <section class="shippingDetails">
+        <ul class="details">
+            <li>aleksandravslomska@gmail.com</li>
+            <li>Aleksandra Slomska</li>
+            <li>
+                <address>
+                    183 Eldert Street, 11207 Brooklny, NY
+                </address>
+            </li>
+            <li>
+                <span>+1 345-567-7654</span>
+            </li>
+        </ul>
+       </section>
+    <!--form shipping methods-->
+    <form action="#" id="shippingMethod">
+        <fieldset>
+            <legend>Shipping method</legend>
+            <div id="shippingMethodType" class="customRadioBtn">
+                <label for="free" class="radioLabel">
+                    <input type="radio" id="free" name="shippingOption" value="0.00" checked>
+                    <span></span>Free shipping (3-7 days) <strong>Free</strong>
+                </label>
+                <label for="secondDay" class="radioLabel">
+                    <input type="radio" id="secondDay" name="shippingOption" value="7.99">
+                    <span></span>Second day shipping (3 days) <strong>$7.99</strong>
+                </label>
+                <label for="nextDay" class="radioLabel">
+                    <input type="radio" id="nextDay" name="shippingOption" value="21.99">
+                    <span></span>Next day shipping (2 days) <strong>$21.99</strong>
+                </label>
+            </div>
+        </fieldset>
+    </form>
+     <!--button continue to personal details-->
+    <a href="orderSummary.html" class="btn-continue">Continue to payment</a>
+    </div>
+
+ <div class="totalCart">
+  <h2>Cart Total</h2>
+  <span class="side-info">
+    <a href="editcart.html"><button class="btn-edit">Edit Cart</button></a>
+  </span>
+  <section id="cartTotal">
+    <article class="item">
+        <ul class="details">
+            <li><img src="img/royal-canin-kitten.jpg" class="image" alt="Royal Canin Kitten"></li>
+            <li class="brandName"><h1>
+               Royal Canin Feline Health Nutrition Thin Slices in Gravy Wet Kitten Food, 3-oz, case of 24</h1>
+            </li> 
+            <li class="qty">
+                <span>Qty: <span class="side-info">36.52$ + Tax</span>
+            </li>  
+            <hr>
+            <li class="total"><span>Order Total:</span> <span class="side-info">$45.15</span></li>
+        </ul>
+    </article>
+</section>
+</div>
+</div>
+</div>
+
+ <!--footer-->
+<footer>
+    <h1 id="footer-title">Chewy</h1>
+    <h3 id="footer-subtitle">with love to pets</h3> 
+</footer>   
+</body>
+</html>

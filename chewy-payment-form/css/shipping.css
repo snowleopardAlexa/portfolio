@@ -1,0 +1,199 @@
+  html {
+    margin: 0;
+    color: #1e535f;
+  }
+
+  .shipping {
+    margin-left: 50px;
+  }
+  
+  .entireShippingForm {
+    padding: 50px;
+    font-family: 'Lexend', sans-serif;
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    -webkit-box-shadow: 0 10px 6px 6px #ecf2f5;
+    -moz-box-shadow: 0 3px 6px 6px #ecf2f5;
+         box-shadow: 0px 3px 6px 6px #ecf2f5;
+  }
+
+  .shippingInfo, .totalCart {
+      padding: 30px;
+      border: 1px solid #cdf2f8;
+  }
+
+  .shippingInfo ul {
+      margin-top: 20px;
+      list-style-type: none;
+  }
+
+fieldset {
+    border: none;
+}  
+
+legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+label {
+    font-size: 1.2rem;
+}
+
+#shippingMethod {
+    margin-top: 20px;
+}
+
+/* display labels in columns */
+#shippingMethodType {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    padding: 5px;
+}
+
+/* list */
+.details {
+    font-size: 1.2rem;
+    list-style-type: none;
+    display: inline-block;
+}
+
+.qty {
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+
+.image {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: block;
+    width: 160px;
+    height: 100px;
+}
+
+.side-info {
+    float: right;
+}
+
+/* order total price */
+.total {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Lexend', sans-serif;
+    margin-top: 10px;
+}
+
+
+hr {
+    border: 1px solid #cdf2f8;
+    margin-top: 20px;
+    width: 100%; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* button edit and continue */
+ .btn-continue, .btn-edit {
+    margin-top: 20px;
+    padding: 0.35em 1.2em;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border: 0.1em solid #ffffff;
+    border-radius: 0.12em;
+    box-sizing: none;
+    background-color: #16aec9;
+    color: #ffffff;
+    font-family: 'Chewy', cursive;
+    text-align: center;
+    transition: all 0.2s;
+    text-decoration: none;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn-edit {
+    font-size: 1rem;
+}
+
+/* hover */
+ .btn-continue:hover, .btn-edit:hover {
+    background-color: #0f90db;
+}
+
+/* CUSTOM RADIO BUTTONS */
+/* hide the default radio buttons */
+.customRadioBtn {
+    max-width: 505px;
+}
+.customRadioBtn input[type="radio"] { /* hide the default radio buttons, this will allow us to make our own */
+	position: absolute !important;
+	margin-left: -9999px !important;
+	visibility: hidden !important;
+}
+
+.customRadioBtn label.radioLabel { /* style the radio buttons labels */ 
+	display: flex; /* so we can position shipping price to far right */
+    margin-bottom: .5em;
+    position: relative;
+	padding-top: 4px;
+    padding-left: 30px;
+    letter-spacing: normal;
+    color: #1e535f;
+    font-size: 1.2rem;
+    border-bottom: solid 1px #cdf2f8;
+    padding-bottom: .5em;
+}
+
+/* the outer circles for the radio buttons */
+.customRadioBtn input+span { 
+	position: absolute;
+	left: 2px;
+	top: 4px;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	border: 2px solid #cdf2f8;
+	border-radius: 50%;
+}
+
+/* style the inner circles for the radio buttons (selected state) */
+.customRadioBtn input+span:after { 
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 0px;
+	height: 0px;
+	border-radius: 50%;
+	background-color: #16aec9;
+	transform: translate(-50%, -50%);
+	transition: 0.2s all;
+}
+
+.customRadioBtn strong { 
+    text-align: right;
+    margin-left: auto;
+}
+
+.customRadioBtn input:not(:checked)+span:after {
+	opacity: 0;
+}
+
+.customRadioBtn input:checked+span:after {
+	opacity: 1;
+	width: 10px;
+	height: 10px;
+}
+
+
+

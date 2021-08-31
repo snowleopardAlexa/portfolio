@@ -1,0 +1,145 @@
+/* CART */
+
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend', sans-serif;
+    color: #1e535f;
+}
+
+/* CART */
+.cart {
+    padding: 50px;
+    max-width: 70%;
+    /* align center cart */
+    margin: 0 auto;
+    /* shadows around  borders */
+    -webkit-box-shadow: 0 10px 6px 6px #ecf2f5;
+    -moz-box-shadow: 0 3px 6px 6px #ecf2f5;
+         box-shadow: 0px 3px 6px 6px #ecf2f5;
+  }
+
+  /* button remove item */
+  .remove-btn-position {
+      margin-top: 5px;
+      float: right;
+  }
+
+  .remove-item-btn {
+      border: none;
+      cursor: pointer;
+      background: none;
+      font-size: 1.2rem;
+      color: #16aec9;
+      font-weight: bold;
+  }
+
+  /* minus plus change quantity buttons */
+  .quantity-btns {
+      margin-top: 10px;
+  }
+
+  fieldset {
+      border: none;
+  }
+
+  fieldset, input[type=button] {
+      border: 0;
+  }
+
+  input[type="button"] {
+      background-color: #16aec9;
+      color: #fff;
+      cursor: pointer;
+      width: 25px;
+      height: 25px;
+  }
+
+  input[type="text"] {
+      font-family: 'Lexend', sans-serif;
+      text-align: center;
+      color: #1e535f;
+      border: 1px solid #16aec9;
+      height: 28px;
+      width: 40px;
+  }
+
+  legend {
+      margin-bottom: 5px;
+  }
+/* end of minus plus change quantity buttons */
+
+/* list */
+.details {
+    list-style-type: none;
+}
+
+/* royal canin wet food image */
+.img-item {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    /* align center img: display block + margins auto */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 150px;
+}
+
+/* list li elements */
+.title, .brandName, .qty, .edit, .sub, .total, .shipping, .tax {
+    font-family: 'Lexend', sans-serif;
+    margin-top: 10px;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.qty, .sub, .shipping, .tax {
+    font-size: 1.1rem;
+}
+
+.total {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.sum-info {
+    float: right;
+}
+
+hr {
+    border: 1px solid #cdf2f8;
+    margin-top: 20px;
+    width: 100%; 
+    margin-left: auto;
+    margin-right: auto;
+}
+/* end of details list */
+
+/* button add items and button personal details */
+.btn-add-items, .btn-personal-details {
+    font-size: 1.5rem;  
+    display: block;
+    padding: 0.35em 1.5em;
+    background-color: #16aec9;
+    color: #ffffff;
+    font-family: 'Chewy', cursive;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-add-items {
+    margin-top: 50px;
+}
+
+.btn-personal-details {
+    margin-top: 10px;
+}
+
+.btn-add-items:hover, .btn-personal-details:hover {
+    background-color: #0f90db;
+}
+

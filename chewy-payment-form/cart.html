@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/cart.css" />
+    <title>Cart</title>
+</head>
+<body>
+<!--header-->    
+<header>
+    <h1 id="header-title">Chewy</h1>
+    <h3 id="header-subtitle">Payment Form</h3>
+</header>   
+
+<!--navigation checkout stepper-->
+<nav class="checkoutStepper">
+    <ul>
+        <li class="active"><a href="cart.html">Cart</a></li>
+        <li><a href="personalDetails.html">Personal Details</a></li>
+        <li><a href="shipping.html">Shipping</a></li>
+        <li><a href="orderSummary.html">Payment</a></li>
+    </ul>
+</nav>
+
+<!--cart-->
+<div class="cart" style="margin-top: 50px;">
+    <section id="card">
+        <article class="item">
+            <ul class="details">
+                <h1 class="title">Your Cart</h1>
+                <span class="remove-btn-position">
+                    <button class="remove-item-btn">Remove</button>
+                </span>
+                <li><img src="img/royal-canin-kitten.jpg" class="img-item" alt="Royal Canin Kitten"></li>
+                <li class="brandName"><h1>
+                   Royal Canin Feline Health Nutrition Thin Slices in Gravy Wet Kitten Food, 3-oz, case of 24</h1>
+                </li>
+                <li class="qty">
+                    <div class="quantity-btns">
+                        <fieldset>
+                            <legend>Qty:</legend>
+                            <input type="button" value="-" class="decrease" />
+                            <input type="text" id="ten-max" value="0" />
+                            <input type="button" value="+" class="increase" />
+                            <span class="sum-info">36.52$</span>
+                        </fieldset>
+                    </div>
+                </li>  
+                <hr>
+                 <li class="sub"><span>Subtotal:</span> <span class="sum-info">$36.52</span></li>   
+                 <li class="shipping"><span>Flat-Rate Shipping:</span> <span class="sum-info">4.95$</span></li>
+                 <li class="tax"><span>Estimated Tax:</span> <span class="sum-info">$3.68</span></li>
+                <hr>
+                <li class="total"><span>Order Total:</span> <span class="sum-info">$45.15</span></li>
+            </ul>
+        </article>
+      </section>
+       <!--button add items-->
+       <a href="store.html" class="btn-add-items">Add Items</a>
+       <!--button continue to personal details-->
+       <a href="personalDetails.html" class="btn-personal-details">Continue to personal details</a>
+</div>       
+
+<!--footer-->
+<footer>
+    <h1 id="footer-title">Chewy</h1>
+    <h3 id="footer-subtitle">with love to pets</h3> 
+</footer>   
+<!--jQuery must be loaded before the function script-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+// increase and decrease input
+$(function () {
+set_($('#ten-max'), 10);  // max 10
+
+function set_(_this, max) {
+    var block = _this.parent();
+
+    block.find(".increase").click(function () {
+        var currentVal = parseInt(_this.val());
+        if (currentVal != NaN && (currentVal + 1) <= max) {
+            _this.val(currentVal + 1);
+        }
+    });
+
+    block.find(".decrease").click(function () {
+        var currentVal = parseInt(_this.val());
+        if (currentVal != NaN && currentVal != 0) {
+            _this.val(currentVal - 1);
+        }
+    });
+   }
+});
+</script>
+</body>
+</html>

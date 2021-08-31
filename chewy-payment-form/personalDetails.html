@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/personalDetails.css" />
+    <title>Personal Details</title>
+</head>
+<body>
+<!--header-->    
+<header>
+    <h1 id="header-title">Chewy</h1>
+    <h3 id="header-subtitle">Payment Form</h3>
+</header>   
+    
+<!--navigation checkout stepper-->
+<nav class="checkoutStepper">
+    <ul>
+        <li><a href="cart.html">Cart</a></li>
+        <li class="active"><a href="personalDetails.html">Personal Details</a></li>
+        <li><a href="shipping.html">Shipping</a></li>
+        <li><a href="orderSummary.html">Payment</a></li>
+    </ul>
+</nav>
+
+<!--personal details-->
+<div class="entireForm">
+    <div class="checkoutDetails">
+       <!--personal details card-->    
+        <div class="card">
+            <div class="personalDetails">
+                <h1 class="title-form">Contact Information</h1>
+                <div class="form">
+                    <label class="field">
+                        <span class="field-label" for="email">Email</span>
+                        <input class="field-input" type="text" id="email" />
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox" checked="checked">
+                        <span class="checkbox-text">Keep me up to date on news and exclusive offers</span>
+                    </label>
+                </div>
+                <h1 class="title-form">Personal Information</h1>
+                <p class="subtitle-form">Please enter your personal details.</p>
+                  <div class="form">
+                    <div class="fields fields-2">
+                      <label class="field">
+                        <span class="field-label" for="firstname">First name</span>
+                        <input class="field-input" type="text" id="firstname" />
+                      </label>
+                      <label class="field">
+                        <span class="field-label" for="lastname">Last name</span>
+                        <input class="field-input" type="text" id="lastname" />
+                      </label>
+                    </div>
+                    <label class="field">
+                      <span class="field-label" for="address">Address</span>
+                      <input class="field-input" type="text" id="address" />
+                    </label>
+                    <label class="field">
+                      <span class="field-label" for="tel">Phone</span>
+                      <select class="field-input" id="phone">
+                      </select>
+                    </label>
+                    <div class="fields fields-3">
+                      <label class="field">
+                        <span class="field-label" for="zipcode">Zip code</span>
+                        <input class="field-input" type="text" id="zipcode" />
+                      </label>
+                      <label class="field">
+                        <span class="field-label" for="city">City</span>
+                        <input class="field-input" type="text" id="city" />
+                      </label>
+                      <label class="field">
+                        <span class="field-label" for="state">State</span>
+                        <select class="field-input" id="state">
+                          <option value=""></option>
+                        </select>
+                      </label>
+                    </div>
+                 </div>
+                <!--end of personalDetails-->  
+              </div>
+              <!--end of card-->
+            </div>
+        <div class="card">
+        <!--order summary-->  
+           <div class="orderSummary">   
+             <section id="orderSummary">
+               <article class="item">
+                 <ul class="details">
+                    <h1 class="title">Your Order
+                        <span class="side-info">
+                            <a href="editcart.html"><button id="edit">Edit Cart</button></a>
+                        </span>
+                    </h1>
+                    <li><img src="img/royal-canin-kitten.jpg" class="image" alt="Royal Canin Kitten"></li>
+                    <li class="brandName"><h1>
+                       Royal Canin Feline Health Nutrition Thin Slices in Gravy Wet Kitten Food, 3-oz, case of 24</h1>
+                    </li> 
+                    <li class="qty">
+                        <span>Qty: <span class="side-info">36.52$</span>
+                    </li>  
+                    <hr>
+                     <li class="sub"><span>Subtotal:</span> <span class="side-info">$36.52</span></li>   
+                     <li class="shipping"><span>Flat-Rate Shipping:</span> <span class="side-info">4.95$</span></li>
+                     <li class="tax"><span>Estimated Tax:</span> <span class="side-info">$3.68</span></li>
+                    <hr>
+                    <li class="total"><span>Order Total:</span> <span class="side-info">$45.15</span></li>
+                </ul>
+              </article>
+            </section>
+          </div>
+        <!--end of card-->  
+      </div>
+      <!--end of checkoutDetails--> 
+    </div>
+    <!--button continue to shipping page-->
+    <a href="shipping.html" class="btn-shipping">Continue to shipping</a>
+<!--end of entireForm-->    
+</div>
+         
+<!--footer-->
+<footer>
+    <h1 id="footer-title">Chewy</h1>
+    <h3 id="footer-subtitle">with love to pets</h3> 
+</footer>
+</body>
+</html>
+    
+
+
+
+
+
+
+
+    <!---
+    <script>
+        // increment and decrement the quantity of the order
+        function increment() {
+            document.getElementById('qty').stepUp();
+        }
+        function decrement() {
+            document.getElementById('qty').stepDown();
+        }
+
+        // input mask for phone number
+        // /pattern/modifiers;
+        document.getElementById('phone').addEventListener('input', function (e) {
+        var x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
+        e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
+        });
+
+        
+
+        // add zip-code validation-->
+
+
+    </script>
+</body>
+</html>

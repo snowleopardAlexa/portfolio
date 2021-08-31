@@ -55,6 +55,15 @@ hr.rounded {
     font-size: 1.2rem;
 }
 
+.card-project {
+    max-width: 60%;
+    font-family: 'Comfortaa'; 
+}
+
+li .list-group-item {
+    font-size: 1.5rem;
+}
+
   /* List group - about */
 .list-group-item {
     border-top: none;

@@ -1,0 +1,269 @@
+/*:::::::::: FONTS :::::::::: */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@500&family=Marcellus+SC&display=swap');
+/* 
+font-family: 'Cinzel', serif;
+font-family: 'Cinzel Decorative', cursive;
+font-family: 'Marcellus SC', serif;
+*/
+
+/* local fonts */
+@font-face {
+    font-family: 'Waltograph';
+    font-family: 'Lion King';
+    /* src: url('waltograph42.otf'); */
+    src: local('fonts/waltographUI.ttf');
+    src: local('fonts/lion_king.ttf');
+}
+
+/*:::::::::: BASIC RESET :::::::::: */
+
+* { /* - Universal selector that matches any html tag: div, body, button, all of them */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*:::::::::: NAVBAR :::::::::: */
+
+nav {
+    top: 0;
+    background-color: #a70202;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 70px;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-family: 'Lion King';
+    cursor: pointer;
+}
+
+.logo {
+    height: 30px;
+    width: 30px;
+}
+
+a {
+    text-decoration: underline;
+    color: #fff;
+}
+
+nav .nav-list {
+    float: right;
+    margin-right: 20px;
+    font-family: 'Lion King';
+}
+
+nav .nav-list li {
+    display: inline-block;
+    line-height: 75px;
+    margin: -2.5px 5px;
+}
+
+nav .nav-list li a {
+    color: #fff;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    text-decoration: none;
+}
+
+nav .nav-list li a:hover {
+    color:rgb(224, 191, 4);
+}
+
+nav .nav-list li a.active {
+    color:rgb(224, 191, 4);
+}
+
+/* checkbox */
+.check-btn {
+    font-size: 2rem;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    nav .nav-list li a {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 858px) {
+    .check-btn {
+        display: block;
+        margin-right: 20px;
+    }
+    .nav-list {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #a70202;
+        top: 80px;
+        /* why */
+        left: -100%;
+        transition: all .5s;
+
+        text-align: center;
+    }
+    nav .nav-list li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav .nav-list li a {
+        font-size: 1.2rem;
+    }
+    a:hover, a.active {
+        background: none;
+        color:rgb(214, 87, 13);
+    }
+    #check:checked ~ .nav-list {
+        left: 0;
+    }
+}
+
+/*:::::::::: FOOTER :::::::::: */
+
+footer {
+    background-color: #a70202;
+    color: #fff;
+}
+
+.footer {
+    line-height: 1.5;
+    padding: 20px 29.6px;
+    display: flex;
+    flex-wrap: wrap;  /* flex-wrap property will let the footer wrap into multiple rows based on the viewport size. */
+}
+
+.footer-title {
+    color: #fff;
+    font-family: 'Waltograph';
+    font-size: 2rem;
+    padding-bottom: 8px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.item-list {
+    font-size: 1.5rem;
+    list-style: none;
+    padding-left: 0;
+    font-family: 'Waltograph';
+}
+
+.item-list li a:hover {
+    text-decoration: none;
+    color: rgb(255, 208, 0);
+}
+
+.item-list li a.active {
+    color:rgb(224, 191, 4);
+}
+
+/* social-media */
+.fa-instagram, .fa-facebook, .fa-pinterest, .fa-twitter {
+  font-size: 2.2rem;
+}
+
+.fa-instagram:hover, .fa-facebook:hover, .fa-pinterest:hover, .fa-twitter:hover {
+    color: rgb(255, 208, 0);
+}
+
+.footer-item {
+    padding: 20px; /* 1.25rem; */
+    min-width: 200px; /* 12.5rem */
+}
+
+.footer .footer-item:nth-last-child(2) {
+   flex:1 /* pushes the item to the right */
+}
+
+/* newsletter form */ 
+form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  input[type="email"] {
+    font-family: 'Waltograph';
+    font-size: 1.5rem;
+    border: 0;
+    padding: 10px; /* 0.625rem; */
+    margin-top: 5px; /* 0.3125rem; */
+  }
+
+  input[type="submit"] {
+    font-family: 'Waltograph';
+    background-color: #441d04;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    padding: 10px 15px; /* 0.625rem 0.9375rem; */
+    margin-top: 5px /* 0.3125rem; */
+  }
+
+.footer-subtitle {
+    font-family: 'Waltograph';
+    font-size: 1.2rem;
+}
+
+.footer-social-media {
+    padding: 0 30px 20px;
+}
+
+.footer-social-media-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    border-top: 1px rgb(214, 11, 11) solid;
+    padding-top: 20px;
+}
+
+.footer-social-media-list li {
+    margin: 16px;
+}
+
+/* footer legal */
+.footer-legal {
+    padding: 15px 30px; /* 0.9375rem 1.875rem; */
+    background-color: rgb(214, 11, 11);
+    font-family: 'Waltograph';
+}
+
+.footer-legal-list {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-legal-list li {
+    margin: 2px 10px;
+    white-space: nowrap;
+    font-size: 1.2rem;
+}
+
+/* last child - puts the item to the right like float:right */
+.footer-legal-list li:nth-last-child(2) {
+    flex: 1; /* same as flex-grow: 1; */
+}
+

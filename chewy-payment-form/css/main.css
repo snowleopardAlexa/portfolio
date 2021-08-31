@@ -1,0 +1,116 @@
+/* MAIN */
+/* FONTS - Chewy, Lexend */
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Lexend&display=swap');
+
+/* HEADER */
+/* allows to include the padding and border in an element's 
+total width and height */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+     background-color: rgb(10, 129, 207);
+     padding: 40px;
+}
+
+#header-title {
+    font-family: 'Chewy', cursive;
+    text-align: center;
+    color: #ffffff;
+    font-size: 5rem;
+}
+
+#header-subtitle{
+    font-family: 'Lexend', sans-serif;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+/* FOOTER */
+footer {
+    position: relative;
+    background-color: rgb(10, 129, 207);
+    margin-top: 50px;
+    width: 100%;
+    padding: 10px;
+}
+
+#footer-title {
+    font-family: 'Chewy', cursive;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+#footer-subtitle{
+    font-family: 'Lexend', sans-serif;
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+}
+
+/* NAVIGATION */
+.checkoutStepper {
+    margin-top: 25px;
+}
+
+.checkoutStepper ul {
+    list-style: none;
+    font-family: 'Chewy', cursive;
+    width: 90%;
+    position: relative;
+    margin: 0 auto 1em;
+    display: flex;
+    justify-content: space-around;
+    counter-reset: step;
+}
+
+.checkoutStepper li {
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.checkoutStepper li:before {
+    content: counter(step);
+    counter-increment: step;
+    color: #ffffff;
+    border-radius: 50%;
+    background-color: #0f90db;
+    display: block;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    margin: auto;
+}
+
+/* line above the checkoutStepper */
+.checkoutStepper ul:after {
+    content: "";
+    width: 78%;
+    height: 3px;
+    background-color: #0f90db;
+    display: block;
+    position: absolute;
+    top: 27.5px;
+    z-index: -1;
+}
+
+.checkoutStepper li.active:before {
+    background-color: #17bacf;
+}
+
+.checkoutStepper a {
+    color: #0f90db;
+    text-decoration: none;
+    padding-top: 37px;
+}
+
+.checkoutStepper .active a {
+    color: #17bacf;
+}

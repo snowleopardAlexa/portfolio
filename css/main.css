@@ -78,14 +78,13 @@ li .list-group-item {
 }
 
 /* buttons */
-.btn-links {
+.btn-links, .btn-arrow {
     font-family: 'Comfortaa';
     font-weight: bold;
     background-color: #dd17dd;
     border: none;
     color: #fbff00;
     text-align: center;
-    padding: 15px 32px;
     text-decoration: none;
     display: inline-block;
     font-size: 1rem;
@@ -93,9 +92,17 @@ li .list-group-item {
     cursor: pointer;
 }
 
-.btn-links:hover {
+.btn-links {
+    padding: 15px 32px;
+}
+
+.btn-links:hover, .btn-arrow:hover {
     background-color: #03ecba;
     color: #870eac;
+}
+
+.btn-arrow {
+    padding: 12px 25px;
 }
 
 .btn-github {

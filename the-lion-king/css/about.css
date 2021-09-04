@@ -1,8 +1,20 @@
 .card-about {
-    background-color: rgb(15, 14, 14);
+    margin-top: -5px;
     color: #fff;
     padding: 120px;
     font-family: 'Marcellus SC', serif;
+}
+
+.card-about-top {
+    background-color: rgb(90, 31, 4);
+}
+
+.card-about-middle {
+    background-color: rgb(190, 88, 3);
+}
+
+.card-about-bottom {
+    background-color: rgb(238, 160, 16);
 }
 
 .card-desc {

@@ -45,6 +45,16 @@
   font-size: 3rem;
 }
 
+.jumbo-text {
+  font-size: 1.5rem;
+  margin-top: 30px;
+}
+
+.jumbo-container {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
 /*:::::::::: LATEST NEWS ABOUT THE MOVIE :::::::::: */
 
 .jumbo-title-news {
@@ -112,12 +122,9 @@ article, .desc {
   color: rgb(223, 205, 205);
 }
 
-
-
 .icon-africa {
   margin-top: 50px;
-  width: 100%;
-  height: 100%;
+  width: 60%;
 }
 
 

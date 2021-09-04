@@ -1,5 +1,13 @@
+.title {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 3rem;
+    font-family: 'Cinzel';
+}
+
 .card-music {
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .img-music {
@@ -20,4 +28,10 @@
 .card-text {
     font-size: 1.6rem;
     font-family: 'Marcellus SC', serif;
+}
+
+.music-list {
+    margin-top: 20px;
+    line-height: 40px;
+    font-size: 1.4rem;
 }

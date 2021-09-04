@@ -1,0 +1,108 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+/*
+font-family: 'Ubuntu', sans-serif;
+*/
+
+/* basic reset - asterix applies to all the page */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #fff;
+}
+
+/* grid */
+.cards {
+    padding: 10px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 100px;
+    max-width: 1160px;
+}
+
+article, .wildCat {
+    position: relative;
+    z-index: 3;
+  }
+
+article .img {
+    background-repeat: no-repeat;
+    background-position: cover;
+    border-radius: 20px;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+.container-img {
+    background-image: url("lion.jpg");
+}
+  
+.container-content {
+    background-color: rgba(19, 14, 14, 0.5);
+    position: relative;
+}
+
+.desc {
+    padding: 10px;
+    width: 100%;
+    z-index: 2;
+    margin-top: -20px;
+    background-color: #001219;
+    color: black;
+    position: absolute;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.desc-title {
+    margin: 20px 0px 0px 5px;
+    color: #fff;
+}
+
+.left {
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+    margin-left: 5px;
+}
+
+.status {
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+    margin-left: 5px;
+}
+
+.title {
+    text-align: center;
+    border-radius: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: rgba(19, 14, 14, 0.5);
+}
+
+article {
+    background: red;
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+    transition: background-color 2s ease-out;
+}
+
+article:hover {
+    background-color:yellow;
+    cursor: pointer;
+}
+
+
+

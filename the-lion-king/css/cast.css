@@ -2,14 +2,28 @@
     margin-top: -5px;
 }
 
-section {
+.cast {
+    margin-top: -5px;
+    background-color: orange;
     color: white;
+    padding: 40px;
 }
 
 .cast-names {
     text-align: center;
+    font-size: 3rem;
+    font-family: 'Cinzel', serif;
 }
 
 .cast-list {
+    margin-top: 30px;
+    line-height: 40px;
     text-align: center;
+    list-style-type: none;
+    font-size: 1.6rem;
+    font-family: 'Cinzel', serif;
+}
+
+.cast-container {
+    padding: 30px;
 }

@@ -1,3 +1,15 @@
-body {
-    background-color: rgb(15, 14, 14);
+.cast-img {
+    margin-top: -5px;
+}
+
+section {
+    color: white;
+}
+
+.cast-names {
+    text-align: center;
+}
+
+.cast-list {
+    text-align: center;
 }

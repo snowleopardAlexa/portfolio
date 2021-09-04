@@ -1,0 +1,23 @@
+.card-music {
+    margin-top: 50px;
+}
+
+.img-music {
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+}
+
+.card-desc {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 2rem;
+    font-family: 'Cinzel', serif;
+}
+
+.card-text {
+    font-size: 1.6rem;
+    font-family: 'Marcellus SC', serif;
+}

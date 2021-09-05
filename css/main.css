@@ -11,12 +11,13 @@
     --ocean-mediterrean: #03ecba;
     --polar-bear: #fff;
     --black-bear: #000;
-
 }
 
 .navbar {
     font-family: 'Comfortaa';
-    background-color: 
+    background: #AA076B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #61045F, #AA076B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #61045F, #AA076B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .navbar-brand {
@@ -42,7 +43,9 @@ hr.rounded {
   }
 
   .card-body-intro {
-    background: #870eac;
+    background: #AA076B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #61045F, #AA076B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #61045F, #AA076B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     margin-top: -5px;
 }
 
@@ -258,7 +261,9 @@ small {
 }
 
 .footer {
-    background-color: #dd17dd;
+    background: #a80077;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #66ff00, #a80077);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #66ff00, #a80077); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding: 20px;
 }
 
@@ -285,29 +290,3 @@ small {
     display: inline;
 }
 
-.container-box {
-    display: inline;
-}
-
-.box1, .box2, .box3, .box4, .box5 {
-    width:100px;
-    height: 100px;
-}
-
-
-
-.box2 {
-    background-color: #dd17dd;
-}
-
-.box3 {
-    background-color: #03ecba;
-}
-
-.box4 {
-    background-color: #870eac;
-}
-
-.box5 {
-    background-color: #fbff00;
-}

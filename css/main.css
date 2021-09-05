@@ -1,8 +1,8 @@
-/***** MAIN *****/
+/* :::::::::: FONTS :::::::::: */
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Hammersmith+One&family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&display=swap');
 
-/* :::::::::: Colors :::::::::: */
+/* :::::::::: COLORS :::::::::: */
 :root {
     --hot-barbie-light: #a80077;
     --hot-barbie: #AA076B;
@@ -10,78 +10,78 @@
     --plum: #61045F;
     --sunshine-deep: #f5af19;
     --ocean-mediterrean: #2ebf91;
-    --polar-bear: #ECE9E6;
-    --black-bear: #000;
-
-    
+    --cloud: #ECE9E6;
+    --polar-bear: #fcfbf9;
+    --snow-blast: #ffffff;
+    --black-bear: #050505;
 }
 
+body {
+    background-color: var(--polar-bear);
+}
+
+/* :::::::::: NAVBAR :::::::::: */
 .navbar {
     font-family: 'Comfortaa';
-    background: #AA076B;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #61045F, #AA076B);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #61045F, #AA076B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: var(--hot-barbie);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, var(--plum), var(--hot-barbie));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, var(--plum), var(--hot-barbie)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .navbar-brand {
     font-size: 1rem;
+    color: var(--polar-bear);
 }
 
-.container {
-    border-color: none;
-}
-
-.navbar > .container-fluid > .navbar-collapse > .navbar-nav > .nav-item > .btn-outline-light {
-    margin-top: 10px;
-}
-
-
-
-  .card-body-intro {
-    background: #AA076B;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #61045F, #AA076B);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #61045F, #AA076B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* :::::::::: CARD MY INFO :::::::::: */
+.card-body-my-info {
+    background: var(--hot-barbie);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, var(--plum), var(--hot-barbie));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, var(--plum), var(--hot-barbie)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     margin-top: -5px;
 }
 
 .card  {
     text-align: center;
-    color: #fff;
 }
 
 .card-title {
     text-align: center;
-    color: #fff;   
-    font-family: 'Hammersmith One', sans-serif;
-}
-
-.card-subtitle-num {
-    color: #000;
-    font-weight: bold;
+    color: var(--snow-blast);   
     font-family: 'Hammersmith One', sans-serif;
 }
 
 .card-text {
+    color: var(--cloud);
     font-size: 1.2rem;
+}
+
+.card-title-main {
+    color: var(--black-bear);
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+.card-subtitle-main {
+    color: var(--black-bear);
+    font-weight: bold;
 }
 
 .card-project {
     max-width: 60%;
     font-family: 'Comfortaa'; 
+    background-color: var(--polar-bear);
 }
 
-li .list-group-item {
-    font-size: 1.5rem;
-}
 
-  /* List group - about */
+
+/* :::::::::: FOOTER :::::::::: */
 .list-group-item {
     border-top: none;
     border-left: none;
     border-right: none;
 }
 
-/* Email */
+/* email */
 .contact {
     font-size: 1rem;
     font-family: 'Comfortaa';
@@ -91,11 +91,9 @@ li .list-group-item {
 .btn-link, .btn-arrow {
     font-family: 'Comfortaa';
     font-weight: bold;
-    
-    background: #a80077;  /* fallback for old browsers */
-  
+    background: var(--hot-barbie);  
     border: none;
-    color: #ECE9E6;
+    color: var(--cloud);
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -108,22 +106,21 @@ li .list-group-item {
     padding: 15px 32px;
 }
 
-.btn-link:hover, .btn-arrow:hover {
-    background-color: #2ebf91;
-    color: #ECE9E6;
-}
-
 .btn-arrow {
     padding: 12px 25px;
+}
+
+.btn-link:hover, .btn-arrow:hover {
+    background-color: var(--ocean-mediterrean);
+    color: var(--cloud);
 }
 
 .btn-github {
     font-family: 'Comfortaa';
     font-weight: bold;
     background: #f12711;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border: none;
     color: white;
     text-align: center;
@@ -139,106 +136,12 @@ background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, F
     color: #ECE9E6;
 }
 
-.link {
-    color: rgb(15, 2, 2);
-    font-family: 'Poppins';
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 1rem;
-}
-
-.link:hover {
-    color: #02f70a;
-}
-
-.link-note {
-    text-decoration: none;
-    color: #000;
-    font-size: 1.5rem;
-    font-family: 'Comfortaa';
-}
-
-.link-note:hover {
-    color:#680963;
-}
-
-.btn-outline-light:hover {
-    color: rgb(221, 23, 221);
-}
-
-.card-subintro {
-    color: #000;
-    border: 1px solid red;
-}
-
-.card-title-intro {
-    color: #000;
-    font-size: 2rem;
-    margin-bottom: 50px;
-}
-
-.card-text {
-    font-family: 'Poppins';
-}
-
-.card-text-subintro {
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
-.under-icon-text {
-    font-weight: bold;
-    font-family: 'Comfortaa';
-}
-
-/* Project screenshot image */
-.project-img {
-    width: 100px;
-    height: 100px;
-}
-
-.card-title-num {
-    color: #000;
-}
-
-.card-title-project {
-    color: #000;
-}
-
-.card-text-project {
-    color: #000;
-}
-
-.card-body-projects {
-    color: #000;
-}
-
-.project-title {
-  font-size: 1.2rem;
-  color: '#000';
-}
-
-.project-desc {
-  font-size: 1rem;
-  color: '#000';
-}
-
-.card-about {
-    color: #fff;
-}
-
-.list-group-about{
-    color: white;
-    font-family: "Comfortaa";
-}
-
 #active {
     color: var(--sunshine-deep);
 }
 
 /* :::::::::: FOOTER :::::::::: */
-
-.card-img {
+.card-img-alexa {
     width: 100px;
     height: 100px;
 }

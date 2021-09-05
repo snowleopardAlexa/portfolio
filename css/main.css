@@ -4,13 +4,16 @@
 
 /* :::::::::: Colors :::::::::: */
 :root {
-    --hot-barbie: #dd17dd;
-    --hot-apple: #3cff00;
-    --deep-purple: #870eac;
-    --sunshine: #fbff00;
-    --ocean-mediterrean: #03ecba;
-    --polar-bear: #fff;
+    --hot-barbie-light: #a80077;
+    --hot-barbie: #AA076B;
+    --hot-apple: #66ff00; 
+    --plum: #61045F;
+    --sunshine-deep: #f5af19;
+    --ocean-mediterrean: #2ebf91;
+    --polar-bear: #ECE9E6;
     --black-bear: #000;
+
+    
 }
 
 .navbar {
@@ -32,15 +35,7 @@
     margin-top: 10px;
 }
 
-/* Rounded border - DIVIDER */
-hr.rounded {
-    border: 2px solid #3cff00;
-    border-radius: 5px;
-    margin-top: 40px;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+
 
   .card-body-intro {
     background: #AA076B;  /* fallback for old browsers */
@@ -93,12 +88,14 @@ li .list-group-item {
 }
 
 /* buttons */
-.btn-links, .btn-arrow {
+.btn-link, .btn-arrow {
     font-family: 'Comfortaa';
     font-weight: bold;
-    background-color: #b400b4;
+    
+    background: #a80077;  /* fallback for old browsers */
+  
     border: none;
-    color: #fbff00;
+    color: #ECE9E6;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -107,13 +104,13 @@ li .list-group-item {
     cursor: pointer;
 }
 
-.btn-links {
+.btn-link {
     padding: 15px 32px;
 }
 
-.btn-links:hover, .btn-arrow:hover {
-    background-color: #03ecba;
-    color: #870eac;
+.btn-link:hover, .btn-arrow:hover {
+    background-color: #2ebf91;
+    color: #ECE9E6;
 }
 
 .btn-arrow {
@@ -123,9 +120,12 @@ li .list-group-item {
 .btn-github {
     font-family: 'Comfortaa';
     font-weight: bold;
-    background-color: #fffafa;
+    background: #f12711;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     border: none;
-    color: #dd17dd;
+    color: white;
     text-align: center;
     padding: 15px 32px;
     text-decoration: none;
@@ -136,8 +136,7 @@ li .list-group-item {
 }
 
 .btn-github:hover {
-    background-color: #fbff00;
-    color: #dd17dd;
+    color: #ECE9E6;
 }
 
 .link {
@@ -234,7 +233,7 @@ li .list-group-item {
 }
 
 #active {
-    color: yellow;
+    color: var(--sunshine-deep);
 }
 
 /* :::::::::: FOOTER :::::::::: */

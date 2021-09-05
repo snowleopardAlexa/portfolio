@@ -83,6 +83,10 @@ body {
     font-family: 'Hammersmith One', sans-serif;
 }
 
+.list-group-item {
+    background-color: var(--polar-bear);
+}
+
 /* :::::::::: FOOTER :::::::::: */
 .list-group-item {
     border-top: none;

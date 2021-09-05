@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Hammersmith+One&family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&display=swap');
 
+/*
+  font-family: 'Comfortaa';
+*/
+
 /* :::::::::: COLORS :::::::::: */
 :root {
     --hot-barbie-light: #a80077;
@@ -45,15 +49,16 @@ body {
     text-align: center;
 }
 
-.card-title {
+.card-title-my-info {
     text-align: center;
     color: var(--snow-blast);   
     font-family: 'Hammersmith One', sans-serif;
 }
 
-.card-text {
+.card-text-my-info {
     color: var(--cloud);
     font-size: 1.2rem;
+    font-family: 'Comfortaa';
 }
 
 .card-title-main {
@@ -71,8 +76,6 @@ body {
     font-family: 'Comfortaa'; 
     background-color: var(--polar-bear);
 }
-
-
 
 /* :::::::::: FOOTER :::::::::: */
 .list-group-item {
@@ -168,6 +171,7 @@ small {
 .social-media-list {
     list-style: none;
 }
+
 /* display list inline */
 .social-media-list li {
     display: inline;

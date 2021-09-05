@@ -1,3 +1,7 @@
+.card {
+  background-color: var(--polar-bear);
+}
+
 .title {
     font-family: 'Hammersmith One', sans-serif;
 }
@@ -7,25 +11,22 @@
     font-size: 1.2rem;
 }
 
-.btn-links-small {
+.btn-link-online-small {
     font-family: 'Comfortaa';
     font-weight: bold;
-    background-color: #dd17dd;
+    background-color: var(--hot-barbie);
     border: none;
-    color: #fbff00;
+    color: var(--cloud);
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 1rem;
     margin: 4px 2px;
     cursor: pointer;
-}
-
-.btn-links-small {
     padding: 10px 25px;
 }
 
-.btn-links-small:hover {
-    background-color: #03ecba;
-    color: #870eac;
+.btn-link-online-small:hover {
+    background-color: var(--ocean-mediterrean);
+    color: var(--polar-bear);
 }

@@ -2,9 +2,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Hammersmith+One&family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&display=swap');
 
+/* :::::::::: Colors :::::::::: */
+:root {
+    --hot-barbie: #dd17dd;
+    --hot-apple: #3cff00;
+    --deep-purple: #870eac;
+    --sunshine: #fbff00;
+    --ocean-mediterrean: #03ecba;
+    --polar-bear: #fff;
+    --black-bear: #000;
+
+}
+
 .navbar {
     font-family: 'Comfortaa';
-    background-color: #dd17dd;
+    background-color: 
 }
 
 .navbar-brand {
@@ -81,7 +93,7 @@ li .list-group-item {
 .btn-links, .btn-arrow {
     font-family: 'Comfortaa';
     font-weight: bold;
-    background-color: #dd17dd;
+    background-color: #b400b4;
     border: none;
     color: #fbff00;
     text-align: center;
@@ -145,7 +157,7 @@ li .list-group-item {
 }
 
 .link-note:hover {
-    color:rgb(104, 9, 99);
+    color:#680963;
 }
 
 .btn-outline-light:hover {
@@ -271,4 +283,31 @@ small {
 
 .experience-list li {
     display: inline;
+}
+
+.container-box {
+    display: inline;
+}
+
+.box1, .box2, .box3, .box4, .box5 {
+    width:100px;
+    height: 100px;
+}
+
+
+
+.box2 {
+    background-color: #dd17dd;
+}
+
+.box3 {
+    background-color: #03ecba;
+}
+
+.box4 {
+    background-color: #870eac;
+}
+
+.box5 {
+    background-color: #fbff00;
 }

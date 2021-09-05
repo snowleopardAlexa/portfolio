@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+/*
+font-family: 'Raleway', sans-serif;
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    max-width: 1170px;
+    background-color: rgb(129, 15, 15);
+    margin: auto;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer {
+    background-color: rgb(129, 15, 15);
+    padding: 90px;
+}
+
+.col {
+    width: 25%;
+    padding: 0 30px;
+}
+
+.col h2 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    position: relative;
+    font-weight: 500;
+}
+
+.col h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: rgb(231, 191, 9);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.col ul li a {
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.col ul li a:hover {
+    color: rgb(231, 191, 9);
+    padding-left: 8px;
+}
+
+.col .social-media ul li a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(231, 191, 9);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.col .social-media ul li a:hover {
+    color: red;
+    background-color: #ffffff;
+}
+
+/* RESPONSIVE */
+@media(max-width: 767px) {
+    .col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .col {
+        width: 100%;
+    } 
+}

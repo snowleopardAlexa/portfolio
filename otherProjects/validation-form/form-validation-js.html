@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation Client-side | JS</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <form class="registration" id="registration">
+            <h1>Registration Form</h1>
+            <label for="username">
+                Usename
+                <input type="text" id="username" minlength="3" required>
+                <ul class="inputRequirements">
+                    <li>At least 8 characters long</li>
+                    <li>Must contain letters and numbers and no special character</li>
+                </ul>
+            </label>
+            <label for="email">
+                Email
+                <input type="text" id="email" required>
+                <ul class="inputRequirements">
+                    <li>Must contain @ symbol</li>
+                </ul>
+            </label>
+            <label for="password">
+                Password
+                <input type="password" id="password" maxlength="20" minlength="8" required>
+                <ul class="inputRequirements">
+                    <li>At least 8 characters long (and less than 100 characters)</li>
+                    <li>Contains at least 1 number</li>
+                    <li>Contains at least 1 lowercase letter</li>
+                    <li>Contains at least 1 uppercase letter</li>
+                    <li>Contains a special character (e.g. @!)</li>
+                </ul>
+            </label>
+            <input type="submit">
+        </form>
+    </div>
+    <script>
+    /*
+      Custom Vaidation:
+      - keeps track of the list of invalidity messages for this input
+      - keeps track of what validity checks need to be performed for this input
+      - performs the validity checks and sends feedback to the front end
+    */
+
+    function CustomValidation(input) {
+        this.invalidities = [];
+        this.validityCh= [];
+
+        // add reference to the input node
+        this.inputNode = input;
+
+        // trigger metho to attach the listener
+        this.registerLiesner();
+    }
+
+    CustomValidation.prototype = {
+        addInvalidity: function(message) {
+            this.invalidities.push(message);
+        },
+        getInvalidities: function() {
+            return this.invalidities.join('.\n');
+        },
+        checkValidity: function(input) {
+            for (var i = 0; i < this.validityChecks.length; i++) {
+                var isInvalid = this.validityChecks[i].isInvalid(input);
+                if (isInvalid) {
+                    this.addInvalidity(this.validityChse[i],invalidityMessage);
+                }
+
+                var requirementElement = this.validityChecks[i].element;
+
+                if (requirementElement) {
+                    if (isInvalid) {
+                        requirementElement.classList.add('invalid');
+                        requirementElement.classList.remove('valid');
+                    } else {
+                        requirementElement.classList.remove('invalid');
+                        requirementElement.classList.add('valid');
+                    }
+                } // end if requirementElement
+            } // end for 
+        },
+        checkInput: function() {
+            this.inputNode.CustomValidation.invalidities = [];
+            this.checkValidity(this.inputNode);
+
+            if (this.inputNode.CustomValidation.invalidities.length === 0 && this.inputNode.value !== '') {
+
+            } else {
+                var message = this.inputNode.CustomValidation.getInvalidities();
+                this.inputNode.setCustomValidity(message);
+            }
+        },
+        registerListener: function() {
+            var CustomValidation = this;
+
+            this.inputNode.addEventListener('keyup', function() {
+                 CustomValidation.checkInput();
+            });
+        }
+    };
+    </script>
+</body>
+</html>

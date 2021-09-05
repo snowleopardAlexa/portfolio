@@ -1,0 +1,202 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+/*
+font-family: 'Poppins', sans-serif;
+*/
+
+/* font-size: 62.5% makes 1rem = 10px. */
+/* browser default font-size: 16px; */
+html {
+     font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem; /* 1.6 * 10px = 16px */
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(245, 245, 245);
+    background: url(img/desert.jpg) no-repeat right center;
+    background-size: cover;
+    /* vh - viewport height */
+    /* useful for creating full height elements (100%) that fill up the entire viewport’s height. */
+    height: 100vh;
+}
+
+h1 {
+    font-size: 2.5rem; /* 2.5 * 10px = 25px */
+    color: #fff;
+    font-weight: bold;
+    padding: 25px 20px;
+    background-color: rgb(116, 40, 9);
+    box-shadow: 0px 5px 8px #25202099;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: solid 5px #990808;
+}
+
+a {
+    text-decoration: underline;
+    color: inherit; 
+}
+
+.container {
+    /* top, align center */
+    margin: 80px auto;
+    width: 100%;
+    max-width: 900px;
+}
+
+.registration {
+    background-color: #ffffff;
+    max-width: 600px;
+    margin: 0px auto;
+    padding-bottom: 20px;
+    box-shadow: 1px 1px 5px 3px rgba(0,0,0,0.3);
+    border-bottom: 5px solid #990808;
+}
+
+.inputRequirements {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem; /* 13px */
+  font-style: italic;
+  text-align: left;
+  /* bullet list */
+  list-style: disc;
+  list-style-position: inside;
+  max-width: 400px;
+  margin: 10px auto;
+  color: rgb(150,150,150);
+}
+
+input, textarea, select, button, legend, fieldset {
+  font-family: 'Poppins', sans-serif;
+  /* include the padding and border in an element's total width and height */
+  box-sizing: border-box;
+  outline: none;
+  font-size: 15px;
+  color: rgb(40, 40, 40);
+  display: block;
+  margin: 10px auto 0;
+  text-align: center;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  padding: 0 20px;
+}
+
+/* Input & Textarea */
+/* fields with standard width */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  max-width: 400px;
+  padding: calc( 40px / 5 );
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(211, 209, 209);
+  /* top, align center, bottom */
+  margin: 0 auto 10px;
+}
+
+/* fields with standard height */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  height: 40px;
+  /*  display an element using platform-native styling */
+  /* Safari, Chrome, Opera */
+  -webkit-appearance: none;
+  /* Firefox */
+  -moz-appearance: none;
+}
+
+/* buttons, input type submit/reset */
+button,
+input[type="button"],
+input[type="submit"] {
+  height: 40px;
+  width: 100%;
+  max-width: 200px;
+  background-color: #990808;
+  /* calc() function takes a single expression as its parameter, with the expression's result used as the value.*/
+  padding: calc( 40px / 5 );
+  /* controls what the mouse cursor will look like when it is located over the element in which this property is set */
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(200, 200, 200);
+  box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.2);
+}
+
+/* states */
+input[disabled], button[disabled] {
+  cursor: not-allowed;
+}
+
+/* select and style an input field when it gets focus */
+input:focus, button:focus  {
+  background-color: rgb(255, 149, 149);
+  border-color: rgb(255, 129, 129);
+}
+
+button:hover, input[type="button"]:hover, input[type="submit"]:hover,
+button:focus, input[type="button"]:focus, input[type="submit"]:focus {
+  background-color: rgb(201, 1, 1);
+  color: #fff;
+}
+
+/* validation with JS */
+.inputRequirements li.invalid {
+  color: #e77c3c;;
+}
+
+.inputRequirements li.valid {
+  color: #76a53e;
+}
+
+.inputRequirements li.valid:after {
+  display: inline-block;
+  padding-left: 10px;
+  content: "\2713";
+}
+
+input:not([type="submit"]):valid {
+border-color: #79a743;
+}
+
+
+/* will target any field that is not submit and is valid */
+input:not([type="submit"]):valid {
+    border-color: #990808;
+    box-shadow: 0 0 3px #990808;
+}
+
+/* hide and show list of inputRequirements when interacting with input */
+input:not([type="submit"]) + .inputRequirements {
+  /* overflow is clipped, and the rest of the content will be invisible */  
+  overflow: hidden;
+  max-height: 0;
+  /* enable you to define the transition between two states of an element. */
+  transition: max-height 1s ease-out;  
+}
+
+/* shows suggestions on hover */
+input:not([type="submit"]):hover + .inputRequirements,
+input:not([type="submit"]):focus + .inputRequirements, 
+input:not([type="submit"]):active + .inputRequirements {
+  /* any large number (bigger then the .inputRequirements list) */
+  /* if you make max-width less than 400px, it will cut off a bullet list of suggestions */  
+  max-height: 500px; 
+  transition: max-height 1s ease-in;
+}

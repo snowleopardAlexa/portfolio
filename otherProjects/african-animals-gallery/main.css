@@ -1,0 +1,23 @@
+/* basic page reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gallery {
+    display: grid;
+    /* not responsive - 3 columns per 300px
+    grid-template-columns: repeat(3, 300px); */
+    /* responsive - grid cell from the top goes down when we resize the browser 
+    grid-template-columns: repeat(auto-fill, 300px); */
+    /* it does not generate extra columns
+    grid-template-columns: repeat(auto-fit, 300px); */
+    /* 300px - min value the image has, 1fr - max value the image has when the browser is resized */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.gallery img {
+    width: 100%;
+    height: 350px;
+}

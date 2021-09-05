@@ -1,0 +1,1 @@
+Responsive footer with lists and social media icons

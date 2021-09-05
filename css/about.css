@@ -1,3 +1,13 @@
+.card-about {
+    font-family: 'Comfortaa'; 
+    font-size: 1.2rem; 
+    width: 50%;
+}
+
+.card-body-about {
+    background-color: var(--polar-bear);
+}
+
 .card-img-big {
     width: 250px;
     height: 250px;
@@ -9,7 +19,17 @@
 }
 
 .small-title {
-    color: black;
+    color: var(--black-bear);
     font-size: 1.2rem;
     font-family: 'Hammersmith One', sans-serif;
+}
+
+.list-group-item {
+    border-bottom: transparent;
+    text-align: left;
+}
+
+.list-group-item-name {
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 1.5rem;
 }

@@ -317,16 +317,17 @@ h3 {
 	height: 24px;
 	font-size: 12px;
 	color: rgb(214, 76, 99);
-    margin-left: 35px;
 }
+
 .stepper {
     border: 2px solid #e08997;
     display: inline-flex;
 }
+
 .stepper-control {
     background-color: #fff;
     font-family: 'Montserrat', sans-serif;
-	height: 55px;
+	height: 33px;
 	padding: 24px 15px 0;
 	color: rgb(224, 137, 151);
 	border: none;
@@ -334,6 +335,7 @@ h3 {
 	font-weight: 700;
     display: block;
     width: 100%;
+    text-align: center;
 }
 
 /* hide default input arrows */
@@ -348,12 +350,4 @@ input[type=number] {
     -moz-appearance: textfield;
 }
 
-#detailsPassengers .form-group { /* seperate out the 'rows' of form inputs */
-    background-color: red;
-}
 
-#bookFlight .form-label {
-    position: absolute;
-	top: 6px;
-	left: 20px;
-}

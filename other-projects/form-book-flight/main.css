@@ -68,7 +68,7 @@ header {
 	padding-top: 4px;
 	padding-left: 30px;
 	font-weight: 700;
-	color: rgb(224, 137, 151);
+	color: #f34662;;
 }
 
 #bookFlight #tripType input+span { 
@@ -78,7 +78,7 @@ header {
 	width: 20px;
 	height: 20px;
 	background: #fff;
-	border: 2px solid rgb(224, 137, 151);
+	border: 2px solid #f34662;
 	border-radius: 50%;
 }
 
@@ -90,7 +90,7 @@ header {
 	width: 0px;
 	height: 0px;
 	border-radius: 50%;
-	background-color: rgb(214, 76, 99);
+	background-color: #d64c63;
 	transform: translate(-50%, -50%);
 	transition: 0.2s all;
 }
@@ -159,7 +159,7 @@ input:focus, select:focus {
 	line-height: 24px;
 	height: 24px;
 	font-size: 12px;
-	color: rgb(214, 76, 99);
+	color: #d64c63;
 }
 
 /* hide default select arrows and browser renderings */
@@ -218,7 +218,7 @@ select {
     margin-top: 10px;
     font-family: 'Poppins', sans-serif;
 	font-size: 1.275em;
-	color: rgb(182, 31, 56);
+	color: #b61f38;
 }
 
 /* mid screen layout */
@@ -315,12 +315,13 @@ h3 {
 	line-height: 24px;
 	height: 24px;
 	font-size: 12px;
-	color: rgb(214, 76, 99);
+	color: #d64c63;
 }
 
 .stepper {
     border: 2px solid #e08997;
     display: inline-flex;
+    width: 160px;
 }
 
 .stepper-control {
@@ -328,7 +329,7 @@ h3 {
     font-family: 'Montserrat', sans-serif;
 	height: 33px;
 	padding: 24px 15px 10;
-	color: rgb(224, 137, 151);
+	color: #e08997;
 	border: none;
 	font-size: 16px;
 	font-weight: 700;
@@ -348,5 +349,7 @@ input::-webkit-inner-spin-button {
 input[type=number] {
     -moz-appearance: textfield;
 }
+
+
 
 

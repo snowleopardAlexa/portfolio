@@ -1,0 +1,12 @@
+.btn-projects {
+    padding: 20px 20px;
+    color: var(--polar-bear);
+    background: var(--intrique-orange);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, var(--sunshine-deep), var(--intrique-orange));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, var(--sunshine-deep), var(--intrique-orange)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+*/
+}
+
+a {
+    text-decoration: none;
+    margin-left: 5px;
+}

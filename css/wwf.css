@@ -1,3 +1,12 @@
+.card-title-design-project {
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+.card-text-design-project {
+    font-family: 'Comfortaa';
+    font-size: 1.2rem;
+}
+
 .btn-projects {
     font-family: 'Comfortaa';
     font-size: 1.2rem;

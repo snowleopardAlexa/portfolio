@@ -4,6 +4,7 @@
 
 /*
   font-family: 'Comfortaa';
+  font-family: 'Hammersmith One', sans-serif;
 */
 
 /* :::::::::: COLORS :::::::::: */
@@ -196,7 +197,7 @@ small {
 }
 
 .fa-linkedin-in:hover, .fa-facebook:hover, .fa-twitter:hover {
-    color: var(--ocean-mediterrean);
+    color: var(--sunshine-deep);
 }
 
 

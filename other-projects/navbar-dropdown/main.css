@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Hammersmith+One&family=Poppins:wght@300&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   user-select: none;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Hammersmith One', sans-serif;
+
 }
 
 body { 
@@ -39,7 +40,6 @@ nav ul {
 }
 
 nav ul li {
-  float: left;
   display: inline-block;
   background: #1b1b1b;
   margin: 0 5px;
@@ -54,10 +54,10 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: cyan;
+  color: #f5af19;
   border-radius: 5px;
-  box-shadow:  0 0 5px #33ffff,
-               0 0 10px #66ffff;
+  box-shadow:  0 0 5px #f5af19,
+               0 0 10px #f5af19;
 }
 
 nav ul ul li a:hover {
@@ -67,7 +67,7 @@ nav ul ul li a:hover {
 nav ul ul {
   position: absolute;
   top: 90px;
-  border-top: 3px solid cyan;
+  border-top: 3px solid #f5af19;
   opacity: 0;
   visibility: hidden;
   transition: top .3s;
@@ -146,7 +146,7 @@ nav ul ul ul li {
   }
 
   .show:hover {
-    color: cyan;
+    color: #f5af19;
   }
 
   .icon {
@@ -193,6 +193,7 @@ nav ul ul ul li {
     content: '\f00d';
   }
 }
+
 .content {
   z-index: -1;
   position: absolute;

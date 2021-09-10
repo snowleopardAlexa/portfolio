@@ -11,9 +11,9 @@ font-family: 'Raleway', sans-serif;
 
 .container {
     max-width: 1170px;
-    background-color: rgb(179, 3, 3);
+    background-color: #9e0404;
     margin: auto;
-    color: #fff;
+    color: #eef2f3;
 }
 
 ul {
@@ -26,7 +26,7 @@ ul {
 }
 
 .footer {
-    background-color: rgb(179, 3, 3);
+    background-color: #9e0404;
     padding: 90px;
 }
 
@@ -48,7 +48,7 @@ ul {
     position: absolute;
     left: 0;
     bottom: -10px;
-    background-color: rgb(231, 191, 9);
+    background-color: #dbb300;
     height: 2px;
     box-sizing: border-box;
     width: 50px;
@@ -63,13 +63,13 @@ ul {
     text-transform: capitalize;
     text-decoration: none;
     font-weight: 300;
-    color: #fff;
+    color: #eef2f3;
     display: block;
     transition: all 0.3s ease;
 }
 
 .col ul li a:hover {
-    color: rgb(231, 191, 9);
+    color: #dbb300;
     padding-left: 8px;
 }
 
@@ -77,17 +77,17 @@ ul {
     display: inline-block;
     height: 40px;
     width: 40px;
-    background-color: rgb(231, 191, 9);
+    background-color: #dbb300;
     margin: 0 10px 10px 0;
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
-    color: #fff;
+    color: #eef2f3;
 }
 
 .col .social-media ul li a:hover {
     color: red;
-    background-color: #ffffff;
+    background-color: #eef2f3;
 }
 
 /* RESPONSIVE */

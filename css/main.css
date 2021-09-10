@@ -89,6 +89,10 @@ body {
     background-color: var(--polar-bear);
 }
 
+.list-group-item-project {
+    font-size: 1.2rem;
+}
+
 /* :::::::::: FOOTER :::::::::: */
 .list-group-item {
     border-top: none;

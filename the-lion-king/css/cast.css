@@ -1,29 +1,10 @@
-.cast-img {
-    margin-top: -5px;
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
 }
 
-.cast {
-    margin-top: -5px;
-    background-color: orange;
-    color: white;
-    padding: 40px;
-}
-
-.cast-names {
-    text-align: center;
-    font-size: 3rem;
-    font-family: 'Cinzel', serif;
-}
-
-.cast-list {
-    margin-top: 30px;
-    line-height: 40px;
-    text-align: center;
-    list-style-type: none;
-    font-size: 1.6rem;
-    font-family: 'Cinzel', serif;
-}
-
-.cast-container {
-    padding: 30px;
+.banner .img-background {
+    position: absolute;
+    top: 0;
 }

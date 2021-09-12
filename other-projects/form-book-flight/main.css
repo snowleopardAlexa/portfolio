@@ -291,7 +291,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     pointer-events: none;
 }
 
+/* style buttons minus and plus */
+.fas.fa-minus, .fas.fa-plus {
+    color: white;
+    background-color: #f34662;
+    padding: 5px;
+}
 
-  
- 
+.minus, .plus {
+    border: none;
+}
 

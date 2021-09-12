@@ -271,8 +271,18 @@ select {
     } 
 }
 
+/* hide default date calendar, the icon is behind font awesome icon, it is transparent */
+input[type="date"] { 
+    background: transparent;
+    color: white;
+  }
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(100%);
+}  
+
 /* position and style the calendar icon */
-i.fas.fa-calendar-alt {
+.fas.fa-calendar-alt {
     position: absolute;
     top: 22px;
     right: 10px;
@@ -280,3 +290,8 @@ i.fas.fa-calendar-alt {
     color: #f34662;
     pointer-events: none;
 }
+
+
+  
+ 
+

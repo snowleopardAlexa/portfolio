@@ -193,7 +193,7 @@ select {
 #bookFlight .show-flights-btn {
 	color: #fff;
     cursor: pointer;
-	background-color: rgb(243, 70, 98);
+	background-color: #f34662;
 	font-weight: 400;
 	height: 65px;
 	font-size: 18px;
@@ -269,4 +269,14 @@ select {
         grid-template-columns: 28% 28% 38%;
         grid-column-gap: 3%;
     } 
+}
+
+/* position and style the calendar icon */
+i.fas.fa-calendar-alt {
+    position: absolute;
+    top: 22px;
+    right: 10px;
+    font-size: 1.4rem;
+    color: #f34662;
+    pointer-events: none;
 }

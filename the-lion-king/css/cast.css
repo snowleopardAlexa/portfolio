@@ -4,7 +4,7 @@
     min-height: 100vh;
 }
 
-.banner .img-background {
+.banner > .img-background {
     position: absolute;
     top: 0;
     left: 0;
@@ -12,7 +12,7 @@
     height: 100%;
 }
 
-.banner .img-background img {
+.banner > .img-background > img {
     position: absolute;
     top: 0;
     left: 0;
@@ -24,3 +24,6 @@
     background-position: center;
 }
 
+.banner .img-background img.active {
+
+}

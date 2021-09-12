@@ -284,8 +284,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 /* position and style the calendar icon */
 .fas.fa-calendar-alt {
     position: absolute;
-    top: 22px;
-    right: 10px;
+    top: 27px;
+    right: 12px;
     font-size: 1.4rem;
     color: #f34662;
     pointer-events: none;

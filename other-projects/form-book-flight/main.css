@@ -303,6 +303,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 /* PASSENGERS and PETS */
+/* title */
+h3 {
+    font-size: 18px;
+    color: #f34662;
+    margin-bottom: 15px;
+}
 .stepper-label {
     font-size: 16px;
     color: #e08997;

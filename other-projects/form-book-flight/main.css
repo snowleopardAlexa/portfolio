@@ -106,8 +106,8 @@ header {
 }
 
 .form-group { /* seperate out the 'rows' of form inputs */
-	position: relative; /*we will be positioning the labels a little bit differently for this form so we need relative on this item */
-	margin-bottom: 20px;
+	position: relative; 	
+    margin-bottom: 20px;
 }
 
 #bookFlight .form-label {
@@ -122,7 +122,7 @@ header {
 	height: 60px;
 	padding: 24px 15px 0;
 	color: rgb(224, 137, 151);
-	border: 2px solid rgb(224, 137, 151);
+	border: 2px solid #e08997;
 	font-size: 16px;
 	font-weight: 700;
     display: block;
@@ -185,7 +185,7 @@ select {
     height: 32px;
     text-align: center;
     pointer-events: none;
-    color:rgb(214, 76, 99);
+    color:#d64c63;
     font-size: .875em;
 }
 
@@ -193,7 +193,7 @@ select {
 #bookFlight .show-flights-btn {
 	color: #fff;
     cursor: pointer;
-	background-color: rgb(243, 70, 98);
+	background-color: #f34662;
 	font-weight: 400;
 	height: 65px;
 	font-size: 18px;
@@ -269,4 +269,79 @@ select {
         grid-template-columns: 28% 28% 38%;
         grid-column-gap: 3%;
     } 
+}
+
+/* hide default date calendar, the icon is behind font awesome icon, it is transparent */
+input[type="date"] { 
+    background: transparent;
+    color: white;
+  }
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(100%);
+}  
+
+/* position and style the calendar icon */
+.fas.fa-calendar-alt {
+    position: absolute;
+    top: 27px;
+    right: 12px;
+    font-size: 1.4rem;
+    color: #f34662;
+    pointer-events: none;
+}
+
+/* style buttons minus and plus */
+.fas.fa-minus, .fas.fa-plus {
+    color: white;
+    background-color: #e08997;
+    padding: 10px;
+}
+/* remove border from plus and minus buttons */
+.minus, .plus {
+    border: none;
+}
+
+/* PASSENGERS and PETS */
+/* title */
+h3 {
+    font-size: 18px;
+    color: #f34662;
+    margin-bottom: 15px;
+}
+.stepper-label {
+    position: absolute;
+    font-weight: 700;
+	text-transform: uppercase;
+	line-height: 24px;
+	height: 24px;
+	font-size: 12px;
+	color: rgb(214, 76, 99);
+    margin-left: 35px;
+}
+.stepper {
+    border: 2px solid #e08997;
+    display: inline-flex;
+}
+.stepper-control {
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+	height: 55px;
+	padding: 24px 15px 0;
+	color: rgb(224, 137, 151);
+	border: none;
+	font-size: 16px;
+	font-weight: 700;
+    display: block;
+    width: 100%;
+}
+
+#detailsPassengers .form-group { /* seperate out the 'rows' of form inputs */
+    background-color: red;
+}
+
+#bookFlight .form-label {
+    position: absolute;
+	top: 6px;
+	left: 20px;
 }

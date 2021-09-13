@@ -68,7 +68,7 @@ header {
 	padding-top: 4px;
 	padding-left: 30px;
 	font-weight: 700;
-	color: rgb(224, 137, 151);
+	color: #f34662;;
 }
 
 #bookFlight #tripType input+span { 
@@ -78,7 +78,7 @@ header {
 	width: 20px;
 	height: 20px;
 	background: #fff;
-	border: 2px solid rgb(224, 137, 151);
+	border: 2px solid #f34662;
 	border-radius: 50%;
 }
 
@@ -90,7 +90,7 @@ header {
 	width: 0px;
 	height: 0px;
 	border-radius: 50%;
-	background-color: rgb(214, 76, 99);
+	background-color: #d64c63;
 	transform: translate(-50%, -50%);
 	transition: 0.2s all;
 }
@@ -159,7 +159,7 @@ input:focus, select:focus {
 	line-height: 24px;
 	height: 24px;
 	font-size: 12px;
-	color: rgb(214, 76, 99);
+	color: #d64c63;
 }
 
 /* hide default select arrows and browser renderings */
@@ -218,7 +218,7 @@ select {
     margin-top: 10px;
     font-family: 'Poppins', sans-serif;
 	font-size: 1.275em;
-	color: rgb(182, 31, 56);
+	color: #b61f38;
 }
 
 /* mid screen layout */
@@ -310,38 +310,46 @@ h3 {
     margin-bottom: 15px;
 }
 .stepper-label {
-    position: absolute;
     font-weight: 700;
 	text-transform: uppercase;
 	line-height: 24px;
 	height: 24px;
 	font-size: 12px;
-	color: rgb(214, 76, 99);
-    margin-left: 35px;
+	color: #d64c63;
 }
+
 .stepper {
     border: 2px solid #e08997;
     display: inline-flex;
+    width: 160px;
 }
+
 .stepper-control {
     background-color: #fff;
     font-family: 'Montserrat', sans-serif;
-	height: 55px;
-	padding: 24px 15px 0;
-	color: rgb(224, 137, 151);
+	height: 33px;
+	padding: 24px 15px 10;
+	color: #e08997;
 	border: none;
 	font-size: 16px;
 	font-weight: 700;
     display: block;
     width: 100%;
+    text-align: center;
 }
 
-#detailsPassengers .form-group { /* seperate out the 'rows' of form inputs */
-    background-color: red;
+/* hide default input arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
-#bookFlight .form-label {
-    position: absolute;
-	top: 6px;
-	left: 20px;
+/* hide default input arrows - Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
 }
+
+
+
+

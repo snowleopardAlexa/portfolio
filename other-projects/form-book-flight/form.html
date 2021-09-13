@@ -61,18 +61,19 @@
                         <div class="form-group selectNum">
                            <label class="stepper-label" for="numOfAdults">Adults (18+)</label>
                             <div class="stepper">
-                                <button class="minus"><i class="fas fa-minus"></i></button>
-                                <input class="stepper-control" id="numOfAdults" type="number" value="0" max="10">
-                                <button class="plus"><i class="fas fa-plus"></i></button>
+                                <button onclick="decAdult()" class="minus"id="minus"><i class="fas fa-minus"></i></button>
+                                <input class="stepper-control" id="numOfAdults" type="number" value="0" min="0" max="10">
+                                <button onclick="incAdult()" class="plus" id="plus"><i class="fas fa-plus"></i></button>
                          </div>
                         </div>
                         <!--children-->
                         <div class="form-group selectNum">
-                           <label class="stepper-label" for="numOfKids">Children (0-17)</label>
+                           <label class="stepper-label" for="numOfKids">
+                               Children (0-17)</label>
                             <div class="stepper">
-                                <button class="minus" id="minus"><i class="fas fa-minus"></i></button>
-                                <input class="stepper-control" id="numOfKids" type="number" value="0" max="10">
-                                <button class="plus"><i class="fas fa-plus"></i></button>
+                                <button onclick="decKid()" class="minus" id="minus"><i class="fas fa-minus"></i></button>
+                                <input class="stepper-control" id="numOfKids" type="number" value="0" min="0" max="10">
+                                <button onclick="incKid()" class="plus" id="plus"><i class="fas fa-plus"></i></button>
                          </div>           
                         </div>
                       <!--optional pets-->
@@ -80,9 +81,9 @@
                           <div class="form-group selectNum">
                               <label class="stepper-label" for="numOfPets">Pets (dogs, cats)</label>
                                <div class="stepper">
-                                   <button class="minus" id="minus"><i class="fas fa-minus"></i></button>
-                                   <input class="stepper-control" id="numOfPets" type="number" value="0" max="2">
-                                   <button class="plus"><i class="fas fa-plus"></i></button>
+                                   <button onclick="decPet()" class="minus"><i class="fas fa-minus"></i></button>
+                                   <input class="stepper-control" id="numOfPets" type="number" value="0" min="0" max="2">
+                                   <button onclick="incPet()" class="plus"><i class="fas fa-plus"></i></button>
                             </div>           
                            </div>
                       </div>
@@ -106,7 +107,31 @@
         </section>
         
     </main>
-    
+    <script>
+       // adults 
+       function incAdult() {
+           document.getElementById('numOfAdults').stepUp();
+       }
+       function decAdult() {
+           document.getElementById('numOfAdults').stepDown();
+       }
+
+       // kids
+       function incKid() {
+           document.getElementById('numOfKids').stepUp();
+       }
+       function decKid() {
+           document.getElementById('numOfKids').stepDown();
+       }
+
+       // pets 
+       function incPet() {
+           document.getElementById('numOfPets').stepUp();
+       }
+       function decPet() {
+           document.getElementById('numOfPets').stepDown();
+       }
+    </script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     
 </body>

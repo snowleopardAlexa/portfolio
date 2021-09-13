@@ -106,8 +106,8 @@ header {
 }
 
 .form-group { /* seperate out the 'rows' of form inputs */
-	position: relative; /*we will be positioning the labels a little bit differently for this form so we need relative on this item */
-	margin-bottom: 20px;
+	position: relative; 	
+    margin-bottom: 20px;
 }
 
 #bookFlight .form-label {
@@ -297,8 +297,36 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background-color: #f34662;
     padding: 5px;
 }
-
+/* remove border from plus and minus buttons */
 .minus, .plus {
     border: none;
 }
 
+/* PASSENGERS and PETS */
+.stepper-label {
+    font-size: 16px;
+    color: red;
+    position: absolute;
+	top: 6px;
+	left: 35px;
+}
+.stepper {
+    border: 1px solid red;
+    display: inline-flex;
+}
+.stepper-control {
+    border: none;	
+}
+
+
+
+.form-group { /* seperate out the 'rows' of form inputs */
+	position: relative; 	
+    margin-bottom: 20px;
+}
+
+#bookFlight .form-label {
+    position: absolute;
+	top: 6px;
+	left: 20px;
+}

@@ -62,7 +62,7 @@
                            <label class="stepper-label" for="numOfAdults">Adults (18+)</label>
                             <div class="stepper">
                                 <button class="minus"><i class="fas fa-minus"></i></button>
-                                <input class="stepper-control" id="numOfAdults" type="number" value="0">
+                                <input class="stepper-control" id="numOfAdults" type="number" value="0" max="10">
                                 <button class="plus"><i class="fas fa-plus"></i></button>
                          </div>
                         </div>
@@ -75,28 +75,27 @@
                                 <button class="plus"><i class="fas fa-plus"></i></button>
                          </div>           
                         </div>
+                      <!--optional pets-->
+                      <div id="detailsPets">
+                          <div class="form-group selectNum">
+                              <label class="stepper-label" for="numOfPets">Pets (dogs, cats)</label>
+                               <div class="stepper">
+                                   <button class="minus" id="minus"><i class="fas fa-minus"></i></button>
+                                   <input class="stepper-control" id="numOfPets" type="number" value="0" max="2">
+                                   <button class="plus"><i class="fas fa-plus"></i></button>
+                            </div>           
+                           </div>
+                      </div>
+                   </div>
                         <!--travel class-->
                         <div class="form-group travelClass">
-                                <label class="form-label" for="travelClass">Travel class</label>
-                                <select class="form-control" id="travelClass">
-                                        <option>Economy class</option>
-                                        <option>Business class</option>
-                                        <option>First class</option>
-                                </select>
-                                 <i class="fa fa-arrow-down select-arrow" aria-hidden="true"></i>
-                        </div>
-                   </div>
-                    <!--optional pets-->
-                    <h3>Pets (optional)</h3>
-                    <div id="detailsPets">
-                        <div class="form-group selectNum">
-                            <label class="stepper-label" for="numOfPets">Pets (dogs, cats)</label>
-                             <div class="stepper">
-                                 <button class="minus" id="minus"><i class="fas fa-minus"></i></button>
-                                 <input class="stepper-control" id="numOfPets" type="number" value="0" max="1">
-                                 <button class="plus"><i class="fas fa-plus"></i></button>
-                          </div>           
-                         </div>
+                            <label class="form-label" for="travelClass">Travel class</label>
+                            <select class="form-control" id="travelClass">
+                                    <option>Economy class</option>
+                                    <option>Business class</option>
+                                    <option>First class</option>
+                            </select>
+                             <i class="fa fa-arrow-down select-arrow" aria-hidden="true"></i>
                     </div>
                     <!--button show flights-->
                     <div class="form-btn">

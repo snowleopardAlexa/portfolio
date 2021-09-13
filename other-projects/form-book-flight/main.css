@@ -122,7 +122,7 @@ header {
 	height: 60px;
 	padding: 24px 15px 0;
 	color: rgb(224, 137, 151);
-	border: 2px solid rgb(224, 137, 151);
+	border: 2px solid #e08997;
 	font-size: 16px;
 	font-weight: 700;
     display: block;
@@ -185,7 +185,7 @@ select {
     height: 32px;
     text-align: center;
     pointer-events: none;
-    color:rgb(214, 76, 99);
+    color:#d64c63;
     font-size: .875em;
 }
 
@@ -294,7 +294,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 /* style buttons minus and plus */
 .fas.fa-minus, .fas.fa-plus {
     color: white;
-    background-color: #f34662;
+    background-color: #e08997;
     padding: 5px;
 }
 /* remove border from plus and minus buttons */
@@ -305,20 +305,18 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 /* PASSENGERS and PETS */
 .stepper-label {
     font-size: 16px;
-    color: red;
+    color: #e08997;
     position: absolute;
 	top: 6px;
 	left: 35px;
 }
 .stepper {
-    border: 1px solid red;
+    border: 2px solid #e08997;
     display: inline-flex;
 }
 .stepper-control {
     border: none;	
 }
-
-
 
 .form-group { /* seperate out the 'rows' of form inputs */
 	position: relative; 	

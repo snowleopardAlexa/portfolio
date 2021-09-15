@@ -1,3 +1,7 @@
+.card-design-project {
+    background-color: var(--polar-bear);
+}
+
 .card-title-design-project {
     font-family: 'Hammersmith One', sans-serif;
 }

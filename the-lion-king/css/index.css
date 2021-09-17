@@ -5,20 +5,20 @@
 }
 
 /*:::::::::: CAROUSEL ::::::::::*/
-.carousel-news {
+.wrapper {
   border: 1px solid red;
   margin-bottom: 200px;
   width: 84%;
   margin: 0 auto;
 }
 
-.carousel-news .wrapper-photos {
+.wrapper .post-wrapper {
   border: 1px solid dashed red;
   height: 350px;
   margin: 0 auto;
 }
 
-.carousel-news .wrapper-photos .post {
+.wrapper .post-wrapper .post {
   width: 300px;
   background-color: lawngreen;
   display: inline-block;

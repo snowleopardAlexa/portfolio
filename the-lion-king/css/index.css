@@ -4,6 +4,25 @@
   margin-top: -10px;
 }
 
+/*:::::::::: CAROUSEL ::::::::::*/
+.carousel-news {
+  border: 1px solid red;
+  margin-bottom: 200px;
+  width: 84%;
+  margin: 0 auto;
+}
+
+.carousel-news .wrapper-photos {
+  border: 1px solid dashed red;
+  height: 350px;
+  margin: 0 auto;
+}
+
+.carousel-news .wrapper-photos .post {
+  background-color: lawngreen;
+
+}
+
 /*:::::::::: SEARCH FOR TICKETS :::::::::: */
 
 .jumbotron {

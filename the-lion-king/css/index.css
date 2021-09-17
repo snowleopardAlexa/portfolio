@@ -19,6 +19,7 @@
 }
 
 .carousel-news .wrapper-photos .post {
+  width: 300px;
   background-color: lawngreen;
   display: inline-block;
 

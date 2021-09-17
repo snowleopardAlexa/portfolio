@@ -5,21 +5,22 @@
 }
 
 /*:::::::::: CAROUSEL ::::::::::*/
-.wrapper {
+.post-slider {
   border: 1px solid red;
-  margin-bottom: 200px;
-  width: 84%;
-  margin: 0 auto;
 }
 
-.wrapper .post-wrapper {
+.post-slider .post-wrapper {
   border: 1px solid dashed red;
+  width: 84%;
+  overflow: hidden;
   height: 350px;
   margin: 0 auto;
 }
 
-.wrapper .post-wrapper .post {
+.post-slider .post-wrapper .post {
   width: 300px;
+  height: 350px;
+  margin: 0px 10px;
   background-color: lawngreen;
   display: inline-block;
 

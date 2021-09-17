@@ -20,6 +20,7 @@
 
 .carousel-news .wrapper-photos .post {
   background-color: lawngreen;
+  display: inline-block;
 
 }
 

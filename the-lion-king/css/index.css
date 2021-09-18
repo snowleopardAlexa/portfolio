@@ -8,26 +8,27 @@
 .carousel {
   width: 100%;
   height: 840px;
-  margin: 10px auto;
+  margin: 0px auto;
   position: relative;
-  padding: 5px 0;
 }
 
 .carousel header{
+  font-family: 'Lion King';
   width: 100%;
-  height: 60px;
+  font-size: 1.5rem;
+  color: #fcfbf9;
   margin: 0 auto;
   display: flex;
   align-items: center;
   padding: 20px;
   justify-content: space-between;
-  border-bottom: 2px solid #ddd;
+  border-bottom: 2px solid #a70202;
 }
 
 .carousel-section {
-  width: 98%;
+  width: 90%;
   height: 600px;
-  margin: auto;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   overflow-x: auto;
@@ -40,7 +41,7 @@
 .carousel-section .post {
   min-width: 24%;
   height: 100%;
-  background: orangered;
+  background: #a70202;
   margin:  0 20px  0 0;
   position: relative;
   left: 0;
@@ -65,14 +66,18 @@ picture .img-post {
   padding: 5px;
   margin-left: 20px;
   color: #000;
+  color: #fcfbf9;
 }
 
 .details .title {
   font-size: 1.6rem;
+  font-family: 'Cinzel', serif;
 }
 
 .details .text {
+  margin-top: 10px;
   font-size: 1.2rem;
+  font-family: 'Marcellus SC', serif;
 }
 
 .button {
@@ -85,7 +90,14 @@ picture .img-post {
   margin: 5px 0 0 20px;
   text-decoration: none;
   display: inline-block;
-  color: white;
+  color: #fcfbf9;
+  background-color: rgb(26, 24, 24);
+  font-family: 'Lion King';
+}
+
+.fas {
+  font-size: 1.5rem;
+  color: #fcfbf9;
 }
 
 

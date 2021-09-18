@@ -1,50 +1,7 @@
-.banner {
-  background-image: url("../img/photos/priderock.jpg");
-  height: 200vh;
-  background-size: cover;
-  text-align: center;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.banner::after {
-  content: "";
+/* makes img responsive on every screen size */
+.intro-img {
   width: 100%;
-  height: 100%;
-  background-color: #6e6e6eb0;
-  position: absolute;
-  opacity: .7;
-  z-index: 0;
-}
-
-.banner > * {
-  z-index: 10;
-  color: white;
-}
-
-.banner-title {
-  display: block;
-  font-family: 'Cinzel', cursive;
-  font-size: 5rem;
-  color: #ffffff;
-}
-
-.banner-text {
-  font-family: 'Cinzel', cursive;
-  font-size: 3rem;
-  color: #ffffff;
-  margin-bottom: 20px;
-}
-
-.btn-tickets {
-  font-family: 'Cinzel', cursive;
-  border: none;
-  color: #ffffff;
-  font-size: 2rem;
-  background-color: #272222;
-  padding: 20px 35px;
+  height: auto;
 }
 
 /*:::::::::: CAROUSEL ::::::::::*/

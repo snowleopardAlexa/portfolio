@@ -220,9 +220,9 @@ form {
   }
 
   input[type="submit"] {
-    font-family: 'Waltograph';
+    font-family: 'Lion King';
     background-color: var(--heart-red);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #fff;
     cursor: pointer;
     border: 0;
@@ -231,8 +231,8 @@ form {
   }
 
 .footer-subtitle {
-    font-family: 'Waltograph';
-    font-size: 1.2rem;
+    font-family: 'Lion king';
+    font-size: 1rem;
 }
 
 .footer-social-media {
@@ -243,7 +243,7 @@ form {
     list-style: none;
     display: flex;
     justify-content: center;
-    border-top: 1px var(--heart-red) solid;
+    border-top: 1px var(--black-smoke) solid;
     padding-top: 20px;
 }
 
@@ -259,9 +259,9 @@ form {
     padding-top: 20px;
     border: none;
 }
-.logo {
-    margin: 0 auto;
-    font-size: 1.5rem;
+.footer-legal .logo {
+    margin: 5 auto;
+    font-size: 2rem;
     font-family: 'Waltograph';
 }
 
@@ -283,6 +283,23 @@ form {
     margin: 2px 10px;
     white-space: nowrap;
     font-size: 1.2rem;
+}
+
+.footer-legal-list .underline {
+    text-decoration: underline;
+}
+
+/* footer logo */
+.footer-logo-disney {
+    background-color: var(--black-smoke);
+    list-style-type: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-logo .logo {
+    font-size: 2rem;
+    font-family: 'Waltograph';
 }
 
 /* last child - puts the item to the right like float:right */

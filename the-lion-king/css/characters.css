@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: rgb(15, 14, 14);
+  background-color: var(--black-smoke);
 }
 
 .gallery {

@@ -72,6 +72,7 @@ nav .nav-list li {
     display: inline-block;
     line-height: 75px;
     margin: -2.5px 5px;
+    letter-spacing: 2px;
 }
 
 nav .nav-list li a {

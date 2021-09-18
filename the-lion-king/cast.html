@@ -5,37 +5,79 @@
         <meta name="viewport"  content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="keywords" content="the lion king, lions, kings, simba, nala, scar, mufasa, timon, pumba, about, games">
         <meta name="description" content="The Lion King World">
+        <link rel="css/index.css" rel="stylesheet" >
         <link href="css/main.css" rel="stylesheet" />
         <link href="css/cast.css" rel="stylesheet" />
         <title>The Lion King - Cast</title>
     </head>
     <body>
 
-        <!--
-    <header>
-    <a href="#" class="logo">King</a>
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Store</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">About</a></li>
-    </ul>  
-   </header>   -->
+    <!--NAVBAR-->
+<nav>
+    <!--checkbox-->
+    <input type="checkbox" id="check">
+    <!--menu bars-->
+    <label for="check" class="check-btn">
+        <img src="img/icons/whitelion.png" class="logo" />
+    </label>
+    <a href="index.html"><label class="logo">The Lion King</label></a>
+    <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="characters.html">Characters</a></li>
+        <li><a href="cast.html">Cast</a></li>
+        <li><a href="#">Tickets</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>    
 
-    <section class="banner">
-        <div class="img-background">
-            <img src="img/photos/nala.png" class="active">
-            <img src="img/photos/rafiki.jpg">
-            <img src="img/photos/pumba.jpg">
-            <img src="img/photos/timon.jpg">
+<!--GRID CAST-->
+<div class="gallery">
+    <img src="img/photos/simbacast.jpg" alt="lion" />
+    <img src="img/photos/simbacast.jpg" alt="lion" />
+    <img src="img/photos/simbacast.jpg" alt="lion" />
+    <img src="img/photos/simbacast.jpg" alt="lion" />
+</div>
+
+<!--CAROUSEL LATEST NEWS-->
+<div class="carousel" style="margin-top: 500px;">
+    <section class="carousel-section">
+        <div class="post">
+            <picture>
+                <img  class="img-post" src="img/photos/elephant.jpg" alt="">
+            </picture>
+            <div class="details">
+                <h2 class="title">Audrey Broderic</h2>
+                <p class="text">as Adult Simba</p>
+                <p class="text">The Winner of Golden Globe</p>
+            </div>
+        </div>
+        <div class="post">
+            <picture>
+                <img  class="img-post" src="img/photos/elephant.jpg" alt="">
+            </picture>
+            <div class="details">
+                <h2 class="title">Audrey Broderic</h2>
+                <p class="text">as Adult Simba</p>
+                <p class="text">The Winner of Golden Globe</p>
+            </div>
+        </div>
+        <div class="post">
+            <picture>
+                <img class="img-post" src="img/photos/elephant.jpg" alt="">
+            </picture>
+            <div class="details">
+                <h2 class="title">Audrey Broderic</h2>
+                <p class="text">as Adult Simba</p>
+                <p class="text">The Winner of Golden Globe</p>
+            </div>
         </div>
     </section>
+    </div>
 
-
-
-    <!--FOOTER-->    
-    <!--flexbox-->  
-    <div class="footer-container">
+   <!--FOOTER-->    
+    <!--flexbox-->   
+    <div class="footer-container" style="margin-top: -4px;">
         <footer>
             <!--main footer-->
             <section class="footer">
@@ -44,10 +86,11 @@
                         Map
                     </h2>
                     <ul class="item-list">
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html" class="active">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="characters.html">Characters</a></li>
-                        <li><a href="cast.html" class="active">Cast</a></li>
+                        <li><a href="cast.html">Cast</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-item">
@@ -55,9 +98,10 @@
                         Entertainment
                     </h2>
                     <ul class="item-list">
-                      <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="music.html">Music</a></li>
                         <li><a href="movies.html">Movies</a></li>
+                        <li><a href="movies.html">Games</a></li>
+                        <li><a href="movies.html">Concert</a></li>
                     </ul>
                 </div>
                 <div class="footer-item">
@@ -65,8 +109,12 @@
                         Contact
                     </h2>
                     <ul class="item-list">
-                        <li>thelionking@disney.com</li>
-                        <li>Office Orlando: +1 756-098-5768</li>
+                        <address>
+                         <li><a href="mailto:jim@rock.com">disney@thelionking.com</a><br></li>
+                         <li><a href="tel:+13115552368">Office: (311) 555-2368</a></li>
+                         <li>Box 567, Disneyland, Orlando</li>
+                         <li>USA</li>
+                        </address>
                     </ul>
                 </div>
                 <div class="footer-item">
@@ -92,12 +140,17 @@
                 <!--footer legal-->
                 <section class="footer-legal">
                     <ul class="footer-legal-list">
-                        <li><a href="terms&conditions.html">Terms &amp; Conditions</a></li>
-                        <li><a href="privacypolicy.html">Privacy Policy</a></li>
-                        <li>&copy; 2021 Copyright Disney.</li>
+                        <li class="underline"><a href="tickets.html">BUY TICKETS</a></li>
+                        <li>&copy; 2021 Copyright The Lion King</li>
+                    </ul>
+                </section>  
+                <!--footer disney logo-->
+                <section class="footer-logo">
+                    <ul class="footer-logo-disney">
+                        <li><small class="logo">Disney</small></li>
                     </ul>
                 </section>
         </footer>
-      </div>
+    </div>
     </body>
 </html>

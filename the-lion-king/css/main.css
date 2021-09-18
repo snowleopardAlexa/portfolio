@@ -24,7 +24,13 @@ font-family: 'Marcellus SC', serif;
   box-sizing: border-box;
 }
 
-
+/*:::::::::: COLORS :::::::::: */
+:root {
+    --black-smoke: #1a1818;
+    --black-city-smoke: #272222;
+    --heart-red: #a70202;
+    --mandarin: #ffae00;
+}
 
 /*:::::::::: NAVBAR :::::::::: */
 
@@ -77,11 +83,11 @@ nav .nav-list li a {
 }
 
 nav .nav-list li a:hover {
-    color:rgb(224, 191, 4);
+    color: var(--mandarin);
 }
 
 nav .nav-list li a.active {
-    color:rgb(224, 191, 4);
+    color: var(--mandarin);
 }
 
 /* checkbox */
@@ -132,7 +138,7 @@ nav .nav-list li a.active {
     }
     a:hover, a.active {
         background: none;
-        color:rgb(214, 87, 13);
+        color: var(--mandarin);
     }
     #check:checked ~ .nav-list {
         left: 0;
@@ -174,11 +180,11 @@ footer a {
 
 .item-list li a:hover {
     text-decoration: none;
-    color: #ffd000;
+    color: var(--mandarin);
 }
 
 .item-list li a.active {
-    color:#ffd000;
+    color: var(--mandarin);
 }
 
 /* social-media */
@@ -187,7 +193,7 @@ footer a {
 }
 
 .fa-instagram:hover, .fa-facebook:hover, .fa-pinterest:hover, .fa-twitter:hover {
-    color: #a70202;
+    color: var(--heart-red);
 }
 
 .footer-item {
@@ -214,9 +220,9 @@ form {
   }
 
   input[type="submit"] {
-    font-family: 'Waltograph';
-    background-color: #a70202;
-    font-size: 1.5rem;
+    font-family: 'Lion King';
+    background-color: var(--heart-red);
+    font-size: 1.2rem;
     color: #fff;
     cursor: pointer;
     border: 0;
@@ -225,8 +231,8 @@ form {
   }
 
 .footer-subtitle {
-    font-family: 'Waltograph';
-    font-size: 1.2rem;
+    font-family: 'Lion king';
+    font-size: 1rem;
 }
 
 .footer-social-media {
@@ -237,7 +243,7 @@ form {
     list-style: none;
     display: flex;
     justify-content: center;
-    border-top: 1px #a70202 solid;
+    border-top: 1px var(--black-smoke) solid;
     padding-top: 20px;
 }
 
@@ -253,16 +259,16 @@ form {
     padding-top: 20px;
     border: none;
 }
-.logo {
-    margin: 0 auto;
-    font-size: 1.5rem;
+.footer-legal .logo {
+    margin: 5 auto;
+    font-size: 2rem;
     font-family: 'Waltograph';
 }
 
 /* footer legal */
 .footer-legal {
     padding: 15px 30px; /* 0.9375rem 1.875rem; */
-    background-color: #a70202;
+    background-color: var(--heart-red);
     font-family: 'Lion King';
 }
 
@@ -277,6 +283,23 @@ form {
     margin: 2px 10px;
     white-space: nowrap;
     font-size: 1.2rem;
+}
+
+.footer-legal-list .underline {
+    text-decoration: underline;
+}
+
+/* footer logo */
+.footer-logo-disney {
+    background-color: var(--black-smoke);
+    list-style-type: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-logo .logo {
+    font-size: 2rem;
+    font-family: 'Waltograph';
 }
 
 /* last child - puts the item to the right like float:right */

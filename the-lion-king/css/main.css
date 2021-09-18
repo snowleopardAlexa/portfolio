@@ -175,7 +175,7 @@ footer a {
     font-size: 1.2rem;
     list-style: none;
     padding-left: 0;
-    font-family: 'Lion King';
+    font-family: 'Cinzel';
 }
 
 .item-list li a:hover {
@@ -212,15 +212,15 @@ form {
   }
 
   input[type="email"] {
-    font-family: 'Waltograph';
-    font-size: 1.5rem;
+    font-family: 'Cinzel';
+    font-size: 1rem;
     border: 0;
     padding: 10px; /* 0.625rem; */
     margin-top: 5px; /* 0.3125rem; */
   }
 
   input[type="submit"] {
-    font-family: 'Lion King';
+    font-family: 'Cinzel';
     background-color: var(--heart-red);
     font-size: 1.2rem;
     color: #fff;
@@ -231,7 +231,7 @@ form {
   }
 
 .footer-subtitle {
-    font-family: 'Lion king';
+    font-family: 'Cinzel';
     font-size: 1rem;
 }
 

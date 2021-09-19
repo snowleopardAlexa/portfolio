@@ -17,22 +17,13 @@ body {
 }
 
 /* :::::::::: GRID CAST :::::::::: */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-}
 
-.gallery img {
-  width: 100%;
-  height: 100%;
-}
 
 /* :::::::::: CAROUSEL :::::::::: */
 .carousel {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
 }
 
 .carousel::before{

@@ -17,7 +17,52 @@ body {
 }
 
 /* :::::::::: GRID CAST :::::::::: */
+.carousel-cast {
+  width: 100%;
+  overflow: hidden;
+  position: static;
+}
 
+.images {
+  display: flex;
+  width: 100%;
+}
+
+.images img {
+  width: 100%;
+  transition: all 0.5s ease;
+}
+
+.images input {
+  display: none;
+}
+.dots {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+.dots .label-dots {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: solid #fff 3px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  margin: 5px;
+}
+.dots .label-dots:hover {background: #fff;}
+#img1:checked ~ .cast-img--1 {
+  margin-left: 0;
+}
+#img2:checked ~ .cast-img--2 {
+  margin-left: -100%;
+}
+#img3:checked ~ .cast-img--3 {
+  margin-left: -200%;
+}
+#img4:checked ~ .cast-img--4 {
+  margin-left: -300%;
+}
 
 /* :::::::::: CAROUSEL :::::::::: */
 .carousel {

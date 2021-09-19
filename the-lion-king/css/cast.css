@@ -39,7 +39,7 @@ body {
 .dots {
   display: flex;
   justify-content: center;
-  margin: 5px;
+  margin: 30px;
 }
 .dots .label-dots {
   height: 18px;
@@ -66,9 +66,9 @@ body {
 
 /* :::::::::: CAROUSEL :::::::::: */
 .carousel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 
 .carousel::before{
@@ -88,7 +88,7 @@ body {
   max-width: 1150px;
   width: 100%;
   overflow: hidden;
-  padding: 80px 0;
+ 
 }
 
 .carousel-container .main-card {

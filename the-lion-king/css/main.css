@@ -192,6 +192,42 @@ nav .nav-list li a.active {
     color: var(--polar-bear);
 }
 
+.title {
+    font-family: 'Lion King';
+    letter-spacing: 3px;
+    font-size: 2.5rem;
+}
+
+.subtitle {
+    margin-top: 20px;
+    font-family: 'Cinzel';
+    font-size: 1.5rem;
+}
+
+.text {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-family: 'Cinzel';
+}
+
+.poster-movie-img {
+    width: 100%;
+    height: 0 auto;
+    padding: 30px;
+}
+
+.btn-search-tickets {
+    border: none;
+    padding: 20px 30px;
+    background-color: var(--heart-red);
+    color: var(--polar-bear);
+    font-family: 'Cinzel';
+    font-size: 1.2rem;
+}
+
+.btn-search-tickets:hover {
+    background-color: rgba(255, 0, 0, 0.623);
+}
 
 /*:::::::::: FOOTER :::::::::: */
 footer {

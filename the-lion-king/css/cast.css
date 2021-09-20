@@ -16,7 +16,7 @@ body {
     background-color: var(--black-smoke);
 }
 
-/* :::::::::: GRID CAST :::::::::: */
+/* :::::::::: CAROUSEL CAST :::::::::: */
 .carousel-cast {
   width: 100%;
   overflow: hidden;
@@ -30,24 +30,26 @@ body {
 
 .images img {
   width: 100%;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 
 .images input {
   display: none;
 }
+
 .dots {
   display: flex;
   justify-content: center;
   margin: 30px;
 }
+
 .dots .label-dots {
   height: 18px;
   width: 18px;
   border-radius: 50%;
   border: 3px solid var(--heart-red);
   cursor: pointer;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
   margin: 5px;
 }
 .dots .label-dots:hover {background: var(--heart-red)}
@@ -64,7 +66,7 @@ body {
   margin-left: -300%;
 }
 
-/* :::::::::: CAROUSEL :::::::::: */
+/* :::::::::: CAROUSEL CAST CARDS :::::::::: */
 .carousel {
  display: flex;
  justify-content: center;

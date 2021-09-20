@@ -1,14 +1,26 @@
-$(document).ready(function() {
-    $('.menu-toggle').document('click', function() {
-        $('.nav').toggleClass('showing');
-        $('.nav ul').toggleClass('showing');
-    });
+// get the modal
+var modal = document.getElementById("myModal");
 
-    $('.post-wrapper').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-    });
-});
+// get the button that opens the modal
+var btn = document.getElementById("openModal");
+
+// get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// when the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// when the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// when the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+}
 

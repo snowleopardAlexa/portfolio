@@ -1,29 +1,215 @@
-.banner {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
 }
 
-.banner > .img-background {
-    position: absolute;
-    top: 0;
-    left: 0;
+.img-cast {
     width: 100%;
     height: 100%;
 }
 
-.banner > .img-background > img {
-    position: absolute;
-    top: 0;
-    left: 0;
+body {
+    background-color: var(--black-smoke);
+}
+
+/* :::::::::: CAROUSEL CAST :::::::::: */
+.carousel-cast {
+  width: 100%;
+  overflow: hidden;
+  position: static;
+}
+
+.images {
+  display: flex;
+  width: 100%;
+}
+
+.images img {
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.images input {
+  display: none;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+
+.dots .label-dots {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  border: 3px solid var(--heart-red);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 5px;
+}
+.dots .label-dots:hover {background: var(--heart-red)}
+#img1:checked ~ .cast-img--1 {
+  margin-left: 0;
+}
+#img2:checked ~ .cast-img--2 {
+  margin-left: -100%;
+}
+#img3:checked ~ .cast-img--3 {
+  margin-left: -200%;
+}
+#img4:checked ~ .cast-img--4 {
+  margin-left: -300%;
+}
+
+/* :::::::::: CAROUSEL CAST CARDS :::::::::: */
+.carousel {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.carousel::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  background: var(--black-smoke);
+  clip-path: inset(47% 0 0 0);
+  z-index: -1;
+  height: 100%;
+}
+::selection {
+  background:	var(--black-city-smoke);
+  color: var(--polar-bear);
+}
+.carousel-container {
+  max-width: 1150px;
+  width: 100%;
+  overflow: hidden;
+ 
+}
+
+.carousel-container .main-card {
+  display: flex;
+  justify-content: space-evenly;
+  width: 200%;
+  transition: 1s;
+}
+
+#two:checked ~ .main-card {
+  margin-left: -100%;
+}
+
+.carousel-container .main-card .slider-cards {
+  width: calc(100% / 2 - 10px);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 20px;
+  justify-content: space-between;
+}
+
+.main-card .slider-cards .slider-card {
+  width: calc(100% / 3 - 10px);
+  background: var(--black-city-smoke);
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+}
+
+.main-card .slider-cards .slider-card:hover {
+  transform: translateY(-15px);
+}
+
+.slider-cards .slider-card .slider-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.slider-cards .slider-card .slider-content .slider-img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  padding: 3px;
+  background: var(--heart-red);
+  margin-bottom: 14px;
+}
+
+.slider-card .slider-content .slider-img img {
+  height: 100%;
+  width: 100%;
+  border: 3px solid var(--black-smoke);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.slider-card .slider-content .name {
+  color: var(--polar-bear);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.slider-card .slider-content .character {
+  font-size: 20px;
+  color: var(--heart-red);
+}
+
+.desc p {
+  font-size: 1rem;
+  color: var(--polar-bear);
+}
+
+ .carousel-container .slider-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.slider-button label {
+  height: 15px;
+  width: 15px;
+  border-radius: 20px;
+  background: var(--heart-red);
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.slider-button label.active {
+  width: 35px;
+}
+#one:checked ~ .slider-button .one {
+  width: 35px;
+}
+#one:checked ~ .slider-button .two {
+  width: 15px;
+}
+#two:checked ~ .slider-button .one {
+  width: 15px;
+}
+#two:checked ~ .slider-button .two {
+  width: 35px;
+}
+input[type="radio"] {
+  display: none;
+}
+@media (max-width: 768px) {
+  .main-card .slider-cards .slider-card {
+    margin: 20px 0 10px 0;
+    width: calc(100% / 2 - 10px);
+  }
+}
+@media (max-width: 600px) {
+  .main-card .slider-cards .slider-card {
+    /* margin: 20px 0 10px 0; */
     width: 100%;
-    height: 100;
-    object-fit: cover;
-    opacity: 0;
-    transition: 0.5s;
-    background-position: center;
+  }
 }
 
-.banner .img-background img.active {
-
-}

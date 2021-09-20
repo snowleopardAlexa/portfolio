@@ -164,10 +164,10 @@ nav .nav-list li a.active {
 }
 
 .modal-content {
-    background-color: #fefefe;
+    background-color: var(--black-city-smoke);
     margin: auto;
     padding: 20px;
-    border: 1px solid #888;
+    border: none;
     width: 80%;
   }
 
@@ -185,6 +185,12 @@ nav .nav-list li a.active {
     text-decoration: none;
     cursor: pointer;
   }
+
+.ticket-card {
+    margin-top: 40px;
+    text-align: center;
+    color: var(--polar-bear);
+}
 
 
 /*:::::::::: FOOTER :::::::::: */

@@ -17,7 +17,6 @@ video {
 
   a {
     text-decoration: none;
-    color: white;
     border-radius: .25rem;
     text-align: center;
     display: inline-block;
@@ -40,42 +39,26 @@ video {
     align-items: center;
   }
   
-  .hero > * {
-    color: white;
-  }
-  
-  .hero > h1 {
-    font-size: 4rem;
-    padding-bottom: 1rem;
-  }
-  
-  .hero > article > p {
-    font-size: 1.5rem;
-    font-weight: 200;
-  }
-  
-  .hero > article > a {
-    padding: 1rem;
-    margin-top: .75rem;
-  }
+ 
   
   /* breweries styles */
-  .breweries {
+  .about {
     padding: 2rem;
   }
   
-  .breweries > ul {
+  .about > ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 1rem;
   }
   
-  .breweries > ul > li {
-    border: 1px solid #E2E2E2;
+  .about > ul > li {
+    border: 1px solid var(--heart-red);
     border-radius: .5rem;
+    list-style-type: none;
   }
   
-  .breweries > ul > li > figure {
+  .about > ul > li > figure {
     max-height: 220px;
     overflow: hidden;
     border-top-left-radius: .5rem;
@@ -83,31 +66,31 @@ video {
     position: relative;
   }
   
-  .breweries > ul > li > figure > img {
+  .about > ul > li > figure > img {
     width: 100%;
   }
   
-  .breweries > ul > li > figure > figcaption {
+  .about > ul > li > figure > figcaption {
     position: absolute;
     bottom: 0;
     background-color: rgba(0,0,0,.7);
     width: 100%;
   }
   
-  .breweries > ul > li > figure > figcaption > h3 {
+  .about> ul > li > figure > figcaption > h3 {
     color: white;
     padding: .75rem;
     font-size: 1.25rem;
   }
   
-  .breweries > ul > li > p {
+  .about > ul > li > p {
     font-size: 1rem;
     line-height: 1.5;
     padding: 1rem .75rem;
     color: #666666;
   }
   
-  .breweries > ul > li > a {
+  .about > ul > li > a {
     padding: .5rem 1rem;
     margin: .5rem;
   }

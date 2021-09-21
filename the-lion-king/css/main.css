@@ -270,6 +270,14 @@ footer a {
     color: var(--mandarin);
 }
 
+.social-media-title {
+    text-align: center;
+    font-family: 'Lion King';
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
 /* social-media */
 .fa-instagram, .fa-facebook, .fa-pinterest, .fa-twitter {
   font-size: 2.2rem;
@@ -384,6 +392,11 @@ form {
 .footer-logo .logo {
     font-size: 2rem;
     font-family: 'Waltograph';
+}
+
+.copy-logo {
+    font-family: 'Cinzel';
+    letter-spacing: 2px;
 }
 
 /* last child - puts the item to the right like float:right */

@@ -13,35 +13,9 @@ video {
     width: 100%    !important;
     height: auto   !important;
   }
-
-
-  a {
-    text-decoration: none;
-    border-radius: .25rem;
-    text-align: center;
-    display: inline-block;
-    transition: all .3s;
-  }
-  
-  a:hover {
-    opacity: .6;
-  }
-  
-  /* Styles for the hero image */
-  .hero {
-    /* Photo by mnm.all on Unsplash */
-    background: url('https://images.unsplash.com/photo-1518176258769-f227c798150e') center;
-    background-size: cover;
-    padding: 4rem 2rem;
-    /* grid styles */
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    align-items: center;
-  }
-  
- 
   
   /* ABOUT */
+  /* section about */
   .about {
     padding: 2rem;
   }
@@ -75,6 +49,8 @@ video {
     bottom: 0;
     background-color: rgba(0,0,0,.7);
     width: 100%;
+    font-family: 'Lion King';
+    letter-spacing: 2px;
   }
   
   .about> ul > li > figure > figcaption > h3 {
@@ -95,11 +71,6 @@ video {
     margin: .5rem;
   }
 
-.container-about {
-    width: 80%;
-    margin: 0 auto;
-}
-
 .title-about {
   margin-top: 50px;
   text-align: center;
@@ -108,58 +79,19 @@ video {
 }
 
 .subtitle-about {
-   font-family: 'Cinzel';
+   font-family: 'Lion King';
    text-align: center;
-   font-size: 1.5rem;
-   margin-top: 20px;
+   font-size: 2rem;
+   margin-top: 30px;
 }
 
 .text-about {
-    text-align: center;
+    text-align: left;
     font-size: 1.2rem;
-    margin-top: 20px;
-    font-family: 'Cinzel';
-}
-
-
-.card-about {
-    margin-top: -5px;
-    color: #fff;
-    padding: 120px;
     font-family: 'Marcellus SC', serif;
 }
 
-.card-about-top {
-    background-color: rgb(90, 31, 4);
-}
 
-.card-about-middle {
-    background-color: rgb(190, 88, 3);
-}
 
-.card-about-bottom {
-    background-color: rgb(238, 160, 16);
-}
 
-.card-desc {
-    max-width: 60%;
-    margin: 0 auto;
-}
 
-.card-title {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 30px;
-    font-family: 'Cinzel Decorative', cursive;
-}
-
-.card-text {
-    font-size: 1.2rem;
-}
-
-.about-icon {
-    width: 100px;
-    height: 100px;
-    display: block;
-    margin: 0 auto;
-}

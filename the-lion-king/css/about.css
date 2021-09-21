@@ -1,7 +1,56 @@
+body {
+    background-color: var(--black-smoke);
+    color: var(--polar-bear);
+}
+
 .img-about {
-    margin: -5px 0 0 0px;
     width: 100%;
     height: 100%;
+}
+
+video {
+    /* override other styles to make responsive */
+    width: 100%    !important;
+    height: auto   !important;
+  }
+
+
+/* Set additional styling options for the columns */
+.column {
+float: left;
+width: 50%;
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+.container-about {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.title-about {
+  margin-top: 50px;
+  text-align: center;
+  font-family: 'Cinzel';
+  font-size: 2.5rem;
+}
+
+.subtitle-about {
+   font-family: 'Cinzel';
+   text-align: center;
+   font-size: 1.5rem;
+   margin-top: 20px;
+}
+
+.text-about {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    font-family: 'Cinzel';
 }
 
 

@@ -41,7 +41,7 @@ video {
   
  
   
-  /* breweries styles */
+  /* ABOUT */
   .about {
     padding: 2rem;
   }
@@ -78,7 +78,7 @@ video {
   }
   
   .about> ul > li > figure > figcaption > h3 {
-    color: white;
+    color: var(--polar-bear);
     padding: .75rem;
     font-size: 1.25rem;
   }
@@ -87,7 +87,7 @@ video {
     font-size: 1rem;
     line-height: 1.5;
     padding: 1rem .75rem;
-    color: #666666;
+    color: var(--polar-bear);
   }
   
   .about > ul > li > a {

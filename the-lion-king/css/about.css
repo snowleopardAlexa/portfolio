@@ -78,10 +78,10 @@ video {
   color: var(--polar-bear);
 }
 
-.subtitle-about {
+.about ul li .subtitle-about {
    font-family: 'Lion King';
    text-align: center;
-   font-size: 2rem;
+   font-size: 1.6rem;
    margin-top: 30px;
 }
 

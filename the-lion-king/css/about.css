@@ -1,11 +1,5 @@
 body {
     background-color: var(--black-smoke);
-    color: var(--polar-bear);
-}
-
-.img-about {
-    width: 100%;
-    height: 100%;
 }
 
 video {
@@ -31,6 +25,11 @@ video {
     border-radius: .5rem;
     list-style-type: none;
   }
+
+.img-about {
+    width: 100%;
+    height: 100%;
+}
   
   .about > ul > li > figure {
     max-height: 220px;
@@ -76,6 +75,7 @@ video {
   text-align: center;
   font-family: 'Cinzel';
   font-size: 2.5rem;
+  color: var(--polar-bear);
 }
 
 .subtitle-about {

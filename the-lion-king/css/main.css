@@ -93,6 +93,35 @@ nav .nav-list li a.active {
     color: var(--mandarin);
 }
 
+/* dropdown menu */
+.fa-angle-double-down {
+    margin-left: 3px;
+}
+
+.more {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    padding: 20px;
+    display: none;
+    margin-top: -30px;
+    margin-left: -43px;
+    min-width: 160px;
+    position: absolute;
+    background-color: var(--black-city-smoke);
+    z-index: 1;
+
+  }
+  
+  .more:hover .dropdown-content {
+    display: block;
+    top: 80px;
+    text-align: center;
+    color: var(--polar-bear);
+  }
+
 /* checkbox */
 .check-btn {
     font-size: 2rem;
@@ -404,36 +433,9 @@ form {
     flex: 1; /* same as flex-grow: 1; */
 }
 
-.fa-angle-double-down {
-    margin-left: 5px;
-}
 
-.more {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    padding: 20px;
-    display: none;
-    margin-top: -30px;
-    margin-left: -43px;
-    min-width: 160px;
-    position: absolute;
-    background-color: var(--black-city-smoke);
-    z-index: 1;
 
-  }
-  
-  .more:hover .dropdown-content {
-    display: block;
-    top: 80px;
-    text-align: center;
-    color: var(--polar-bear);
-  }
 
-  .droodown-content .more-dropdown-list li:hover {
-    color: var(--heart-red);
-}
+
 
 

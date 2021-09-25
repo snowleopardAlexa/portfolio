@@ -1,48 +1,97 @@
+body {
+    background-color: var(--black-smoke);
+}
+
+video {
+    /* override other styles to make responsive */
+    width: 100%    !important;
+    height: auto   !important;
+  }
+  
+  /* ABOUT */
+  /* section about */
+  .about {
+    padding: 2rem;
+  }
+  
+  .about > ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+  }
+  
+  .about > ul > li {
+    border: 1px solid var(--heart-red);
+    border-radius: .5rem;
+    list-style-type: none;
+  }
+
 .img-about {
-    margin: -5px 0 0 0px;
     width: 100%;
     height: 100%;
 }
+  
+  .about > ul > li > figure {
+    max-height: 220px;
+    overflow: hidden;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    position: relative;
+  }
+  
+  .about > ul > li > figure > img {
+    width: 100%;
+  }
+  
+  .about > ul > li > figure > figcaption {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0,0,0,.7);
+    width: 100%;
+    font-family: 'Lion King';
+    letter-spacing: 2px;
+  }
+  
+  .about> ul > li > figure > figcaption > h3 {
+    color: var(--polar-bear);
+    padding: .75rem;
+    font-size: 1.25rem;
+  }
+  
+  .about > ul > li > p {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 1rem .75rem;
+    color: var(--polar-bear);
+  }
+  
+  .about > ul > li > a {
+    padding: .5rem 1rem;
+    margin: .5rem;
+  }
 
+.title-about {
+  margin-top: 50px;
+  text-align: center;
+  font-family: 'Cinzel';
+  font-size: 2.5rem;
+  color: var(--polar-bear);
+}
 
-.card-about {
-    margin-top: -5px;
-    color: #fff;
-    padding: 120px;
+.about ul li .subtitle-about {
+   font-family: 'Lion King';
+   text-align: center;
+   font-size: 1.6rem;
+   margin-top: 30px;
+}
+
+.text-about {
+    text-align: left;
+    font-size: 1.2rem;
     font-family: 'Marcellus SC', serif;
 }
 
-.card-about-top {
-    background-color: rgb(90, 31, 4);
-}
 
-.card-about-middle {
-    background-color: rgb(190, 88, 3);
-}
 
-.card-about-bottom {
-    background-color: rgb(238, 160, 16);
-}
 
-.card-desc {
-    max-width: 60%;
-    margin: 0 auto;
-}
 
-.card-title {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 30px;
-    font-family: 'Cinzel Decorative', cursive;
-}
-
-.card-text {
-    font-size: 1.2rem;
-}
-
-.about-icon {
-    width: 100px;
-    height: 100px;
-    display: block;
-    margin: 0 auto;
-}

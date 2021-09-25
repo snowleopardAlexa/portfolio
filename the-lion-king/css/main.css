@@ -104,9 +104,8 @@ nav .nav-list li a.active {
   }
   
   .dropdown-content {
-    padding: 20px;
     display: none;
-    margin-top: -30px;
+    margin-top: -10px;
     margin-left: -43px;
     min-width: 160px;
     position: absolute;

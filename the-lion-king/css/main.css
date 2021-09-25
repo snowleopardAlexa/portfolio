@@ -404,6 +404,10 @@ form {
     flex: 1; /* same as flex-grow: 1; */
 }
 
+.fa-angle-double-down {
+    margin-left: 5px;
+}
+
 .more {
     position: relative;
     display: inline-block;
@@ -411,14 +415,22 @@ form {
   
   .dropdown-content {
     display: none;
-    position: absolute;
-    background-color: #f9f9f9;
+    margin-left: -59px;
     min-width: 160px;
+    position: absolute;
+    background-color: var(--black-city-smoke);
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
     z-index: 1;
   }
   
   .more:hover .dropdown-content {
     display: block;
+    top: 80px;
+    text-align: center;
+  }
+
+  .droodown-content .more-dropdown-list li {
+      list-style-type: none;
+      display: block;
+      max-width: 600px;
   }

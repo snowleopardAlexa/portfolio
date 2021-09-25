@@ -414,23 +414,26 @@ form {
   }
   
   .dropdown-content {
+    padding: 20px;
     display: none;
-    margin-left: -59px;
+    margin-top: -30px;
+    margin-left: -43px;
     min-width: 160px;
     position: absolute;
     background-color: var(--black-city-smoke);
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+
   }
   
   .more:hover .dropdown-content {
     display: block;
     top: 80px;
     text-align: center;
+    color: var(--polar-bear);
   }
 
-  .droodown-content .more-dropdown-list li {
-      list-style-type: none;
-      display: block;
-      max-width: 600px;
-  }
+  .droodown-content .more-dropdown-list li:hover {
+    color: var(--heart-red);
+}
+
+

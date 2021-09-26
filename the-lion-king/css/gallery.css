@@ -1,0 +1,22 @@
+/* basic page reset */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.wrapper {
+   width: 100%; /* 95 * 16 = 1520px */
+   margin: 0 auto;
+   height: auto;
+}
+
+
+
+/* gallery image */
+.gallery__image {
+   width: 100%;
+   height: auto;
+   object-fit: cover;
+   margin-top: -5px;
+}

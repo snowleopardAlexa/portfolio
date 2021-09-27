@@ -225,3 +225,9 @@ input[type="radio"] {
   }
 }
 
+@media (max-width: 768px) {
+  .carousel-cast {
+    margin-top: 80px;
+  }
+}
+

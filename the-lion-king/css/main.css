@@ -439,13 +439,6 @@ form {
     }
 }
 
-@media (max-width: 375px) {
-    /* keeps the slide navbar attached to the visible navbar while scrolling the page */ 
-    nav {
-        position: fixed;
-    }
-}
-
 /* dropdown menu responsive */
 @media all and (max-width: 952px) { 
     .dropdown-content {
@@ -470,10 +463,23 @@ form {
         z-index: 99;
       }
       .dropdown-content {
-        margin-left: 320px;
+        margin-left: 20px;
       }
 
     }
+
+@media (max-width: 375px) {
+    /* keeps the slide navbar attached to the visible navbar while scrolling the page */ 
+       nav {
+            position: fixed;
+        }
+        .dropdown-content {
+            display: none;
+            font-size: 1rem;
+            margin-top: -55px;
+            margin-left: 300px;
+          }
+    }    
 
 
 

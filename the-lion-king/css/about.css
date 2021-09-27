@@ -1,12 +1,6 @@
 body {
     background-color: var(--black-smoke);
 }
-
-video {
-    /* override other styles to make responsive */
-    width: 100%    !important;
-    height: auto   !important;
-  }
   
   /* ABOUT */
   /* section about */
@@ -89,6 +83,21 @@ video {
     text-align: left;
     font-size: 1.2rem;
     font-family: 'Marcellus SC', serif;
+}
+
+/*:::::::::: MAKE IT RESPONSIVE ::::::::::*/
+@media (max-width: 375px) {
+  .title-about {
+    margin-top: 120px;
+  }
+
+  nav {
+    z-index: 99;
+  }
+
+  .img-about {
+    z-index: 1;
+  } 
 }
 
 

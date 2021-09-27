@@ -456,29 +456,23 @@ form {
     }   
 } 
 
-@media (max-width: 768px) {
-    /* without z-index: 99, images will overlap the fixed navbar on scroll */  
+@media only screen and (max-width: 768px) and (min-width: 768px) {
+      /* without z-index: 99, images will overlap the fixed navbar on scroll */  
       nav {
         position: fixed;
         z-index: 99;
       }
       .dropdown-content {
-        margin-left: 20px;
+        margin-left: 320px;
       }
+}
 
-    }
 
 @media (max-width: 375px) {
     /* keeps the slide navbar attached to the visible navbar while scrolling the page */ 
        nav {
-            position: fixed;
+         position: fixed;
         }
-        .dropdown-content {
-            display: none;
-            font-size: 1rem;
-            margin-top: -55px;
-            margin-left: 300px;
-          }
     }    
 
 

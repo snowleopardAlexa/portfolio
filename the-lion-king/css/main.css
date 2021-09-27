@@ -289,7 +289,7 @@ footer a {
 }
 
 /* newsletter form */ 
-form {
+  form {
     display: flex;
     flex-wrap: wrap;
   }
@@ -400,15 +400,9 @@ form {
 
 /*:::::::::: MAKE IT RESPONSIVE ::::::::::*/
 
-/* navbar responsive */
+/* NAVBAR FOR BIG, MEDIUM, SMALL SCREENS */
 
-@media (max-width: 952px) {
-    nav .nav-list li a {
-        font-size: 0.7rem;
-    }
-}
-
-@media (max-width: 858px) {
+@media only screen and (min-width: 375px) and (max-width: 1366px) {
     .check-btn {
         display: block;
         margin-right: 20px;
@@ -420,7 +414,6 @@ form {
         height: 100vh;
         background: var(--black-city-smoke);
         top: 80px;
-        /* why */
         left: -100%;
         transition: all .5s;
         text-align: center;
@@ -428,8 +421,6 @@ form {
     nav .nav-list li {
         display: block;
         margin: 50px 0;
-
-
         line-height: 10px;
     }
     nav .nav-list li a {
@@ -444,12 +435,17 @@ form {
     }
 }
 
-/* dropdown menu responsive */
+
 
 /* BIG SCREEN */
-@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+
+@media only screen and (max-width: 1366px) and (min-width: 1024px) {
+     nav {
+         position: fixed;
+     }
       .dropdown-content {
-        margin-left: -7.5px;
+        margin-top: -55px;   
+        margin-left: 450px;
       }
       /* modal */
            .title {
@@ -474,10 +470,9 @@ form {
 /* MEDIUM SCREEN */
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-      .nav {
-          z-index: 99; /* keeps the slide navbar attached to the visible navbar while scrolling the page */ 
-          position: fixed;
-      }
+    nav {
+        position: fixed; /* keeps the slide navbar attached to the visible navbar while scrolling the page */ 
+       }
 
       .dropdown-content {
         margin-top: -55px;
@@ -485,6 +480,7 @@ form {
       }
       /* modal */
            .modal {
+             z-index: 99;
              padding-top: 100px;
            }
 
@@ -511,8 +507,7 @@ form {
     
 @media only screen and (min-width: 375px) and (max-width: 765px) {
     nav {
-        position: fixed;
-        z-index: 99;     /* keeps the slide navbar attached to the visible navbar while scrolling the page */ 
+        position: fixed; /* keeps the slide navbar attached to the visible navbar while scrolling the page */ 
        }
 
        .dropdown-content {
@@ -525,7 +520,7 @@ form {
       .modal {
           z-index: 99;
       } 
-      
+
       .title {
         font-size: 1.6rem;  
       }

@@ -456,22 +456,59 @@ form {
     }   
 } 
 
-/* SPECIAL FIX - dropdown-content list must be given a different margin-left on different screens */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-      /* without z-index: 99, images will overlap the fixed navbar on scroll */  
-      nav {
-        position: fixed;
-        z-index: 99;
-      }
+@media only screen and (max-width: 1366px) and (min-width: 1024px) {
       .dropdown-content {
         margin-left: 320px;
       }
+      /* modal */
+           .title {
+            font-size: 1.6rem;  
+          }
+          .subtitle {
+            font-size: 1.3rem; 
+          }
+          .text {
+            font-size: 1rem; 
+          }
+          .btn-search-tickets {
+              font-size: 1rem;
+          } 
 }
 
-@media (max-width: 375px) {
+/* SPECIAL FIX - dropdown-content list must be given a different margin-left on different screens */
+@media only screen and (max-width: 1024px) and (min-width: 770px) {
+      /* without z-index: 99, images will overlap the fixed navbar on scroll */  
+      .nav {
+          z-index: 99;
+          position: fixed;
+      }
+
+      .dropdown-content {
+        margin-left: -7.5px;
+      }
+      /* modal */
+           .title {
+            font-size: 1.6rem;  
+          }
+          .subtitle {
+            font-size: 1.3rem; 
+          }
+          .text {
+            font-size: 1rem; 
+          }
+          .btn-search-tickets {
+            font-size: 1rem;
+          }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 377px) {
     /* keeps the slide navbar attached to the visible navbar while scrolling the page */ 
        nav {
          position: fixed;
+         z-index: 99;
+        }
+        .dropdown-content {
+            margin-left: 320px;
         }
         /* modal */
        .title {
@@ -486,7 +523,31 @@ form {
        .btn-search-tickets {
            font-size: 1rem;
        }
-    }    
+    }   
+    
+@media only screen and (min-width: 375px) and (max-width: 764px) {
+    /* keeps the slide navbar attached to the visible navbar while scrolling the page */ 
+    nav {
+        position: fixed;
+        z-index: 99;
+       }
+       .dropdown-content {
+           margin-left: 127px;
+       }
+       /* modal */
+      .title {
+        font-size: 1.6rem;  
+      }
+      .subtitle {
+        font-size: 1.3rem; 
+      }
+      .text {
+        font-size: 1rem; 
+      }
+      .btn-search-tickets {
+          font-size: 1rem;
+      }
+}    
 
 
 

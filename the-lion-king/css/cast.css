@@ -21,6 +21,7 @@ body {
   width: 100%;
   overflow: hidden;
   position: static;
+  border: 3px solid  var(--heart-red);
 }
 
 .images {
@@ -52,18 +53,29 @@ body {
   transition: all 0.3s ease;
   margin: 5px;
 }
-.dots .label-dots:hover {background: var(--heart-red)}
+
+.dots .label-dots:hover {
+  background: var(--heart-red);
+}
+
 #img1:checked ~ .cast-img--1 {
   margin-left: 0;
 }
+
 #img2:checked ~ .cast-img--2 {
   margin-left: -100%;
 }
+
 #img3:checked ~ .cast-img--3 {
   margin-left: -200%;
 }
+
 #img4:checked ~ .cast-img--4 {
   margin-left: -300%;
+}
+
+.dot-1:checked {
+  background-color: var(--heart-red);
 }
 
 /* :::::::::: CAROUSEL CAST CARDS :::::::::: */

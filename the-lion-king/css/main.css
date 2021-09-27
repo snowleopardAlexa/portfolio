@@ -66,14 +66,13 @@ a {
 
 nav .nav-list {
     float: right;
-    margin-right: 20px;
+    margin-right: 0px;
     font-family: 'Lion King';
 }
 
 nav .nav-list li {
     display: inline-block;
     line-height: 75px;
-    margin: -2.5px 5px;
     letter-spacing: 2px;
 }
 
@@ -81,7 +80,8 @@ nav .nav-list li a {
     color: #fff;
     font-size: 0.9rem;
     text-transform: uppercase;
-    padding: 7px 13px;
+    /* 7, 13 */
+    padding: 17px 23px; 
     text-decoration: none;
 }
 
@@ -103,23 +103,47 @@ nav .nav-list li a.active {
     display: inline-block;
   }
   
-  .dropdown-content {
+.dropdown-content {
     display: none;
     margin-top: -10px;
-    margin-left: -43px;
-    min-width: 160px;
+    margin-left: -7.5px;
     position: absolute;
     background-color: var(--black-city-smoke);
     z-index: 1;
-
   }
   
-  .more:hover .dropdown-content {
+.dropdown-content .more-dropdown-list li a {
+    font-size: 0.8rem;
+}
+
+.more:hover .dropdown-content {
     display: block;
     top: 80px;
     text-align: center;
     color: var(--polar-bear);
-  }
+}
+
+ /* dropdown menu responsive */
+ @media all and (max-width: 952px) { 
+    .dropdown-content {
+        display: none;
+        font-size: 1rem;
+        margin-top: -55px;
+        margin-left: 125px;
+        position: absolute;
+        background-color: var(--black-city-smoke);
+        z-index: 1;
+      }
+
+    .dropdown-content .more-dropdown-list li a {
+        font-size: 0.8rem;
+    }  
+
+    .dropdown-content .more-dropdown-list .music {
+        margin-top: 50px;
+    }  
+ } 
+
 
 /* checkbox */
 .check-btn {
@@ -156,13 +180,14 @@ nav .nav-list li a.active {
         /* why */
         left: -100%;
         transition: all .5s;
-
         text-align: center;
     }
     nav .nav-list li {
         display: block;
         margin: 50px 0;
-        line-height: 30px;
+
+
+        line-height: 10px;
     }
     nav .nav-list li a {
         font-size: 1.2rem;

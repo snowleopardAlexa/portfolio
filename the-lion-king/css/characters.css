@@ -8,8 +8,8 @@ body {
 }
 
 .gallery {
-  border-left: 10px solid rgb(15, 14, 14);
-  border-right: 10px solid rgb(15, 14, 14);
+  margin-top: -10px;
+  border: 10px solid rgb(15, 14, 14);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   /* we need 6 rows because each column takes grid-row span 2 | 2 * 3 = 6 */
@@ -144,7 +144,6 @@ body {
 }
 
 
-
 /* MAKE IT RESPONSIVE */
 @media screen and (max-width: 560px) {
   body {
@@ -155,5 +154,23 @@ body {
   }
   .gallery__img {
     margin-top: -2px;
+  }
+}
+
+@media (max-width: 375px) {
+/* without z-index: 99, images will overlap the fixed navbar on scroll */  
+  nav {
+    position: fixed;
+    z-index: 99;
+  }
+  .gallery {
+    margin-top: 80px;
+  }
+
+  .gallery__img {
+    margin-top: -2px;
+  }
+  .footer-container {
+    margin-top: -10px;
   }
 }

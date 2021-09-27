@@ -91,13 +91,11 @@ body {
     margin-top: 120px;
   }
 
+/* without z-index: 99, images will overlap the fixed navbar on scroll */  
   nav {
+    position: fixed;
     z-index: 99;
   }
-
-  .img-about {
-    z-index: 1;
-  } 
 }
 
 

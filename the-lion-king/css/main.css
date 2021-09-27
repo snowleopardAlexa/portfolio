@@ -521,6 +521,11 @@ form {
     }
      
        /* modal */
+
+      .modal {
+          z-index: 99;
+      } 
+      
       .title {
         font-size: 1.6rem;  
       }

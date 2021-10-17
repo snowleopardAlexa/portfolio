@@ -29,9 +29,10 @@ body {
 }
 
  .music-list {
-    background-color: var(--heart-red);
+    border: 10px solid var(--bloody-red);
+    border-radius: 20px;
     width: 70%;
-    margin: 0 auto;
+    margin: 0 auto 50px;
 }
 
 .list-player {

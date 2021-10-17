@@ -2,17 +2,18 @@ body {
     background-color: var(--black-smoke);
 }
 
-.wrapper-intro {
-    background-color: var(--black-city-smoke);
-    padding: 5px;
-}
-
 .title-music {
     color: var(--polar-bear);
     text-align: center; 
     margin-top: 150px;
     font-family: 'Lion King';
     font-size: 3rem;
+    margin-bottom: 50px;
+}
+
+.wrapper-intro {
+    background-color: var(--black-city-smoke);
+    padding: 5px;
 }
 
 .subtitle-music {

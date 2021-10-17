@@ -1,37 +1,52 @@
-.title {
-    text-align: center;
-    margin-top: 50px;
+body {
+    background-color: var(--black-smoke);
+}
+
+.title-music {
+    color: var(--polar-bear);
+    text-align: center; 
+    margin-top: 150px;
+    font-family: 'Lion King';
     font-size: 3rem;
-    font-family: 'Cinzel';
 }
 
-.card-music {
+.subtitle-music {
+    color: var(--polar-bear);
+    text-align: center; 
+    font-family: 'Lion King';
+    font-size: 2rem;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
-.img-music {
-    width: 50%;
-    height: 50%;
+.soundtrack {
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+}
+
+ #music-list {
+    border: 1 px solid red;
+    background-color: var(--heart-red);
+    width: 70%;
     margin: 0 auto;
 }
 
-.card-desc {
+.list-player {
     text-align: center;
+    /* display numbers - fix */
+    list-style-position: inside;
 }
 
-.card-title {
-    font-size: 2rem;
-    font-family: 'Cinzel', serif;
+.song {
+    color: var(--polar-bear);
+    font-size: 1.2rem;
+    padding: 20px;
 }
 
-.card-text {
-    font-size: 1.6rem;
-    font-family: 'Marcellus SC', serif;
-}
-
-.music-list {
-    margin-top: 20px;
-    line-height: 40px;
-    font-size: 1.4rem;
+.box-one {
+    background-color: red;
 }

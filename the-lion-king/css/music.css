@@ -2,6 +2,11 @@ body {
     background-color: var(--black-smoke);
 }
 
+.wrapper-intro {
+    background-color: var(--black-city-smoke);
+    padding: 5px;
+}
+
 .title-music {
     color: var(--polar-bear);
     text-align: center; 
@@ -15,8 +20,7 @@ body {
     text-align: center; 
     font-family: 'Lion King';
     font-size: 2rem;
-    margin-top: 50px;
-    margin-bottom: 20px;
+    margin: 40px 0px 40px 0px;
 }
 
 .soundtrack-img {

@@ -7,6 +7,8 @@ iframe {
     margin: auto;
     display: block;
     margin-bottom: 50px;
+    border: 10px solid var(--black-city-smoke);
+
 }
 
 .title-movie {

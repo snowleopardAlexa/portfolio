@@ -1,37 +1,116 @@
-.title {
-    text-align: center;
-    margin-top: 50px;
-    font-size: 3rem;
-    font-family: 'Cinzel';
+body {
+    background-color: var(--black-smoke);
 }
 
-.card-music {
-    margin-top: 50px;
+.title-music {
+    color: var(--polar-bear);
+    text-align: center; 
+    margin-top: 150px;
+    font-family: 'Lion King';
+    font-size: 3rem;
     margin-bottom: 50px;
 }
 
-.img-music {
-    width: 50%;
-    height: 50%;
-    margin: 0 auto;
+.wrapper-intro {
+    background-color: var(--black-city-smoke);
+    padding: 5px;
 }
 
-.card-desc {
-    text-align: center;
-}
-
-.card-title {
+.subtitle-music {
+    color: var(--polar-bear);
+    text-align: center; 
+    font-family: 'Lion King';
     font-size: 2rem;
-    font-family: 'Cinzel', serif;
+    margin: 40px 0px 40px 0px;
 }
 
-.card-text {
-    font-size: 1.6rem;
-    font-family: 'Marcellus SC', serif;
-}
-
-.music-list {
+.soundtrack-img {
+    margin: auto;
+    display: block;
     margin-top: 20px;
-    line-height: 40px;
-    font-size: 1.4rem;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
 }
+
+ .music-list {
+    border: 10px solid var(--bloody-red);
+    border-radius: 20px;
+    width: 70%;
+    margin: 0 auto 50px;
+}
+
+.list-player {
+    text-align: center;
+    /* display numbers - fix */
+    list-style-position: inside;
+}
+
+.song {
+    color: var(--polar-bear);
+    font-size: 1.3rem;
+    font-family: 'Cinzel';
+    padding: 20px;
+    border-radius: 20%;
+}
+
+.box-one {
+    padding: 20px;
+    background-color: var(--heart-red);
+}
+
+.box-two {
+    padding: 20px;
+    background-color: var(--bloody-red);
+}
+
+/** Audio ***/
+
+/* panel */
+audio::-webkit-media-controls-panel {
+    background-color: var(--black-city-smoke);
+}
+
+/* play button */
+audio::-webkit-media-controls-play-button {
+    background-color: var(--grey-passion);
+    border-radius: 50%;
+}
+  
+/* play button hover */
+audio::-webkit-media-controls-play-button:hover {
+    background-color: var(--mandarin);
+}
+
+/* timeline */
+audio::-webkit-media-controls-timeline {
+    background-color: var(--dirty-red);
+    border-radius: 65px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: var(--black-city-smoke);
+  }
+
+/* current time display */
+audio::-webkit-media-controls-current-time-display {
+    color: var(--polar-bear);
+}
+
+/* remaining time display */
+audio::-webkit-media-controls-time-remaining-display {
+    color: var(--polar-bear);
+}
+
+/* mute button */
+audio::-webkit-media-controls-mute-button {
+    background-color: var(--mandarin);
+    border-radius: 50%;
+}
+
+/* volume slider */
+audio::-webkit-media-controls-volume-slider {
+    background-color: var(--mandarin);
+    border-radius: 25px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }

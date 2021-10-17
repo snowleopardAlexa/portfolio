@@ -1,6 +1,6 @@
 /*:::::::::: FONTS :::::::::: */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@500&family=Marcellus+SC&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@500&family=Marcellus+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
 /* 
 font-family: 'Cinzel', serif;
 font-family: 'Cinzel Decorative', cursive;
@@ -10,16 +10,17 @@ font-family: 'Lato', sans-serif;
 
 /* local fonts */
 @font-face {
-    font-family: 'Waltograph';
-    font-family: 'Lion King';
-    /* src: url('waltograph42.otf'); */
-    src: local('fonts/waltographUI.ttf');
-    src: local('fonts/lion_king.ttf');
+  font-family: "Waltograph";
+  font-family: "Lion King";
+  /* src: url('waltograph42.otf'); */
+  src: local("fonts/waltographUI.ttf");
+  src: local("fonts/lion_king.ttf");
 }
 
 /*:::::::::: BASIC RESET :::::::::: */
 
-* { /* - Universal selector that matches any html tag: div, body, button, all of them */
+* {
+  /* - Universal selector that matches any html tag: div, body, button, all of them */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -27,115 +28,117 @@ font-family: 'Lato', sans-serif;
 
 /*:::::::::: COLORS :::::::::: */
 :root {
-    --black-smoke: #1a1818;
-    --black-city-smoke: #272222;
-    --heart-red: #a70202;
-    --mandarin: #ffae00;
-    --polar-bear: #fcfbf9;
+  --black-smoke: #1a1818;
+  --black-city-smoke: #272222;
+  --heart-red: #a70202;
+  --mandarin: #ffae00;
+  --polar-bear: #fcfbf9;
 }
 
 /*:::::::::: NAVBAR :::::::::: */
 
 nav {
-    top: 0;
-    background-color: #272222;
-    /* background-color: #a70202;*/
-    height: 80px;
-    width: 100%;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  background-color: #272222;
+  /* background-color: #a70202;*/
+  height: 80px;
+  width: 100%;
 }
 
 label.logo {
-    color: #fff;
-    font-size: 1.2rem;
-    line-height: 70px;
-    margin-left: 20px;
-    margin-top: 20px;
-    font-family: 'Lion King';
-    cursor: pointer;
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 70px;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-family: "Lion King";
+  cursor: pointer;
 }
 
 .logo {
-    height: 30px;
-    width: 30px;
+  height: 30px;
+  width: 30px;
 }
 
 a {
-    text-decoration: underline;
-    color: #fff;
+  text-decoration: underline;
+  color: #fff;
 }
 
 nav .nav-list {
-    float: right;
-    margin-right: 0px;
-    font-family: 'Lion King';
+  float: right;
+  margin-right: 0px;
+  font-family: "Lion King";
 }
 
 nav .nav-list li {
-    display: inline-block;
-    line-height: 75px;
-    letter-spacing: 2px;
+  display: inline-block;
+  line-height: 75px;
+  letter-spacing: 2px;
 }
 
 nav .nav-list li a {
-    color: #fff;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    /* 7, 13 */
-    padding: 17px 23px; 
-    text-decoration: none;
+  color: #fff;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  /* 7, 13 */
+  padding: 17px 23px;
+  text-decoration: none;
 }
 
 nav .nav-list li a:hover {
-    color: var(--mandarin);
+  color: var(--mandarin);
 }
 
 nav .nav-list li a.active {
-    color: var(--mandarin);
+  color: var(--mandarin);
 }
 
 /* dropdown menu */
 .fa-angle-double-down {
-    margin-left: 3px;
+  margin-left: 3px;
 }
 
 .more {
-    position: relative;
-    display: inline-block;
-  }
-  
+  position: relative;
+  display: inline-block;
+}
+
 .dropdown-content {
-    display: none;
-    margin-top: -10px;
-    margin-left: -7.5px;
-    position: absolute;
-    background-color: var(--black-city-smoke);
-    z-index: 1;
-  }
-  
+  display: none;
+  margin-top: -10px;
+  margin-left: -7.5px;
+  position: absolute;
+  background-color: var(--black-city-smoke);
+  z-index: 1;
+}
+
 .dropdown-content .more-dropdown-list li a {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
 }
 
 .more:hover .dropdown-content {
-    display: block;
-    top: 80px;
-    text-align: center;
-    color: var(--polar-bear);
+  display: block;
+  top: 80px;
+  text-align: center;
+  color: var(--polar-bear);
 }
 
 /* checkbox */
 .check-btn {
-    font-size: 2rem;
-    color: #fff;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
+  font-size: 2rem;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
 }
 
 #check {
-    display: none;
+  display: none;
 }
 
 /*:::::::::: MODAL TICKETS ::::::::::*/
@@ -148,394 +151,395 @@ nav .nav-list li a.active {
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%; 
+  height: 100%;
   overflow: auto; /* enable scroll if needed */
   background-color: var(--black-city-smoke); /* fallback color */
-  background-color: rgba(0,0,0,0.4); /* black w/ opacity */
+  background-color: rgba(0, 0, 0, 0.4); /* black w/ opacity */
 }
 
 .modal-content {
-    background-color: var(--black-city-smoke);
-    margin: auto;
-    padding: 20px;
-    border: none;
-    width: 80%;
-  }
+  background-color: var(--black-city-smoke);
+  margin: auto;
+  padding: 20px;
+  border: none;
+  width: 80%;
+}
 
-  /* close button */
+/* close button */
 .close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 .ticket-card {
-    margin-top: 40px;
-    text-align: center;
-    color: var(--polar-bear);
+  margin-top: 40px;
+  text-align: center;
+  color: var(--polar-bear);
 }
 
 .title {
-    font-family: 'Lion King';
-    letter-spacing: 3px;
-    font-size: 2.5rem;
+  font-family: "Lion King";
+  letter-spacing: 3px;
+  font-size: 2.5rem;
 }
 
 .subtitle {
-    margin-top: 20px;
-    font-family: 'Cinzel';
-    font-size: 1.5rem;
+  margin-top: 20px;
+  font-family: "Cinzel";
+  font-size: 1.5rem;
 }
 
 .text {
-    margin-top: 20px;
-    font-size: 1.2rem;
-    font-family: 'Cinzel';
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-family: "Cinzel";
 }
 
 .poster-movie-img {
-    width: 100%;
-    height: 0 auto;
-    padding: 30px;
+  width: 100%;
+  height: 0 auto;
+  padding: 30px;
 }
 
 .btn-search-tickets {
-    border: none;
-    padding: 20px 20px;
-    background-color: var(--heart-red);
-    color: var(--polar-bear);
-    font-family: 'Cinzel';
-    font-size: 1.2rem;
+  border: none;
+  padding: 20px 20px;
+  background-color: var(--heart-red);
+  color: var(--polar-bear);
+  font-family: "Cinzel";
+  font-size: 1.2rem;
 }
 
 .btn-search-tickets:hover {
-    background-color: rgba(255, 0, 0, 0.623);
+  background-color: rgba(255, 0, 0, 0.623);
 }
 
 /*:::::::::: FOOTER :::::::::: */
 
 footer {
-    background-color: #272222;
-    color: #fff;
+  background-color: #272222;
+  color: #fff;
 }
 
 .footer {
-    line-height: 1.5;
-    padding: 20px 29.6px;
-    display: flex;
-    flex-wrap: wrap;  /* flex-wrap property will let the footer wrap into multiple rows based on the viewport size. */
+  line-height: 1.5;
+  padding: 20px 29.6px;
+  display: flex;
+  flex-wrap: wrap; /* flex-wrap property will let the footer wrap into multiple rows based on the viewport size. */
 }
 
 .footer-title {
-    color: #fff;
-    font-family: 'Lion King';
-    font-size: 1.5rem;
-    padding-bottom: 8px;
+  color: #fff;
+  font-family: "Lion King";
+  font-size: 1.5rem;
+  padding-bottom: 8px;
 }
 
 footer a {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 
 .item-list {
-    font-size: 1.2rem;
-    list-style: none;
-    padding-left: 0;
-    font-family: 'Lato', sans-serif;
+  font-size: 1.2rem;
+  list-style: none;
+  padding-left: 0;
+  font-family: "Lato", sans-serif;
 }
 
 .item-list li a:hover {
-    text-decoration: none;
-    color: var(--mandarin);
+  text-decoration: none;
+  color: var(--mandarin);
 }
 
 .item-list li a.active {
-    color: var(--mandarin);
+  color: var(--mandarin);
 }
 
 .social-media-title {
-    text-align: center;
-    font-family: 'Lion King';
-    font-size: 1rem;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
+  text-align: center;
+  font-family: "Lion King";
+  font-size: 1rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
 }
 
 /* social-media */
-.fa-instagram, .fa-facebook, .fa-pinterest, .fa-twitter {
+.fa-instagram,
+.fa-facebook,
+.fa-pinterest,
+.fa-twitter {
   font-size: 2.2rem;
 }
 
-.fa-instagram:hover, .fa-facebook:hover, .fa-pinterest:hover, .fa-twitter:hover {
-    color: var(--heart-red);
+.fa-instagram:hover,
+.fa-facebook:hover,
+.fa-pinterest:hover,
+.fa-twitter:hover {
+  color: var(--heart-red);
 }
 
 .footer-item {
-    padding: 20px; /* 1.25rem; */
-    min-width: 200px; /* 12.5rem */
+  padding: 20px; /* 1.25rem; */
+  min-width: 200px; /* 12.5rem */
 }
 
 .footer .footer-item:nth-last-child(2) {
-   flex:1 /* pushes the item to the right */
+  flex: 1; /* pushes the item to the right */
 }
 
-/* newsletter form */ 
-  form {
-    display: flex;
-    flex-wrap: wrap;
-  }
+/* newsletter form */
+form {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-  input[type="email"] {
-    font-family: 'Lato', sans-serif;
-    font-size: 1rem;
-    border: 0;
-    padding: 10px; /* 0.625rem; */
-    margin-top: 5px; /* 0.3125rem; */
-  }
+input[type="email"] {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  border: 0;
+  padding: 10px; /* 0.625rem; */
+  margin-top: 5px; /* 0.3125rem; */
+}
 
-  input[type="submit"] {
-    font-family: 'Lato', sans-serif;
-    background-color: var(--heart-red);
-    font-size: 1.2rem;
-    color: #fff;
-    cursor: pointer;
-    border: 0;
-    padding: 10px 15px; /* 0.625rem 0.9375rem; */
-    margin-top: 5px /* 0.3125rem; */
-  }
+input[type="submit"] {
+  font-family: "Lato", sans-serif;
+  background-color: var(--heart-red);
+  font-size: 1.2rem;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  padding: 10px 15px; /* 0.625rem 0.9375rem; */
+  margin-top: 5px; /* 0.3125rem; */
+}
 
 .footer-subtitle {
-    font-family: 'Cinzel';
-    font-size: 1rem;
+  font-family: "Cinzel";
+  font-size: 1rem;
 }
 
 .footer-social-media {
-    padding: 0 30px 20px;
+  padding: 0 30px 20px;
 }
 
 .footer-social-media-list {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    border-top: 1px var(--black-smoke) solid;
-    padding-top: 20px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  border-top: 1px var(--black-smoke) solid;
+  padding-top: 20px;
 }
 
 .footer-social-media-list li {
-    margin: 16px;
+  margin: 16px;
 }
 
 /* disney logo */
 .footer-social-media-list-logo {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
-    border: none;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  border: none;
 }
 .footer-legal .logo {
-    margin: 5 auto;
-    font-size: 2rem;
-    font-family: 'Waltograph';
+  margin: 5 auto;
+  font-size: 2rem;
+  font-family: "Waltograph";
 }
 
 /* footer legal */
 .footer-legal {
-    padding: 15px 30px; /* 0.9375rem 1.875rem; */
-    background-color: var(--heart-red);
-    font-family: 'Lion King';
-    letter-spacing: 1px;
+  padding: 15px 30px; /* 0.9375rem 1.875rem; */
+  background-color: var(--heart-red);
+  font-family: "Lion King";
+  letter-spacing: 1px;
 }
 
 .footer-legal-list {
-    list-style: none;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .footer-legal-list li {
-    margin: 2px 10px;
-    white-space: nowrap;
-    font-size: 1.2rem;
+  margin: 2px 10px;
+  white-space: nowrap;
+  font-size: 1.2rem;
 }
 
 .footer-legal-list .underline {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* footer logo */
 .footer-logo-disney {
-    background-color: var(--black-smoke);
-    list-style-type: none;
-    text-align: center;
-    padding: 20px;
+  background-color: var(--black-smoke);
+  list-style-type: none;
+  text-align: center;
+  padding: 20px;
 }
 
 .footer-logo .logo {
-    font-size: 2rem;
-    font-family: 'Waltograph';
+  font-size: 2rem;
+  font-family: "Waltograph";
 }
 
 .copy-logo {
-    font-family: 'Cinzel';
-    letter-spacing: 2px;
+  font-family: "Cinzel";
+  letter-spacing: 2px;
 }
 
 /* last child - puts the item to the right like float:right */
 .footer-legal-list li:nth-last-child(2) {
-    flex: 1; /* same as flex-grow: 1; */
+  flex: 1; /* same as flex-grow: 1; */
 }
-
-
 
 /*:::::::::: MAKE IT RESPONSIVE ::::::::::*/
 
 /* NAVBAR FOR BIG, MEDIUM, SMALL SCREENS */
 
 @media only screen and (min-width: 375px) and (max-width: 1366px) {
-    .check-btn {
-        display: block;
-        margin-right: 20px;
-    }
+  .check-btn {
+    display: block;
+    margin-right: 20px;
+  }
 
-    .nav-list {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: var(--black-city-smoke);
-        top: 80px;
-        left: -100%;
-        transition: all .5s;
-        text-align: center;
-    }
-    nav .nav-list li {
-        display: block;
-        margin: 50px 0;
-        line-height: 10px;
-    }
-    nav .nav-list li a {
-        font-size: 1.2rem;
-    }
-    a:hover, a.active {
-        background: none;
-        color: var(--mandarin);
-    }
-    #check:checked ~ .nav-list {
-        left: 0;
-    }
+  .nav-list {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: var(--black-city-smoke);
+    top: 80px;
+    left: -100%;
+    transition: all 0.5s;
+    text-align: center;
+  }
+  nav .nav-list li {
+    display: block;
+    margin: 50px 0;
+    line-height: 10px;
+  }
+  nav .nav-list li a {
+    font-size: 1.2rem;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: var(--mandarin);
+  }
+  #check:checked ~ .nav-list {
+    left: 0;
+  }
 }
-
-
 
 /* BIG SCREEN */
 
 @media only screen and (max-width: 1366px) and (min-width: 1024px) {
-     nav {
-         position: fixed;
-     }
-      .dropdown-content {
-        margin-top: -55px;   
-        margin-left: 450px;
-      }
-      /* modal */
-           .title {
-            font-size: 1.6rem;  
-          }
-          .subtitle {
-            font-size: 1.3rem; 
-          }
-          .text {
-            font-size: 1rem; 
-          }
+  nav {
+    z-index: 99;
+    position: fixed;
+  }
+  .dropdown-content {
+    margin-top: -55px;
+    margin-left: 450px;
+  }
+  /* modal */
+  .title {
+    font-size: 1.6rem;
+  }
+  .subtitle {
+    font-size: 1.3rem;
+  }
+  .text {
+    font-size: 1rem;
+  }
 
-          .poster-movie-img {
-            width: 100%;
-            height: 0 auto;
-        }
-          .btn-search-tickets {
-              font-size: 1rem;
-          } 
+  .poster-movie-img {
+    width: 100%;
+    height: 0 auto;
+  }
+  .btn-search-tickets {
+    font-size: 1rem;
+  }
 }
 
 /* MEDIUM SCREEN */
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    nav {
-        position: fixed; /* keeps the slide navbar attached to the visible navbar while scrolling the page */ 
-       }
+  nav {
+    z-index: 99;
+    position: fixed; /* keeps the slide navbar attached to the visible navbar while scrolling the page */
+  }
 
-      .dropdown-content {
-        margin-top: -55px;
-        margin-left: 320px; /* SPECIAL FIX - dropdown-content list must be given a different margin-left on different screens */
-      }
-      /* modal */
-           .modal {
-             z-index: 99;
-             padding-top: 100px;
-           }
+  .dropdown-content {
+    margin-top: -55px;
+    margin-left: 320px; /* SPECIAL FIX - dropdown-content list must be given a different margin-left on different screens */
+  }
+  /* modal */
+  .modal {
+    z-index: 99;
+    padding-top: 100px;
+  }
 
-           .poster-movie-img {
-            width: 90%;
-            height: 0 auto;
-        }
-           
-           .title {
-            font-size: 1.6rem;  
-          }
-          .subtitle {
-            font-size: 1.3rem; 
-          }
-          .text {
-            font-size: 1rem; 
-          }
-          .btn-search-tickets {
-            font-size: 1rem;
-          }
+  .poster-movie-img {
+    width: 90%;
+    height: 0 auto;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+  .subtitle {
+    font-size: 1.3rem;
+  }
+  .text {
+    font-size: 1rem;
+  }
+  .btn-search-tickets {
+    font-size: 1rem;
+  }
 }
 
 /* SMALL SCREEN */
-    
+
 @media only screen and (min-width: 375px) and (max-width: 765px) {
-    nav {
-        position: fixed; /* keeps the slide navbar attached to the visible navbar while scrolling the page */ 
-       }
+  nav {
+    z-index: 99;
+    position: fixed; /* keeps the slide navbar attached to the visible navbar while scrolling the page */
+  }
 
-       .dropdown-content {
-        margin-top: -55px;
-        margin-left: 127px;
-    }
-     
-       /* modal */
+  .dropdown-content {
+    margin-top: -55px;
+    margin-left: 127px;
+  }
 
-      .modal {
-          z-index: 99;
-      } 
+  /* modal */
 
-      .title {
-        font-size: 1.6rem;  
-      }
-      .subtitle {
-        font-size: 1.3rem; 
-      }
-      .text {
-        font-size: 1rem; 
-      }
-      .btn-search-tickets {
-          font-size: 1rem;
-      }
-}    
+  .modal {
+    z-index: 99;
+  }
 
-
-
-
-
+  .title {
+    font-size: 1.6rem;
+  }
+  .subtitle {
+    font-size: 1.3rem;
+  }
+  .text {
+    font-size: 1rem;
+  }
+  .btn-search-tickets {
+    font-size: 1rem;
+  }
+}

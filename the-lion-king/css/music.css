@@ -29,7 +29,6 @@ body {
 }
 
  #music-list {
-    border: 1 px solid red;
     background-color: var(--heart-red);
     width: 70%;
     margin: 0 auto;
@@ -48,5 +47,11 @@ body {
 }
 
 .box-one {
-    background-color: red;
+    padding: 20px;
+    background-color: var(--heart-red);
+}
+
+.box-two {
+    padding: 20px;
+    background-color: var(--bloody-red);
 }

@@ -37,7 +37,7 @@ body {
     border: 10px solid var(--bloody-red);
     border-radius: 20px;
     width: 70%;
-    margin: 0 auto 50px;
+    margin: 0 auto 100px;
 }
 
 .list-player {

@@ -19,7 +19,7 @@ body {
     margin-bottom: 20px;
 }
 
-.soundtrack {
+.soundtrack-img {
     margin: auto;
     display: block;
     margin-top: 20px;
@@ -28,7 +28,7 @@ body {
     height: 250px;
 }
 
- #music-list {
+ .music-list {
     background-color: var(--heart-red);
     width: 70%;
     margin: 0 auto;
@@ -42,8 +42,10 @@ body {
 
 .song {
     color: var(--polar-bear);
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    font-family: 'Cinzel';
     padding: 20px;
+    border-radius: 20%;
 }
 
 .box-one {

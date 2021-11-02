@@ -1,8 +1,4 @@
-.card-about {
-    font-family: 'Comfortaa'; 
-    font-size: 1.2rem; 
-    width: 50%;
-}
+/********** ABOUT **********/
 
 .card-body-about {
     background-color: var(--polar-bear);
@@ -14,14 +10,21 @@
 }
 
 .title {
+    font-size: 1.8rem;
     font-family: 'Hammersmith One', sans-serif;
     text-align: center;
 }
 
 .small-title {
     color: var(--black-bear);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-family: 'Hammersmith One', sans-serif;
+}
+
+.card-about {
+    font-family: 'Comfortaa'; 
+    font-size: 1.2rem; 
+    width: 50%;
 }
 
 .list-group-item {
@@ -33,3 +36,34 @@
     font-family: 'Hammersmith One', sans-serif;
     font-size: 1.5rem;
 }
+
+/********** RESPONSIVE VIEW **********/
+
+/********** SMALL SCREEN ***********/
+
+@media only screen and (min-width: 375px) and (max-width: 765px) {
+
+    /* card */
+
+    .card-img-big {
+        width: 160px;
+        height: 180px;
+    }
+
+    .list-group-item-name {
+        font-size: 1.2rem;
+    }
+    
+    .title {
+        font-size: 1.5rem;
+    }
+    
+    .small-title {
+        font-size: 1rem;
+    }
+    
+    .card-about {
+        font-size: 1rem;
+    }
+}
+    

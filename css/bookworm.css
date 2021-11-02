@@ -24,6 +24,19 @@ body {
     height: 90px;
 }
 
+.title-book {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.subtitle-book {
+    font-size: 1.2rem;
+}
+
+.text-author {
+    font-size: 1rem;
+}
+
 /********** RESPONSIVE VIEW **********/
 
 /********** SMALL SCREEN ***********/
@@ -50,4 +63,18 @@ body {
         width: 60px;
         height: 60px;
     }
+
+    .title-book {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    
+    .subtitle-book {
+        font-size: 1rem;
+    }
+    
+    .text-author {
+        font-size: 0.9rem;
+    }
+    
 }

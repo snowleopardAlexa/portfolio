@@ -1,4 +1,7 @@
+/********** COURSES **********/
+
 .title {
+    font-size: 1.8rem;
     text-align: center;
     font-family: 'Hammersmith One', sans-serif;
 }
@@ -9,20 +12,39 @@
     font-family: 'Comfortaa';
 }
 
-.card-title-self-studying {
-  color: #000;
-  font-family: 'Hammersmith One', sans-serif;
+.cert-img {
+    width: 100%;
+    height: auto;
 }
 
-.self-studying {
-    color: #000;
+.text-center {
+    font-size: 1.2rem;
     font-family: 'Comfortaa';
 }
 
-.table {
-    font-family: 'Comfortaa';
-}
+/********** RESPONSIVE VIEW **********/
 
-#headline {
-    font-weight: bold;
+/********** SMALL SCREEN ***********/
+
+@media only screen and (min-width: 375px) and (max-width: 765px) {
+
+    /* courses */
+
+    .title {
+        font-size: 1.5rem;
+    }
+    
+    .subtitle {
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+    .cert-img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .text-center {
+        font-size: 1rem;
+    }
 }

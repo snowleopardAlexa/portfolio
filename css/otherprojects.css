@@ -1,8 +1,11 @@
+/********** OTHER PROJECTS **********/
+
 .card {
   background-color: var(--polar-bear);
 }
 
 .title {
+    font-size: 1.8rem;
     font-family: 'Hammersmith One', sans-serif;
 }
 
@@ -13,10 +16,7 @@
 
 th {
     font-family: 'Hammersmith One', sans-serif;
-}
-
-.mt-3 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .btn-link-online-small {
@@ -37,4 +37,34 @@ th {
 .btn-link-online-small:hover {
     background-color: var(--ocean-mediterrean);
     color: var(--polar-bear);
+}
+
+/********** RESPONSIVE VIEW **********/
+
+/********** SMALL SCREEN ***********/
+
+@media only screen and (min-width: 375px) and (max-width: 765px) {
+
+    /* table projects */
+
+    .title {
+        font-size: 1.5rem;
+        font-family: 'Hammersmith One', sans-serif;
+    }
+    
+    .subtitle {
+        font-family: 'Comfortaa';
+        font-size: 1rem;
+    }
+    
+    th {
+        font-family: 'Hammersmith One', sans-serif;
+        font-size: 1rem;
+    }
+
+    .btn-link-online-small {
+        margin-top: 10px;
+        font-size: 0.8rem;
+        padding: 8px 22px;
+    }
 }

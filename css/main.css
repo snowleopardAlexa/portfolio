@@ -58,6 +58,13 @@ body {
 }
 
 .card-text-my-info {
+    color: var(--cloud);
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: 'Comfortaa';
+}
+
+.card-text-old-portfolio {
     color: var(--black-bear);
     font-weight: bold;
     font-size: 1.2rem;

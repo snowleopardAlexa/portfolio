@@ -33,3 +33,31 @@ iframe {
     margin-bottom: 20px;
 }
 
+/********** MEDIUM SCREEN **********/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .video {
+        width: 600px;
+        height: 400px;
+    }
+    .title-movie {
+        font-size: 2.5rem;
+    }
+    .subtitle-movie {
+        font-size: 1.5rem;
+    }
+  }
+
+/********** SMALL SCREEN **********/
+@media only screen and (min-width: 375px) and (max-width: 765px) {
+    .video {
+        width: 400px;
+        height: 200px;
+    }
+    .title-movie {
+        font-size: 1.5rem;
+    }
+    .subtitle-movie {
+        font-size: 1rem;
+        margin-top: 40px;
+    }
+}

@@ -29,8 +29,36 @@ iframe {
     text-align: center; 
     font-family: 'Lion King';
     font-size: 2rem;
-    margin-top: 80px;
-    margin-bottom: 20px;
+}
+
+/********** LARGE SCREEN **********/
+@media only screen and (min-width: 1366px) {
+    .video {
+        width: 800px;
+        height: 500px;
+    }
+    .title-movie {
+        margin-bottom: 50px;
+    }
+    .subtitle-movie {
+        font-size: 2rem;
+        margin: 25px 25px;
+    }
+}
+
+/********** BIG SCREEN **********/
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+    .video {
+        width: 800px;
+        height: 500px;
+    }
+    .title-movie {
+        margin-bottom: 50px;
+    }
+    .subtitle-movie {
+        font-size: 1.5rem;
+        margin: 20px 20px;
+    }
 }
 
 /********** MEDIUM SCREEN **********/
@@ -41,9 +69,11 @@ iframe {
     }
     .title-movie {
         font-size: 2.5rem;
+        margin-bottom: 40px;
     }
     .subtitle-movie {
         font-size: 1.5rem;
+        margin: 20px 20px;
     }
   }
 
@@ -52,12 +82,14 @@ iframe {
     .video {
         width: 400px;
         height: 200px;
+        
     }
     .title-movie {
         font-size: 1.5rem;
+        margin-bottom: 20px;
     }
     .subtitle-movie {
         font-size: 1rem;
-        margin-top: 40px;
+        margin: 20px 20px;
     }
 }

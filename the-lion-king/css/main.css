@@ -395,8 +395,7 @@ input[type="submit"] {
 }
 
 /*:::::::::: MAKE IT RESPONSIVE ::::::::::*/
-
-/* NAVBAR FOR BIG, MEDIUM, SMALL SCREENS */
+/* BIG, MEDIUM, SMALL SCREENS */
 
 @media only screen and (min-width: 375px) and (max-width: 1366px) {
   .check-btn {
@@ -420,7 +419,7 @@ input[type="submit"] {
     line-height: 10px;
   }
   nav .nav-list li a {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   a:hover,
   a.active {
@@ -458,6 +457,7 @@ input[type="submit"] {
     width: 100%;
     height: 0 auto;
   }
+
   .btn-search-tickets {
     font-size: 1rem;
   }
@@ -497,6 +497,9 @@ input[type="submit"] {
   }
   .btn-search-tickets {
     font-size: 1rem;
+  }
+  .check-btn {
+    margin-top: 5px;
   }
 }
 

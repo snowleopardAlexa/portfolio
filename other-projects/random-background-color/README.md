@@ -1,0 +1,1 @@
+Random background color generator. Click on the button and change the color of the page. 

@@ -1,0 +1,1 @@
+This is random hex code generator made with JavaScript. 

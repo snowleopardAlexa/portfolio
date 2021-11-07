@@ -2,6 +2,10 @@
     font-family: 'Hammersmith One', sans-serif;
 }
 
+.card {
+    background-color: var(--polar-bear);
+}
+
 .card-text-design-project {
     font-family: 'Comfortaa';
     font-size: 1.2rem;

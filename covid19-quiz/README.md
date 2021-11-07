@@ -1,0 +1,1 @@
+JavaScript covid10 quiz - answers and questions. 

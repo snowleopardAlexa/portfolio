@@ -1,0 +1,1 @@
+Highlight searched text with JavaScript and CSS. 

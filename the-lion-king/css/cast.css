@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins',sans-serif;
 }
 
 .img-cast {
@@ -83,6 +82,8 @@ body {
  display: flex;
  justify-content: center;
  align-items: center;
+ font-family: 'Poppins';
+ color: var(--polar-bear);
 }
 
 .carousel::before{
@@ -212,12 +213,14 @@ body {
 input[type="radio"] {
   display: none;
 }
+
 @media (max-width: 768px) {
   .main-card .slider-cards .slider-card {
     margin: 20px 0 10px 0;
     width: calc(100% / 2 - 10px);
   }
 }
+
 @media (max-width: 600px) {
   .main-card .slider-cards .slider-card {
     /* margin: 20px 0 10px 0; */

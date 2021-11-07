@@ -19,7 +19,7 @@ body {
 
 .container {
     background-color: rgb(219, 205, 205);
-    width: 60vmin;
+    width: 80vmin;
     padding: 2.5em 2em;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -86,7 +86,7 @@ input[type="text"]::selection {
 }
 
 .btns button {
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 0.8em 2.2em;
     cursor: pointer;
 }
@@ -104,7 +104,7 @@ input[type="text"]::selection {
 
 .custom-alert {
     background-color: teal;
-    font-size: 1.2rem;
+    font-size: 1rem;
     position: fixed;
     top: 10px;
     right: 10px;

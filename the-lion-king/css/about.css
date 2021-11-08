@@ -15,7 +15,7 @@ body {
   }
   
   .about > ul > li {
-    border: 1px solid var(--heart-red);
+    border: 2px solid var(--black-city-smoke);
     border-radius: .5rem;
     list-style-type: none;
   }
@@ -57,13 +57,13 @@ body {
     line-height: 1.5;
     padding: 1rem .75rem;
     color: var(--polar-bear);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lato', sans-serif;
   }
   
-  .about > ul > li > a {
+.about > ul > li > a {
     padding: .5rem 1rem;
     margin: .5rem;
-  }
+}
 
 .title-about {
   margin-top: 100px;
@@ -83,7 +83,6 @@ body {
 .text-about {
     text-align: left;
     font-size: 1.2rem;
-    font-family: 'Poppins', sans-serif;
 }
 
 /*:::::::::: MAKE IT RESPONSIVE ::::::::::*/

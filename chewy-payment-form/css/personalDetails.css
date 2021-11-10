@@ -39,11 +39,11 @@
 }
 
 .personalDetails {
-    padding: 40px;
+    padding: 50px;
     margin: 0 auto;
     border: 1px solid #cdf2f8;
     max-width: 100%;
-  }
+}
 
 /* UL list */
 .details {
@@ -218,10 +218,59 @@ hr {
 
 @media only screen and (min-width: 375px) and (max-width: 765px) { 
 
-  /* personal details */
+  /* shipping info */
 
-  .card {
-    padding: 0rem;
+  .orderSummary {
+    padding: 20px;
+}
+
+.personalDetails {
+    padding: 20px;
+}
+ 
+  .title-form {
+    margin-top: 10px;
+    font-size: 1.2rem;
   }
 
+  .subtitle-form {
+    font-size: 0.9rem;
+  }
+
+  .checkbox-text {
+    font-size: 0.9rem;
+  }
+
+  .title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  #edit {
+    font-size: 0.8rem;
+  }
+
+  .brandName {
+    font-size: 0.9rem;
+  }
+
+  .img-item {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 140px;
+    height: 100px;
+  }
+
+  .qty, .sub, .shipping, .tax {
+    font-size: 1rem; 
+  }
+
+  .total {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .btn-shipping {
+    font-size: 1.2rem;  
+  }
 }

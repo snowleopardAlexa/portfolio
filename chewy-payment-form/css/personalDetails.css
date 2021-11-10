@@ -212,15 +212,32 @@ hr {
     background-color: #333;
   }
 
-  /********* RESPONSIVE VIEW **********/
+/********* RESPONSIVE VIEW **********/
+
+
+/********** MEDIUM SCREEN ***********/
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+/* shipping info */
+
+ .orderSummary {
+  padding: 20px;
+ }
+
+ .personalDetails {
+  padding: 20px;
+ }
+
+}
 
 /********** SMALL SCREEN **********/
 
 @media only screen and (min-width: 375px) and (max-width: 765px) { 
 
-  /* shipping info */
+/* shipping info */
 
-  .orderSummary {
+.orderSummary {
     padding: 20px;
 }
 

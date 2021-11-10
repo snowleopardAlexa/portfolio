@@ -34,30 +34,6 @@ header {
     font-size: 1.5rem;
 }
 
-/* FOOTER */
-
-footer {
-    position: relative;
-    background-color: rgb(10, 129, 207);
-    margin-top: 50px;
-    width: 100%;
-    padding: 10px;
-}
-
-#footer-title {
-    font-family: 'Chewy', cursive;
-    text-align: center;
-    color: #ffffff;
-    font-size: 1.5rem;
-}
-
-#footer-subtitle{
-    font-family: 'Lexend', sans-serif;
-    text-align: center;
-    color: #fff;
-    font-size: 1rem;
-}
-
 /* NAVIGATION */
 
 .checkoutStepper {

@@ -144,6 +144,18 @@ hr {
 
 /********* RESPONSIVE VIEW **********/
 
+/********** MEDIUM SCREEN ***********/
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+/* cart */
+
+  .cart {
+    padding: 50px;
+    max-width: 80%;
+  }
+}
+
 /********** SMALL SCREEN **********/
 
 @media only screen and (min-width: 375px) and (max-width: 765px) { 

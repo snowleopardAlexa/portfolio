@@ -1,14 +1,18 @@
-/* MAIN */
-/* FONTS - Chewy, Lexend */
+/********** FONTS *********/
+
 @import url('https://fonts.googleapis.com/css2?family=Chewy&family=Lexend&display=swap');
 
-/* HEADER */
-/* allows to include the padding and border in an element's 
-total width and height */
+
+/* basic reset */
+
 * {
-    box-sizing: border-box;
+    box-sizing: border-box; /* allows to include the padding and border in an element's total width and height */
     margin: 0;
     padding: 0;
+}
+
+body {
+    color: rgb(6, 55, 75);
 }
 
 header {

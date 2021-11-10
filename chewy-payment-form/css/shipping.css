@@ -1,14 +1,7 @@
-  html {
-    margin: 0;
-    color: #1e535f;
-  }
-
-  .shipping {
-    margin-left: 50px;
-  }
+/********** SHIPPING **********/
   
   .entireShippingForm {
-    padding: 50px;
+    padding: 20px;
     font-family: 'Lexend', sans-serif;
     max-width: 100%;
     margin: 0 auto;
@@ -30,35 +23,37 @@
       list-style-type: none;
   }
 
-fieldset {
+  fieldset {
     border: none;
-}  
+  }  
 
-legend {
+  legend {
     font-size: 1.5rem;
     font-weight: bold;
-}
+  }
 
-label {
+  label {
     font-size: 1.2rem;
-}
+  }
 
-#shippingMethod {
+  #shippingMethod {
     margin-top: 20px;
-}
+  }
 
 /* display labels in columns */
-#shippingMethodType {
+ 
+  #shippingMethodType {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
-}
+ }
 
-label {
+  label {
     padding: 5px;
-}
+ }
 
 /* list */
+
 .details {
     font-size: 1.2rem;
     list-style-type: none;
@@ -74,6 +69,7 @@ label {
     margin-top: 30px;
     margin-bottom: 20px;
     display: block;
+    margin: 0 auto;
     width: 160px;
     height: 100px;
 }
@@ -83,13 +79,13 @@ label {
 }
 
 /* order total price */
+
 .total {
     font-size: 1.5rem;
     font-weight: bold;
     font-family: 'Lexend', sans-serif;
     margin-top: 10px;
 }
-
 
 hr {
     border: 1px solid #cdf2f8;
@@ -100,6 +96,7 @@ hr {
 }
 
 /* button edit and continue */
+
  .btn-continue, .btn-edit {
     margin-top: 20px;
     padding: 0.35em 1.2em;
@@ -131,7 +128,9 @@ a {
 }
 
 /* CUSTOM RADIO BUTTONS */
+
 /* hide the default radio buttons */
+
 .customRadioBtn {
     max-width: 505px;
 }
@@ -155,6 +154,7 @@ a {
 }
 
 /* the outer circles for the radio buttons */
+
 .customRadioBtn input+span { 
 	position: absolute;
 	left: 2px;
@@ -167,6 +167,7 @@ a {
 }
 
 /* style the inner circles for the radio buttons (selected state) */
+
 .customRadioBtn input+span:after { 
 	content: '';
 	position: absolute;
@@ -193,6 +194,198 @@ a {
 	opacity: 1;
 	width: 10px;
 	height: 10px;
+}
+
+/********* RESPONSIVE VIEW **********/
+
+/********** BIG SCREEN *********/
+
+@media only screen and (max-width: 1366px) and (min-width: 1024px) {
+ /* shipping info */
+    
+   .orderSummary {
+    padding: 20px;
+   }
+  
+   .personalDetails {
+    padding: 20px;
+   }
+
+   h2 {
+      font-size: 1.5rem; 
+    }
+    
+    legend {
+      font-size: 1.5rem;
+    }
+
+    .details {
+        font-size: 1.2rem;
+    }
+
+    .customRadioBtn label.radioLabel {
+        font-size: 1.2rem;
+    }
+
+    .btn-continue {
+        font-size: 1.2rem;
+    }
+
+    /* cart */
+
+    .title {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .brandName {
+        font-size: 1rem;
+    }
+
+    .btn-edit {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    
+    .image {
+        margin-bottom: 20px;
+        width: 140px;
+        height: 100px;
+    }
+    
+    .qty  {
+        font-size: 1.1rem; 
+    }
+    
+    .total {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+}
+
+/********** MEDIUM SCREEN ***********/
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    /* shipping info */
+    
+     .orderSummary {
+      padding: 20px;
+     }
+    
+     .personalDetails {
+      padding: 20px;
+     }
+
+     h2 {
+        font-size: 1.2rem; 
+      }
+      
+      legend {
+        font-size: 1.2rem;
+      }
+  
+      .details {
+          font-size: 1rem;
+      }
+  
+      .customRadioBtn label.radioLabel {
+          font-size: 1rem;
+      }
+  
+      .btn-continue {
+          font-size: 1rem;
+      }
+  
+      /* cart */
+  
+      .title {
+          font-size: 1.2rem;
+          font-weight: bold;
+      }
+  
+      .brandName {
+          font-size: 0.8rem;
+      }
+  
+      .btn-edit {
+          font-size: 0.8rem;
+          margin-bottom: 20px;
+      }
+      
+      .image {
+          margin-bottom: 20px;
+          width: 140px;
+          height: 100px;
+      }
+      
+      .qty  {
+          font-size: 1rem; 
+      }
+      
+      .total {
+          font-size: 1rem;
+          font-weight: bold;
+      }
+  }
+
+/********** SMALL SCREEN **********/
+
+@media only screen and (min-width: 375px) and (max-width: 765px) { 
+
+    /* shipping */
+
+    h2 {
+      font-size: 1.2rem; 
+    }
+    
+    legend {
+      font-size: 1.2rem;
+    }
+
+    .details {
+        font-size: 1rem;
+    }
+
+    .customRadioBtn label.radioLabel {
+        font-size: 1rem;
+    }
+
+    .btn-continue {
+        font-size: 1rem;
+    }
+
+    /* cart */
+
+    .title {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .brandName {
+        font-size: 0.8rem;
+    }
+
+    .btn-edit {
+        margin-top: 10px;
+        font-size: 0.8rem;
+        margin-bottom: 20px;
+    }
+    
+    .image {
+        margin-bottom: 20px;
+        width: 140px;
+        height: 100px;
+    }
+    
+    .qty  {
+        font-size: 1rem; 
+    }
+    
+    .total {
+        font-size: 1rem;
+        font-weight: bold;
+    }
 }
 
 

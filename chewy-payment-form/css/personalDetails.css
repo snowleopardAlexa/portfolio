@@ -237,11 +237,11 @@ hr {
 
 /* shipping info */
 
-.orderSummary {
+  .orderSummary {
     padding: 20px;
 }
 
-.personalDetails {
+  .personalDetails {
     padding: 20px;
 }
  

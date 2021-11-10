@@ -1,39 +1,19 @@
-/* MAIN CONTENT */
+/********** PERSONAL DETAILS **********/
 
 .card {
     padding: 1rem;
-  }
+}
   
-  .checkoutDetails {
+.checkoutDetails {
     max-width: 100%;
     margin: 0 auto;
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
 }
 
-html {
-  font-family: 'Lexend', sans-serif;
-  box-sizing: border-box;
-}
+/********** ORDER SUMMARY *********/
 
-@supports (font-variation-settings: normal) {
-  html {
-    font-family: 'Lexend', sans-serif;
-  }
-}
-
-html {
-    color: #1e535f;
-}
-
-/* ORDER SUMMARY */
 .intro li {
     display: inline-block;
     list-style-type: none;
@@ -44,11 +24,8 @@ html {
 }
 
 .entireForm {
-    padding: 50px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    padding: 20px;
+    margin: 50px 20px 20px 20px;
     -webkit-box-shadow: 0 10px 6px 6px #ecf2f5;
     -moz-box-shadow: 0 3px 6px 6px #ecf2f5;
          box-shadow: 0px 3px 6px 6px #ecf2f5;
@@ -104,6 +81,7 @@ html {
 }
 
 /* increment and decrement btn */
+
 .img-qty {
    width: 22px;
    height: 22px;
@@ -115,6 +93,7 @@ html {
 }
 
 /* button edit */
+
 #edit, .btn-shipping {
     padding: 0.35em 1.2em;
     border: 0.1em solid #ffffff;
@@ -151,12 +130,6 @@ hr {
 }
 
 /* SHIPPING INFORMATION */
-/* FORM */
-:root {
-    --color-blue: #0f90db;
-    --color-medium-blue: #16aec9;
-    --color-light-blue: #cdf2f8;
-  }
 
   .title-form {
       margin-top: 25px;
@@ -238,3 +211,17 @@ hr {
   .button:focus-visible {
     background-color: #333;
   }
+
+  /********* RESPONSIVE VIEW **********/
+
+/********** SMALL SCREEN **********/
+
+@media only screen and (min-width: 375px) and (max-width: 765px) { 
+
+  /* personal details */
+
+  .card {
+    padding: 0rem;
+  }
+
+}

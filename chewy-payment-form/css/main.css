@@ -11,9 +11,18 @@
     padding: 0;
 }
 
-body {
-    color: rgb(6, 55, 75);
+html {
+    color: #1e535f;
+    font-family: 'Lexend', sans-serif;
 }
+
+/********** COLORS **********/
+
+:root {
+    --color-blue: #0f90db;
+    --color-medium-blue: #16aec9;
+    --color-light-blue: #cdf2f8;
+  }
 
 header {
      background-color: rgb(10, 129, 207);

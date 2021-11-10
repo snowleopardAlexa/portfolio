@@ -31,6 +31,7 @@ header {
 }
 
 /* FOOTER */
+
 footer {
     position: relative;
     background-color: rgb(10, 129, 207);
@@ -54,6 +55,7 @@ footer {
 }
 
 /* NAVIGATION */
+
 .checkoutStepper {
     margin-top: 25px;
 }
@@ -113,4 +115,33 @@ footer {
 
 .checkoutStepper .active a {
     color: #17bacf;
+}
+
+/********* RESPONSIVE VIEW **********/
+
+/********** SMALL SCREEN **********/
+
+@media only screen and (min-width: 375px) and (max-width: 765px) { 
+
+    /* header */
+
+    #header-title {
+       font-size: 4rem;
+    }
+
+    #header-subtitle {
+       font-size: 1.5rem;
+    }
+
+    /* stepper */
+
+    .checkoutStepper li {
+        font-size: 1rem;
+    }
+
+    .checkoutStepper li:before {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+  }
 }

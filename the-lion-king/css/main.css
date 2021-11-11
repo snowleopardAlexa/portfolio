@@ -131,7 +131,7 @@ nav .nav-list li a.active {
 
 /* checkbox */
 .check-btn {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #fff;
   float: right;
   line-height: 80px;
@@ -523,6 +523,10 @@ input[type="submit"] {
   nav {
     z-index: 99;
     position: fixed; /* keeps the slide navbar attached to the visible navbar while scrolling the page */
+  }
+
+  .check-btn {
+    margin-top: 25px;
   }
 
   .dropdown-content {

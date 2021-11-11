@@ -8,8 +8,13 @@ iframe {
     display: block;
     margin-bottom: 50px;
     border: 10px solid var(--black-city-smoke);
-
 }
+
+.responsive-iframe {
+    width: 100%;
+    height: 100%;
+    border: 10px solid var(--black-city-smoke);
+  }
 
 .title-movie {
     color: var(--polar-bear);

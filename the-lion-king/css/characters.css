@@ -1,3 +1,5 @@
+/********** GALLERY **********/
+
 .wrapper {
   max-width: 100%;
   margin: 10px auto;  /* bug, without 10px top the grid shrinks, it has something to do with nav .nav-list float:right */
@@ -9,7 +11,7 @@ body {
 
 .gallery {
   margin-top: -10px;
-  border: 10px solid rgb(15, 14, 14);
+  border: 10px solid var(--black-smoke);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   /* we need 6 rows because each column takes grid-row span 2 | 2 * 3 = 6 */
@@ -94,7 +96,8 @@ body {
   grid-row: 5 / span 2;
 }
 
-/* OVERLAY NAME */
+/* overlay name */
+
 .gallery__img {
   width: 100%;
   height: 100%;
@@ -144,8 +147,29 @@ body {
 }
 
 
-/* MAKE IT RESPONSIVE */
-@media screen and (max-width: 560px) {
+/*********** RESPONSIVE VIEW **********/
+
+/********** MEDIUM SCREEN **********/
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    nav {
+      position: fixed;
+      z-index: 99; /* without z-index: 99, images will overlap the fixed navbar on scroll */  
+    }
+    .gallery {
+      margin-top: 80px;
+    }
+    .gallery__img {
+      margin-top: -2px;
+    }
+    .footer-container {
+      margin-top: -10px;
+    }
+  }
+
+/********** SMALL SCREEN **********/
+
+@media only screen and (min-width: 375px) and (max-width: 765px) {
   body {
     background-color: #a70202;
   }
@@ -155,10 +179,6 @@ body {
   .gallery__img {
     margin-top: -2px;
   }
-}
-
-@media (max-width: 375px) {
-/* without z-index: 99, images will overlap the fixed navbar on scroll */  
   nav {
     position: fixed;
     z-index: 99;
@@ -174,20 +194,3 @@ body {
     margin-top: -10px;
   }
 }
-
-@media (max-width: 768px) {
-  /* without z-index: 99, images will overlap the fixed navbar on scroll */  
-    nav {
-      position: fixed;
-      z-index: 99;
-    }
-    .gallery {
-      margin-top: 80px;
-    }
-    .gallery__img {
-      margin-top: -2px;
-    }
-    .footer-container {
-      margin-top: -10px;
-    }
-  }

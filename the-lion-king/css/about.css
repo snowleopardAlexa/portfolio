@@ -119,6 +119,7 @@ body {
 
   .title-timeline {
     font-size: 1.5rem;
+    margin-top: 30px;
   }
 
   .about> ul > li > figure > figcaption > h3 {

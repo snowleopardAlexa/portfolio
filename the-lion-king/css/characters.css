@@ -170,19 +170,24 @@ body {
 /********** SMALL SCREEN **********/
 
 @media only screen and (min-width: 375px) and (max-width: 765px) {
-  body {
-    background-color: #a70202;
-  }
-  .gallery {
-    display: block;
-  }
-  .gallery__img {
-    margin-top: -2px;
-  }
+
+  /* navbar */
+
   nav {
     position: fixed;
     z-index: 99;
   }
+
+  /* gallery */
+
+  .gallery {
+    display: block;
+  }
+
+  .gallery__img {
+    margin-top: -2px;
+  }
+
   .gallery {
     margin-top: 80px;
   }
@@ -190,6 +195,9 @@ body {
   .gallery__img {
     margin-top: -2px;
   }
+
+  /* footer */
+
   .footer-container {
     margin-top: -10px;
   }

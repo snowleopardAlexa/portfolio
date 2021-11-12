@@ -50,24 +50,19 @@ nav {
   width: 100%;
 }
 
+a {
+  text-decoration: underline;
+  color: #fff;
+}
+
 label.logo {
   color: #fff;
   font-size: 1.2rem;
-  line-height: 70px;
+  line-height: 80px;
   margin-left: 20px;
   margin-top: 20px;
   font-family: "Lion King";
   cursor: pointer;
-}
-
-.logo {
-  height: 30px;
-  width: 30px;
-}
-
-a {
-  text-decoration: underline;
-  color: #fff;
 }
 
 nav .nav-list {
@@ -100,6 +95,7 @@ nav .nav-list li a.active {
 }
 
 /* dropdown menu */
+
 .fa-angle-double-down {
   margin-left: 3px;
 }
@@ -130,6 +126,7 @@ nav .nav-list li a.active {
 }
 
 /* checkbox */
+
 .check-btn {
   font-size: 1.5rem;
   color: #fff;
@@ -144,7 +141,7 @@ nav .nav-list li a.active {
   display: none;
 }
 
-/*:::::::::: MODAL TICKETS ::::::::::*/
+/********** MODAL TICKETS **********/
 
 .modal {
   display: none; /* hidden by default */
@@ -169,6 +166,7 @@ nav .nav-list li a.active {
 }
 
 /* close button */
+
 .close {
   color: #aaaaaa;
   float: right;
@@ -226,7 +224,7 @@ nav .nav-list li a.active {
   background-color: rgba(255, 0, 0, 0.623);
 }
 
-/* :::::::::: FOOTER :::::::::: */
+/********** FOOTER **********/
 
 footer {
   background-color: #272222;
@@ -277,6 +275,7 @@ footer a {
 }
 
 /* social-media */
+
 .fa-instagram,
 .fa-facebook,
 .fa-pinterest,
@@ -301,6 +300,7 @@ footer a {
 }
 
 /* newsletter form */
+
 form {
   display: flex;
   flex-wrap: wrap;
@@ -347,6 +347,7 @@ input[type="submit"] {
 }
 
 /* footer legal */
+
 .footer-legal {
   padding: 15px 30px; /* 0.9375rem 1.875rem; */
   background-color: var(--heart-red);
@@ -372,6 +373,7 @@ input[type="submit"] {
 }
 
 /* footer logo */
+
 .footer-logo-disney {
   background-color: var(--black-smoke);
   list-style-type: none;
@@ -390,13 +392,14 @@ input[type="submit"] {
 }
 
 /* last child - puts the item to the right like float:right */
+
 .footer-legal-list li:nth-last-child(2) {
   flex: 1; /* same as flex-grow: 1; */
 }
 
-/*:::::::::: MAKE IT RESPONSIVE ::::::::::*/
+/********** RESPONSIVE VIEW ***********/
 
-/* BIG, MEDIUM, SMALL SCREENS */
+/********** BIG, MEDIUM, SMALL SCREEN ***********/
 
 @media only screen and (min-width: 375px) and (max-width: 1366px) {
   .check-btn {
@@ -432,7 +435,7 @@ input[type="submit"] {
   }
 }
 
-/* BIG SCREEN */
+/********** BIG SCREEN ***********/
 
 @media only screen and (max-width: 1366px) and (min-width: 1024px) {
   nav {
@@ -464,7 +467,7 @@ input[type="submit"] {
   }
 }
 
-/* MEDIUM SCREEN */
+/********** MEDIUM SCREEN ***********/
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   nav {
@@ -504,16 +507,19 @@ input[type="submit"] {
   }
 }
 
-/* SMALL SCREEN */
+/********** SMALL SCREEN ***********/
 
 @media only screen and (min-width: 375px) and (max-width: 765px) {
+
+  /* navbar */
+
   nav {
     z-index: 99;
     position: fixed; /* keeps the slide navbar attached to the visible navbar while scrolling the page */
   }
 
   .check-btn {
-    margin-top: 25px;
+    margin-top: 0px;
   }
 
   .dropdown-content {

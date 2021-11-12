@@ -232,6 +232,7 @@ input[type="radio"] {
 
 
 
+/*
 @media (max-width: 768px) {
   .main-card .slider-cards .slider-card {
     margin: 20px 0 10px 0;
@@ -241,7 +242,7 @@ input[type="radio"] {
 
 @media (max-width: 600px) {
   .main-card .slider-cards .slider-card {
-    /* margin: 20px 0 10px 0; */
+
     width: 100%;
   }
 }
@@ -250,5 +251,4 @@ input[type="radio"] {
   .carousel-cast {
     margin-top: 80px;
   }
-}
-
+}*/

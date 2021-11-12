@@ -20,7 +20,7 @@ body {
     list-style-type: none;
   }
 
-.img-about {
+  .img-about {
     width: 100%;
     height: 100%;
 }
@@ -53,19 +53,18 @@ body {
   }
   
   .about > ul > li > p {
-    font-size: 1rem;
     line-height: 1.5;
     padding: 1rem .75rem;
     color: var(--polar-bear);
     font-family: 'Lato', sans-serif;
   }
   
-.about > ul > li > a {
+ .about > ul > li > a {
     padding: .5rem 1rem;
     margin: .5rem;
 }
 
-.title-about {
+ .title-about, .title-timeline {
   margin-top: 100px;
   text-align: center;
   font-family: 'Cinzel';
@@ -80,23 +79,57 @@ body {
    margin-top: 30px;
 }
 
-.text-about {
-    text-align: left;
-    font-size: 1.2rem;
+.about ul li .text-about {
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.about ul li .text-timeline {
+  text-align: left;
+  font-size: 1.2rem;
 }
 
 /*:::::::::: MAKE IT RESPONSIVE ::::::::::*/
-@media (max-width: 375px) {
+@media only screen and (min-width: 375px) and (max-width: 765px) { 
   .title-about {
     margin-top: 120px;
-  }
+}
 
 /* without z-index: 99, images will overlap the fixed navbar on scroll */  
   nav {
     position: fixed;
     z-index: 99;
   }
+
+  .title-about {
+    font-size: 1.5rem;
+  }
+
+  .about ul li .subtitle-about {
+    font-size: 1.3rem;
+  }
+
+  .about ul li .text-about {
+    font-size: 1rem;
+ }
+
+  .about ul li .text-timeline {
+    font-size: 1rem;
+ }
+
+  .title-timeline {
+    font-size: 1.5rem;
+  }
+
+  .about> ul > li > figure > figcaption > h3 {
+    font-size: 1.1rem;
+  }
 }
+
+
+
+
+
 
 
 

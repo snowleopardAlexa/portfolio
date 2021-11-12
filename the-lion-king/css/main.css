@@ -1,6 +1,9 @@
-/*:::::::::: FONTS :::::::::: */
+/********** FONTS **********/
+
 @import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@500&family=Marcellus+SC&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 /* 
 font-family: 'Cinzel', serif;
 font-family: 'Cinzel Decorative', cursive;
@@ -9,6 +12,7 @@ font-family: 'Lato', sans-serif;
 */
 
 /* local fonts */
+
 @font-face {
   font-family: "Waltograph";
   font-family: "Lion King";
@@ -17,7 +21,7 @@ font-family: 'Lato', sans-serif;
   src: local("fonts/lion_king.ttf");
 }
 
-/*:::::::::: BASIC RESET :::::::::: */
+/********** BASIC RESET **********/
 
 * {
   /* - Universal selector that matches any html tag: div, body, button, all of them */
@@ -26,7 +30,8 @@ font-family: 'Lato', sans-serif;
   box-sizing: border-box;
 }
 
-/*:::::::::: COLORS :::::::::: */
+/********** COLORS **********/
+
 :root {
   --black-smoke: #1a1818;
   --black-city-smoke: #272222;
@@ -36,9 +41,14 @@ font-family: 'Lato', sans-serif;
   --mandarin: #ffae00;
   --polar-bear: #fcfbf9;
   --grey-passion: #9e9797;
+  --dirty-grey: #332f2f;
 }
 
-/*:::::::::: NAVBAR :::::::::: */
+body {
+  background-color: var(--black-smoke);
+}
+
+/********** NAVBAR **********/
 
 nav {
   position: fixed;
@@ -391,10 +401,9 @@ input[type="submit"] {
   letter-spacing: 2px;
 }
 
-/* last child - puts the item to the right like float:right */
-
 .footer-legal-list li:nth-last-child(2) {
   flex: 1; /* same as flex-grow: 1; */
+  /* last child - puts the item to the right like float:right */
 }
 
 /********** RESPONSIVE VIEW ***********/
@@ -470,6 +479,9 @@ input[type="submit"] {
 /********** MEDIUM SCREEN ***********/
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+   /* navbar */
+
   nav {
     z-index: 99;
     position: fixed; /* keeps the slide navbar attached to the visible navbar while scrolling the page */
@@ -479,7 +491,9 @@ input[type="submit"] {
     margin-top: -55px;
     margin-left: 320px; /* SPECIAL FIX - dropdown-content list must be given a different margin-left on different screens */
   }
+
   /* modal */
+
   .modal {
     z-index: 99;
     padding-top: 100px;

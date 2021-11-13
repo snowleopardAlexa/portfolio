@@ -1,5 +1,6 @@
+/********** DISPLAY **********/
+
 .display {
-    background-color: var(--black-smoke);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,4 +22,30 @@
 .display-text {
     font-size: 1.5rem;
     text-align: center;
+}
+
+/********** RESPONSIVE VIEW **********/
+
+/********** SMALL SCREEN **********/
+
+@media only screen and (min-width: 375px) and (max-width: 765px) {
+
+    .container-display {
+        margin-top: 150px;
+        width: 50%;
+        color: var(--polar-bear);
+        margin-bottom: 80px;
+    }
+    
+    .display-title {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    
+    .display-text {
+        margin-top: 20px;
+        font-size: 1rem;
+        text-align: center;
+    }
+    
 }

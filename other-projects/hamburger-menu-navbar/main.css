@@ -124,3 +124,12 @@ section {
     color: white;
 }
 
+/********* RESPONSIVE VIEW **********/
+
+/********** SMALL SCREEN **********/
+
+@media only screen and (min-width: 375px) and (max-width: 765px) { 
+    .check-btn {
+        font-size: 1.5rem;
+  }
+}

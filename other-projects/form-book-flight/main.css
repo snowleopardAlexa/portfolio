@@ -1,4 +1,5 @@
-/* MAIN */
+/********* FONTS  **********/
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:ital,wght@0,500;1,400&family=Poppins:wght@300&display=swap');
 /*
 font-family: 'Montserrat', sans-serif;
@@ -7,6 +8,7 @@ font-family: 'Poppins', sans-serif;
 */
 
 /* basic page reset */
+
 * { 
     padding: 0;
     margin: 0;
@@ -27,12 +29,6 @@ main {
     /* max width of the entire form, important on large screens */
     max-width: 1200px;
 }
-
-/*
-section {
-	position: relative;
-}
-*/
 
 #formBooking { 
     max-width: 800px;
@@ -55,6 +51,7 @@ header {
 
 /* custom radio buttons */
 /* hide default radio buttons */
+
 #formMain #tripType input {
     position: absolute;
     margin-left: -9999px;
@@ -305,7 +302,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 /* PASSENGERS and PETS */
 /* title */
 h3 {
-    font-size: 18px;
+    font-size: 1.5rem;
     color: #f34662;
     margin-bottom: 15px;
 }

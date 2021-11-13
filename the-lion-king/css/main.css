@@ -1,6 +1,9 @@
-/*:::::::::: FONTS :::::::::: */
+/********** FONTS **********/
+
 @import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@500&family=Marcellus+SC&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 /* 
 font-family: 'Cinzel', serif;
 font-family: 'Cinzel Decorative', cursive;
@@ -9,6 +12,7 @@ font-family: 'Lato', sans-serif;
 */
 
 /* local fonts */
+
 @font-face {
   font-family: "Waltograph";
   font-family: "Lion King";
@@ -17,7 +21,7 @@ font-family: 'Lato', sans-serif;
   src: local("fonts/lion_king.ttf");
 }
 
-/*:::::::::: BASIC RESET :::::::::: */
+/********** BASIC RESET **********/
 
 * {
   /* - Universal selector that matches any html tag: div, body, button, all of them */
@@ -26,7 +30,8 @@ font-family: 'Lato', sans-serif;
   box-sizing: border-box;
 }
 
-/*:::::::::: COLORS :::::::::: */
+/********** COLORS **********/
+
 :root {
   --black-smoke: #1a1818;
   --black-city-smoke: #272222;
@@ -36,9 +41,14 @@ font-family: 'Lato', sans-serif;
   --mandarin: #ffae00;
   --polar-bear: #fcfbf9;
   --grey-passion: #9e9797;
+  --dirty-grey: #332f2f;
 }
 
-/*:::::::::: NAVBAR :::::::::: */
+body {
+  background-color: var(--black-smoke);
+}
+
+/********** NAVBAR **********/
 
 nav {
   position: fixed;
@@ -50,24 +60,19 @@ nav {
   width: 100%;
 }
 
+a {
+  text-decoration: underline;
+  color: #fff;
+}
+
 label.logo {
   color: #fff;
   font-size: 1.2rem;
-  line-height: 70px;
+  line-height: 80px;
   margin-left: 20px;
   margin-top: 20px;
   font-family: "Lion King";
   cursor: pointer;
-}
-
-.logo {
-  height: 30px;
-  width: 30px;
-}
-
-a {
-  text-decoration: underline;
-  color: #fff;
 }
 
 nav .nav-list {
@@ -100,6 +105,7 @@ nav .nav-list li a.active {
 }
 
 /* dropdown menu */
+
 .fa-angle-double-down {
   margin-left: 3px;
 }
@@ -130,8 +136,9 @@ nav .nav-list li a.active {
 }
 
 /* checkbox */
+
 .check-btn {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #fff;
   float: right;
   line-height: 80px;
@@ -144,7 +151,7 @@ nav .nav-list li a.active {
   display: none;
 }
 
-/*:::::::::: MODAL TICKETS ::::::::::*/
+/********** MODAL TICKETS **********/
 
 .modal {
   display: none; /* hidden by default */
@@ -169,6 +176,7 @@ nav .nav-list li a.active {
 }
 
 /* close button */
+
 .close {
   color: #aaaaaa;
   float: right;
@@ -226,7 +234,7 @@ nav .nav-list li a.active {
   background-color: rgba(255, 0, 0, 0.623);
 }
 
-/*:::::::::: FOOTER :::::::::: */
+/********** FOOTER **********/
 
 footer {
   background-color: #272222;
@@ -243,7 +251,7 @@ footer {
 .footer-title {
   color: #fff;
   font-family: "Lion King";
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   padding-bottom: 8px;
 }
 
@@ -253,7 +261,7 @@ footer a {
 }
 
 .item-list {
-  font-size: 1.2rem;
+  font-size: 1rem;
   list-style: none;
   padding-left: 0;
   font-family: 'Cinzel', serif;
@@ -277,11 +285,12 @@ footer a {
 }
 
 /* social-media */
+
 .fa-instagram,
 .fa-facebook,
 .fa-pinterest,
 .fa-twitter {
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 
 .fa-instagram:hover,
@@ -301,6 +310,7 @@ footer a {
 }
 
 /* newsletter form */
+
 form {
   display: flex;
   flex-wrap: wrap;
@@ -308,21 +318,21 @@ form {
 
 input[type="email"] {
   font-family: "Lato", sans-serif;
-  font-size: 1rem;
+  font-size: 0.8rem;
   border: 0;
   padding: 10px; /* 0.625rem; */
   margin-top: 5px; /* 0.3125rem; */
 }
 
 input[type="submit"] {
-  font-family: "Lato", sans-serif;
+  font-family: "Cinzel";
   background-color: var(--heart-red);
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #fff;
   cursor: pointer;
   border: 0;
   padding: 10px 15px; /* 0.625rem 0.9375rem; */
-  margin-top: 5px; /* 0.3125rem; */
+  margin-top: 4.5px; /* 0.3125rem; */
 }
 
 .footer-subtitle {
@@ -346,21 +356,8 @@ input[type="submit"] {
   margin: 16px;
 }
 
-/* disney logo */
-.footer-social-media-list-logo {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  padding-top: 20px;
-  border: none;
-}
-.footer-legal .logo {
-  margin: 5 auto;
-  font-size: 2rem;
-  font-family: "Waltograph";
-}
-
 /* footer legal */
+
 .footer-legal {
   padding: 15px 30px; /* 0.9375rem 1.875rem; */
   background-color: var(--heart-red);
@@ -378,7 +375,7 @@ input[type="submit"] {
 .footer-legal-list li {
   margin: 2px 10px;
   white-space: nowrap;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .footer-legal-list .underline {
@@ -386,6 +383,7 @@ input[type="submit"] {
 }
 
 /* footer logo */
+
 .footer-logo-disney {
   background-color: var(--black-smoke);
   list-style-type: none;
@@ -394,7 +392,7 @@ input[type="submit"] {
 }
 
 .footer-logo .logo {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: "Waltograph";
 }
 
@@ -403,14 +401,14 @@ input[type="submit"] {
   letter-spacing: 2px;
 }
 
-/* last child - puts the item to the right like float:right */
 .footer-legal-list li:nth-last-child(2) {
   flex: 1; /* same as flex-grow: 1; */
+  /* last child - puts the item to the right like float:right */
 }
 
-/*:::::::::: MAKE IT RESPONSIVE ::::::::::*/
+/********** RESPONSIVE VIEW ***********/
 
-/* NAVBAR FOR BIG, MEDIUM, SMALL SCREENS */
+/********** BIG, MEDIUM, SMALL SCREEN ***********/
 
 @media only screen and (min-width: 375px) and (max-width: 1366px) {
   .check-btn {
@@ -434,7 +432,7 @@ input[type="submit"] {
     line-height: 10px;
   }
   nav .nav-list li a {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   a:hover,
   a.active {
@@ -446,7 +444,7 @@ input[type="submit"] {
   }
 }
 
-/* BIG SCREEN */
+/********** BIG SCREEN ***********/
 
 @media only screen and (max-width: 1366px) and (min-width: 1024px) {
   nav {
@@ -472,14 +470,18 @@ input[type="submit"] {
     width: 100%;
     height: 0 auto;
   }
+
   .btn-search-tickets {
     font-size: 1rem;
   }
 }
 
-/* MEDIUM SCREEN */
+/********** MEDIUM SCREEN ***********/
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+   /* navbar */
+
   nav {
     z-index: 99;
     position: fixed; /* keeps the slide navbar attached to the visible navbar while scrolling the page */
@@ -489,7 +491,9 @@ input[type="submit"] {
     margin-top: -55px;
     margin-left: 320px; /* SPECIAL FIX - dropdown-content list must be given a different margin-left on different screens */
   }
+
   /* modal */
+
   .modal {
     z-index: 99;
     padding-top: 100px;
@@ -501,10 +505,10 @@ input[type="submit"] {
   }
 
   .title {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
   .subtitle {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
   .text {
     font-size: 1rem;
@@ -512,14 +516,24 @@ input[type="submit"] {
   .btn-search-tickets {
     font-size: 1rem;
   }
+  .check-btn {
+    margin-top: 5px;
+  }
 }
 
-/* SMALL SCREEN */
+/********** SMALL SCREEN ***********/
 
 @media only screen and (min-width: 375px) and (max-width: 765px) {
+
+  /* navbar */
+
   nav {
     z-index: 99;
     position: fixed; /* keeps the slide navbar attached to the visible navbar while scrolling the page */
+  }
+
+  .check-btn {
+    margin-top: 0px;
   }
 
   .dropdown-content {
@@ -534,15 +548,39 @@ input[type="submit"] {
   }
 
   .title {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
+
   .subtitle {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
+
   .text {
     font-size: 1rem;
   }
+  
   .btn-search-tickets {
     font-size: 1rem;
+  }
+
+  /* social-media */
+
+  .fa-instagram,
+  .fa-facebook,
+  .fa-pinterest,
+  .fa-twitter {
+    font-size: 1.5rem;
+  }
+
+  /* input email */
+  input[type="email"] {
+    font-size: 0.8rem;
+    padding: 9px; /* 0.625rem; */
+  }
+
+  /* button subscribe */
+
+  input[type="submit"] {
+    font-size: 0.8rem;
   }
 }

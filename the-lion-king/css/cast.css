@@ -1,26 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/*********** IMG **********/
 
 .img-cast {
     width: 100%;
     height: 100%;
 }
 
-body {
-    background-color: var(--black-smoke);
-}
+/*********** CAROUSEL CAST **********/
 
-/* :::::::::: CAROUSEL CAST :::::::::: */
 .carousel-cast {
   width: 100%;
   overflow: hidden;
   position: static;
-  border: 3px solid  var(--heart-red);
+  border: 3px solid  var(--dirty-grey);
 }
 
 .images {
@@ -77,7 +68,8 @@ body {
   background-color: var(--heart-red);
 }
 
-/* :::::::::: CAROUSEL CAST CARDS :::::::::: */
+/********** CAROUSEL CAST CARDS **********/
+
 .carousel {
  display: flex;
  justify-content: center;
@@ -95,15 +87,16 @@ body {
   z-index: -1;
   height: 100%;
 }
+
 ::selection {
   background:	var(--black-city-smoke);
   color: var(--polar-bear);
 }
+
 .carousel-container {
   max-width: 1150px;
   width: 100%;
   overflow: hidden;
- 
 }
 
 .carousel-container .main-card {
@@ -166,17 +159,17 @@ body {
 
 .slider-card .slider-content .name {
   color: var(--polar-bear);
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 500;
 }
 
 .slider-card .slider-content .character {
-  font-size: 20px;
+  font-size: 1.2rem;
   color: var(--heart-red);
 }
 
 .desc p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: var(--polar-bear);
 }
 
@@ -214,23 +207,44 @@ input[type="radio"] {
   display: none;
 }
 
-@media (max-width: 768px) {
+/*********** RESPONSIVE VIEW **********/
+
+@media only screen and (min-width: 375px) and (max-width: 765px) {
+
+   /* carousel cast card */
+
+  .carousel-cast {
+     margin-top: 80px;
+   }
+
   .main-card .slider-cards .slider-card {
     margin: 20px 0 10px 0;
     width: calc(100% / 2 - 10px);
   }
+
+  .slider-card .slider-content .name {
+    color: var(--polar-bear);
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  
+  .slider-card .slider-content .character {
+    font-size: 1rem;
+    color: var(--heart-red);
+  }
+  
+  .desc p {
+    font-size: 0.9rem;
+    color: var(--polar-bear);
+  }
 }
+
+/* custom media query */
 
 @media (max-width: 600px) {
   .main-card .slider-cards .slider-card {
-    /* margin: 20px 0 10px 0; */
     width: 100%;
   }
 }
 
-@media (max-width: 768px) {
-  .carousel-cast {
-    margin-top: 80px;
-  }
-}
 

@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="css/gallery.css"/>
   <!--font awesome-->
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <!--animate.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <title>The Lion King - Gallery</title>
 </head>
 <body>
@@ -20,7 +22,7 @@
     <input type="checkbox" id="check">
     <!--menu bars-->
     <label for="check" class="check-btn">
-        <img src="img/icons/whitelion.png" class="logo" />
+        <i class="fas fa-bars"></i>
     </label>
     <a href="index.html"><label class="logo">The Lion King</label></a>
     <ul class="nav-list">
@@ -60,38 +62,44 @@
     </div>
 
 <!--GALLERY-->
-
-    <div class="gallery">
-        <!--1st-->
-        <div class="img-1">
-            <img src="img/photos/mufasasimbaintro.jpg" class="img-gallery-1" />
-        </div>
-        <!--2nd-->
-        <div class="img-2">
-            <img src="img/photos/sunrise-mufasa-simba.png" class="img-gallery" />
-        </div>
-        <!--3rd-->
-        <div class="img-3">
-            <img src="img/photos/mufasasimba.jpg" class="img-gallery"  />
-        </div>
-        <!--4th-->
-        <div class="img-4">
-            <img src="img/photos/t2.jpeg" class="img-gallery"  />
-        </div>
-          <!--4th-->
-        <div class="img-5">
-            <img src="img/photos/t12.jpeg" class="img-gallery"  />
-        </div>
-        <div class="img-6">
-            <img src="img/photos/t13.jpeg" class="img-gallery"  />
-        </div>
-        <div class="img-7">
-            <img src="img/photos/t17.jpeg" class="img-gallery"  />
-        </div>
-        <div class="img-8">
-            <img src="img/photos/t5.jpeg" class="img-gallery"  />
-        </div>
+<container>
+  <div class="gallery">
+    <!--1st-->
+    <div class="img-1" style="margin-top: 80px">
+        <img src="img/photos/simba-poster-painted.jpeg" class="img-gallery animate__animated animate__zoomIn" />
+    </div> 
+    <!--2sd-->
+    <div class="img-2">
+        <img src="img/photos/simba-mufasa-eyes-to-eyes.jpg" class="img-gallery animate__animated animate__zoomIn animate__delay-1s" />
+    </div> 
+    <!--3rd-->
+    <div class="img-3">
+        <img src="img/photos/simba-timon-pumba-white.jpeg" class="img-gallery animate__animated animate__zoomIn animate__delay-2s"  />
+    </div>
+    <div class="img-8">
+        <img src="img/photos/simba-with-paw.jpeg" class="img-gallery animate__animated animate__zoomIn animate__delay-7s"  />
+    </div>
+    <div class="img-8">
+        <img src="img/photos/simba-face.jpeg" class="img-gallery animate__animated animate__zoomIn animate__delay-7s"  />
+    </div>
+    <!--4th-->
+    <div class="img-7">
+        <img src="img/photos/simba-roaring.png" class="img-gallery animate__animated animate__zoomIn animate__delay-3s"  />
+    </div>
+    <div class="img-8">
+        <img src="img/photos/simba-mufasa-faces.jpeg" class="img-gallery animate__animated animate__zoomIn animate__delay-4s"  />
+    </div>
+    <div class="img-8">
+        <img src="img/photos/simba-with-bugs.jpeg" class="img-gallery animate__animated animate__zoomIn animate__delay-7s"  />
+    </div>
+    <div class="img-8">
+        <img src="img/photos/sunrise-mufasa-simba.png" class="img-gallery animate__animated animate__zoomIn animate__delay-6s"  />
+    </div>
+    <div class="img-8">
+        <img src="img/photos/simba-mufasa-intro.jpg" class="img-gallery animate__animated animate__zoomIn animate__delay-7s"  />
+    </div>
   </div>
+</container>
 
   <!--FOOTER-->    
     <!--flexbox-->   

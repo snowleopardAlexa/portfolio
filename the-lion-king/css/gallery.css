@@ -1,17 +1,16 @@
 /*********** GALLERY **********/
 
-.gallery {
-   width: 100%; /* 95 * 16 = 1520px */
-   margin: 0 auto;
-   height: auto;
-}
-
 /* gallery image */
+
+.wrapper {
+   border: 10px solid red;
+   max-width: 100%;
+   margin:80px auto;  /* bug, without 10px top the grid shrinks, it has something to do with nav .nav-list float:right */
+ }
 
 .img-gallery {
    width: 100%;
    height: auto;
-   object-fit: cover;
    margin-top: -5px;
 }
 
@@ -27,6 +26,10 @@
      position: fixed;
      z-index: 99;
    }
+
+   /* gallery */
+
+
  }
 
 

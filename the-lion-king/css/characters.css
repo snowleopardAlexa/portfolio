@@ -5,10 +5,6 @@
   margin: 10px auto;  /* bug, without 10px top the grid shrinks, it has something to do with nav .nav-list float:right */
 }
 
-body {
-  background-color: var(--black-smoke);
-}
-
 .gallery {
   margin-top: -10px;
   border: 10px solid var(--black-smoke);

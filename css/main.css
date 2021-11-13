@@ -1,13 +1,14 @@
-/* :::::::::: FONTS :::::::::: */
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Hammersmith+One&family=Poppins:wght@300&display=swap');
+/********** FONTS **********/
 
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Hammersmith+One&family=Poppins:wght@300&display=swap');
 
 /*
   font-family: 'Comfortaa';
   font-family: 'Hammersmith One', sans-serif;
 */
 
-/* :::::::::: COLORS :::::::::: */
+/*********** COLORS **********/
+
 :root {
     --hot-barbie-light: #a80077;
     --hot-barbie: #AA076B;
@@ -26,7 +27,8 @@ body {
     background-color: var(--polar-bear);
 }
 
-/* :::::::::: NAVBAR :::::::::: */
+/********** NAVBAR **********/
+
 .navbar {
     font-family: 'Comfortaa';
     background: var(--hot-barbie);  /* fallback for old browsers */
@@ -39,7 +41,8 @@ body {
     color: var(--polar-bear);
 }
 
-/* :::::::::: CARD MY INFO :::::::::: */
+/********** CARD MY INFO **********/
+
 .card-body-my-info {
     background: var(--hot-barbie);  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, var(--plum), var(--hot-barbie));  /* Chrome 10-25, Safari 5.1-6 */
@@ -101,7 +104,8 @@ body {
     font-size: 1.2rem;
 }
 
-/* :::::::::: FOOTER :::::::::: */
+/********** CARD CONTACT **********/
+
 .list-group-item {
     border-top: none;
     border-left: none;
@@ -109,12 +113,14 @@ body {
 }
 
 /* email */
+
 .contact {
     font-size: 1rem;
     font-family: 'Comfortaa';
 }
 
 /* buttons */
+
 .btn-link, .btn-arrow {
     font-family: 'Comfortaa';
     font-weight: bold;
@@ -167,7 +173,8 @@ body {
     color: var(--sunshine-deep);
 }
 
-/* :::::::::: FOOTER :::::::::: */
+/********** FOOTER **********/
+
 .footer {
     background: var(--hot-barbie-light);  /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, var(--hot-apple), var(--hot-barbie-light));  /* Chrome 10-25, Safari 5.1-6 */
@@ -192,12 +199,14 @@ small {
     margin-left: -40px;
 }
 
-/* :::::::::: SOCIAL MEDIA ::::::::::: */
+/********** SOCIAL MEDIA **********/
+
 .social-media-list {
     list-style: none;
 }
 
 /* display list inline */
+
 .social-media-list li {
     display: inline;
     padding: 5px;
@@ -213,4 +222,22 @@ small {
 }
 
 
+/********** RESPONSIVE VIEW **********/
 
+/********** SMALL SCREEN ***********/
+
+@media only screen and (min-width: 375px) and (max-width: 765px) {
+
+/* intro card */
+ .card-title {
+    font-size: 1.5rem;
+ }
+
+ .card-text {
+    font-size: 1rem; 
+ }
+
+ .btn-link, .btn-arrow, .btn-github {
+     font-size: 0.8rem;
+ }
+}

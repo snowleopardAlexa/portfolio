@@ -562,4 +562,25 @@ input[type="submit"] {
   .btn-search-tickets {
     font-size: 1rem;
   }
+
+  /* social-media */
+
+  .fa-instagram,
+  .fa-facebook,
+  .fa-pinterest,
+  .fa-twitter {
+    font-size: 1.5rem;
+  }
+
+  /* input email */
+  input[type="email"] {
+    font-size: 0.8rem;
+    padding: 9px; /* 0.625rem; */
+  }
+
+  /* button subscribe */
+
+  input[type="submit"] {
+    font-size: 0.8rem;
+  }
 }

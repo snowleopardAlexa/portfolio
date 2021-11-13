@@ -213,6 +213,10 @@ input[type="radio"] {
 
    /* carousel cast card */
 
+  .carousel-cast {
+     margin-top: 80px;
+   }
+
   .main-card .slider-cards .slider-card {
     margin: 20px 0 10px 0;
     width: calc(100% / 2 - 10px);

@@ -91,6 +91,12 @@ body {
     background-color: var(--polar-bear);
 }
 
+.card-title-category {
+    font-size: 1.7rem;
+    color: var(--black-bear);
+    font-family: 'Hammersmith One', sans-serif;
+ }
+
 .card-title-project {
     color: var(--black-bear);
     font-family: 'Hammersmith One', sans-serif;
@@ -240,4 +246,37 @@ small {
  .btn-link, .btn-arrow, .btn-github {
      font-size: 0.8rem;
  }
+
+ /* project card */
+
+ .card-title-category {
+    font-size: 1.7rem;
+ }
+
+ .card-title-project {
+    font-size: 1.3rem;
+ }
+
+ .card-subtitle {
+    font-size: 1.2rem;
+ }
+
+ .list-group-item-project {
+    font-size: 0.9rem;
+ }
+ 
+ /* card contact footer */
+
+ .card-subtitle-footer {
+     font-size: 1rem;
+ }
+
+ .card-text-footer {
+    font-size: 1rem;
+ }
+
+ /* social media icons */
+ .fa-linkedin-in, .fa-facebook, .fa-twitter {
+    font-size: 1.3rem;
+ }    
 }

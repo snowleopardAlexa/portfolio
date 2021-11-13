@@ -73,6 +73,14 @@
 
   @media only screen and (min-width: 375px) and (max-width: 765px) {
     
+    /* navbar */
+
+    .check-btn {
+        margin-top: 27px; /* written fix only for home page */
+    }
+    
+    /* video */
+
     .video {
         width: 350px;
         height: 200px;

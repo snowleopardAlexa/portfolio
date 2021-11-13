@@ -1,7 +1,4 @@
-
-body {
-    background-color: var(--black-smoke);
-}
+/*********** VIDEO **********/
 
 .video {
     margin: auto;
@@ -32,14 +29,22 @@ iframe {
 }
 
 /********** LARGE SCREEN **********/
+
 @media only screen and (min-width: 1366px) {
+
+    iframe {
+        border: 10px solid var(--black-city-smoke);
+    }
+
     .video {
         width: 800px;
         height: 500px;
     }
+
     .title-movie {
         margin-bottom: 50px;
     }
+
     .subtitle-movie {
         font-size: 2rem;
         margin: 25px 25px;
@@ -47,14 +52,22 @@ iframe {
 }
 
 /********** BIG SCREEN **********/
+
 @media only screen and (min-width: 1024px) and (max-width: 1366px) {
+
+    iframe {
+        border: 8px solid var(--black-city-smoke);
+    }
+
     .video {
         width: 800px;
         height: 500px;
     }
+
     .title-movie {
         margin-bottom: 50px;
     }
+
     .subtitle-movie {
         font-size: 1.5rem;
         margin: 20px 20px;
@@ -62,15 +75,23 @@ iframe {
 }
 
 /********** MEDIUM SCREEN **********/
+
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    iframe {
+        border: 6px solid var(--black-city-smoke);
+    }
+
     .video {
         width: 600px;
         height: 400px;
     }
+
     .title-movie {
         font-size: 2.5rem;
         margin-bottom: 40px;
     }
+
     .subtitle-movie {
         font-size: 1.5rem;
         margin: 20px 20px;
@@ -78,16 +99,23 @@ iframe {
   }
 
 /********** SMALL SCREEN **********/
+
 @media only screen and (min-width: 375px) and (max-width: 765px) {
-    .video {
-        width: 400px;
-        height: 200px;
-        
+
+    iframe {
+        border: 6px solid var(--black-city-smoke);
     }
+
+    .video {
+        width: 350px;
+        height: 200px;
+    }
+
     .title-movie {
         font-size: 1.5rem;
         margin-bottom: 20px;
     }
+
     .subtitle-movie {
         font-size: 1rem;
         margin: 20px 20px;

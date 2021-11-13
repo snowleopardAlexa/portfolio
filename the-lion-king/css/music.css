@@ -1,6 +1,4 @@
-body {
-    background-color: var(--black-smoke);
-}
+/********** TITLE **********/
 
 .title-music {
     color: var(--polar-bear);
@@ -10,6 +8,8 @@ body {
     font-size: 3rem;
     margin-bottom: 50px;
 }
+
+/********** MUSIC PLAYER **********/
 
 .wrapper-intro {
     background-color: var(--black-city-smoke);
@@ -64,25 +64,29 @@ body {
     background-color: var(--bloody-red);
 }
 
-/** Audio ***/
+/* AUDIO */
 
 /* panel */
+
 audio::-webkit-media-controls-panel {
     background-color: var(--black-city-smoke);
 }
 
 /* play button */
+
 audio::-webkit-media-controls-play-button {
     background-color: var(--grey-passion);
     border-radius: 50%;
 }
   
 /* play button hover */
+
 audio::-webkit-media-controls-play-button:hover {
     background-color: var(--mandarin);
 }
 
 /* timeline */
+
 audio::-webkit-media-controls-timeline {
     background-color: var(--dirty-red);
     border-radius: 65px;
@@ -92,25 +96,75 @@ audio::-webkit-media-controls-timeline {
   }
 
 /* current time display */
+
 audio::-webkit-media-controls-current-time-display {
     color: var(--polar-bear);
 }
 
 /* remaining time display */
+
 audio::-webkit-media-controls-time-remaining-display {
     color: var(--polar-bear);
 }
 
 /* mute button */
+
 audio::-webkit-media-controls-mute-button {
     background-color: var(--mandarin);
     border-radius: 50%;
 }
 
 /* volume slider */
+
 audio::-webkit-media-controls-volume-slider {
     background-color: var(--mandarin);
     border-radius: 25px;
     padding-left: 8px;
     padding-right: 8px;
-  }
+}
+
+/********** FOOTER **********/
+
+.footer-container {
+    margin-top: 20px;
+}
+
+/*********** RESPONSIVE VIEW ***********/
+
+/********** SMALL SCREEN **********/
+
+@media only screen and (min-width: 375px) and (max-width: 765px) {
+
+    /* title */
+
+    .title-music {
+        margin-top: 120px;
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+ 
+    /* music player */
+
+    .music-list {
+        width: 95%;
+    }
+
+    .soundtrack-img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .subtitle-music {
+        font-size: 1.3rem;
+        margin: 40px 0px 40px 0px;
+    }
+
+    .song {
+        font-size: 1rem;
+    }
+
+    /* footer */
+    .footer-container {
+        margin-top: -50px;
+    }
+}

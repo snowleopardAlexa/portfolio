@@ -1,4 +1,8 @@
 /********** SHIPPING **********/
+
+  #shipping {
+    margin-top: 40px;
+  }
  
   .entireShippingForm {
     padding: 50px;
@@ -47,6 +51,73 @@
     font-size: 1.2rem;
   }
 
+/* PAYMENT FORM */
+
+.title-form {
+  margin-top: 25px;
+  font-size: 1.5rem;
+}
+
+.lock-text {
+  color: #16aec9;
+  font-size: 1rem;
+}
+
+.form {
+display: grid;
+grid-gap: 1rem;
+}
+
+.field {
+width: 100%;
+display: flex;
+flex-direction: column;
+border: 1px solid var(--color-light-blue);
+padding: .5rem;
+}
+
+.field-label {
+color: var(--color-lighter-blue);
+font-size: 0.6rem;
+font-weight: 300;
+text-transform: uppercase;
+margin-bottom: 0.25rem
+}
+
+.field-input {
+padding: 0;
+margin: 0;
+border: 0;
+outline: 0;
+font-weight: bold;
+font-size: 1rem;
+width: 100%;
+-webkit-appearance: none;
+appearance: none;
+background-color: transparent;
+}
+
+.field:focus-within {
+border-color: var(--color-medium-blue);
+}
+
+.fields {
+display: grid;
+grid-gap: 1rem;
+}
+
+.fields-2 {
+grid-template-columns: 1fr 1fr;
+}
+
+/* cards image */
+
+.cards-img {
+margin-top: 5px;
+width: 40px;
+height: 40px;
+}  
+
 /* date */
 
 input[type="date"] {
@@ -70,24 +141,27 @@ label {
     display: inline-block;
 }
 
-.qty {
-    margin-top: 20px;
-    font-size: 1.1rem;
-}
-
-.image {
-    margin-top: 30px;
-    margin-bottom: 20px;
-    display: block;
-    width: 160px;
-    height: 100px;
-}
-
 .side-info {
     float: right;
 }
 
-/* order total price */
+/* cart total */
+
+.brandName {
+  font-size: 1.2rem;
+}
+
+.image {
+  margin: 0 auto;
+  display: block;
+  width: 160px;
+  height: 100px;
+}
+
+.qty {
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
 
 .total {
     font-size: 1.5rem;
@@ -140,83 +214,7 @@ hr {
     background-color: #0f90db;
 }
 
-/* PAYMENT FORM */
-
-  .title-form {
-      margin-top: 25px;
-      font-size: 1.5rem;
-  }
-
-  .lock-text {
-      color: #16aec9;
-      font-size: 1rem;
-  }
-  
-  .form {
-    display: grid;
-    grid-gap: 1rem;
-  }
-  
-  .field {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid var(--color-light-blue);
-    padding: .5rem;
-  }
-  
-  .field-label {
-    color: var(--color-lighter-blue);
-    font-size: 0.6rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    margin-bottom: 0.25rem
-  }
-  
-  .field-input {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    outline: 0;
-    font-weight: bold;
-    font-size: 1rem;
-    width: 100%;
-    -webkit-appearance: none;
-    appearance: none;
-    background-color: transparent;
-  }
-
-  .field:focus-within {
-    border-color: var(--color-medium-blue);
-  }
-  
-  .fields {
-    display: grid;
-    grid-gap: 1rem;
-  }
-
-  .fields-2 {
-    grid-template-columns: 1fr 1fr;
-  }
-
-   /* cards image */
-
-   .cards-img {
-    margin-top: 5px;
-    width: 40px;
-    height: 40px;
-  }
-
-
 /********* RESPONSIVE VIEW **********/
-
-/********** MEDIUM SCREEN ***********/
-
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-
- 
-
-}
   
 /********** SMALL SCREEN **********/
   
@@ -246,6 +244,12 @@ legend {
   font-size: 0.9rem;
 }
 
+.cards-img {
+  margin-top: 5px;
+  width: 30px;
+  height: 30px;
+}
+
 .field {
   width: 100%;
   display: flex;
@@ -266,21 +270,31 @@ legend {
   font-size: 1rem;
 }
 
+/* cart total */
+
 .btn-edit {
-  font-size: 1rem;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+  margin-top: 5px;
 }
 
-
-/* cart total */
+.brandName {
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
 
 .qty {
   margin-top: 20px;
   font-size: 1rem;
 }
 
+.total {
+  font-size: 1.2rem;
+}
+
 .image {
-  margin-top: 30px;
   margin-bottom: 20px;
+  margin: 0 auto;
   display: block;
   width: 140px;
   height: 100px;

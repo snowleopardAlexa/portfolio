@@ -110,6 +110,10 @@ body {
     font-size: 1.2rem;
 }
 
+.list-group-flush {
+ list-style-type: none;
+}
+
 /********** CARD CONTACT **********/
 
 .list-group-item {
@@ -235,6 +239,7 @@ small {
 @media only screen and (min-width: 375px) and (max-width: 765px) {
 
 /* intro card */
+
  .card-title {
     font-size: 1.5rem;
  }
@@ -267,12 +272,16 @@ small {
  
  /* card contact footer */
 
+ .card-title-my-info {
+     font-size: 1.3rem;
+ }
+
  .card-subtitle-footer {
-     font-size: 1rem;
+     font-size: 0.9rem;
  }
 
  .card-text-footer {
-    font-size: 1rem;
+    font-size: 0.8rem;
  }
 
  /* social media icons */

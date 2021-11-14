@@ -1,8 +1,12 @@
+/********** FONTS **********/
+
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat&display=swap');
-/* fonts */
+
 /*
 font-family: 'Montserrat', sans-serif;
 */
+
+/* basic reset */
 
 * {
     padding: 0;
@@ -18,7 +22,7 @@ body {
 }
 
 button {
-    font-size: 18px;
+    font-size: 1.2rem;
     font-family: 'Montserrat', sans-serif;
     padding: 16px 40px;
     background-color: transparent;
@@ -29,3 +33,15 @@ button {
     cursor: pointer;
     outline: none;
 }
+
+/********** RESPONSIVE VIEW **********/
+
+/********** SMALL SCREEN ***********/
+
+@media only screen and (min-width: 375px) and (max-width: 765px) {
+    button {
+        font-size: 0.8rem;
+        border: 3px solid #ffffff;
+    }
+}    
+

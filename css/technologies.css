@@ -1,22 +1,179 @@
+/********** TECHNOLOGIES **********/
+
 body {
     font-family: 'Comfortaa';
-    color: black;
+    color: var(--black-bear);
+}
+
+.card {
+    background-color: var(--polar-bear);
 }
 
 .title {
+    font-size: 1.8rem;
     text-align: center;
-    color: black;
+    color: var(--black-bear);
     font-family: 'Hammersmith One', sans-serif;
 }
 
 .subtitle {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: black;
 }
 
 .list-exp {
     list-style: none;
+}
+
+thead {
+  font-size: 1rem;
+}
+
+tr {
+  font-size: 1.2rem; 
+}
+
+td {
+    font-size: 1.2rem;
+}
+
+/* icons */
+
+.fa-html5, .fa-bootstrap {
+   color: var(--deep-purple);
+}
+
+.fa-css3-alt, .fa-react, .fa-js-square {
+    color: var(--green-apple);
+}
+
+.fa-node, .fa-python, .fa-sass {
+    color: var(--blue-ocean);
+}
+
+.fa-html5, .fa-bootstrap, .fa-css3-alt, .fa-react, .fa-js-square, .fa-node, .fa-python, .fa-sass {
+    font-size: 3.5rem;
+}
+
+.data-img {
+  width: 60px;
+}
+
+.api-img {
+  width: 50px;
+  height: 80px;
+}
+
+.version-img {
+  width: 50px;
+}
+
+.package-img {
+   width: 70px;
+}
+
+.testing-img {
+    width: 50px;
+  }
+  
+.cloud-img {
+     width: 60px;
+}
+
+.hosting-img {
+    width: 60px;
+    height: 80px;
+}
+
+.ide-img {
+    width: 60px;
+}
+
+.design-img {
+    width: 60px;
+    height: 80px;
+}
+
+.using-img {
+    width: 60px;
+}
+
+/********** RESPONSIVE VIEW **********/
+
+/********** SMALL SCREEN ***********/
+
+@media only screen and (min-width: 375px) and (max-width: 765px) {
+
+    /* table */
+
+    .title {
+      font-size: 1.5rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    thead {
+        font-size: 0.8rem;
+    }
+
+    tr {
+        font-size: 0.8rem; 
+      }
+
+    .fa-html5, .fa-bootstrap, .fa-css3-alt, .fa-react, .fa-js-square, .fa-node, .fa-python, .fa-sass {
+        font-size: 2.5rem;
+    }
+
+    td {
+        font-size: 0.8rem;
+    }
+
+    .data-img {
+        width: 50px;
+      }
+      
+    .api-img {
+        width: 40px;
+        height: 70px;
+      }
+      
+    .version-img {
+        width: 40px;
+      }
+      
+    .package-img {
+         width: 60px;
+      }
+      
+    .testing-img {
+          width: 50px;
+        }
+        
+    .cloud-img {
+           width: 50px;
+      }
+      
+    .hosting-img {
+          width: 40px;
+          height: 60px;
+      }
+      
+    .ide-img {
+          width: 40px;
+      }
+      
+    .design-img {
+          width: 40px;
+          height: 60px;
+      }
+      
+    .using-img {
+          width: 40px;
+      }
+
 }
 
 

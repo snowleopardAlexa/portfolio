@@ -1,25 +1,16 @@
-/* CART */
+/********* CART **********/
 
-html {
-    margin: 0;
-    padding: 0;
-    font-family: 'Lexend', sans-serif;
-    color: #1e535f;
-}
-
-/* CART */
 .cart {
     padding: 50px;
     max-width: 70%;
-    /* align center cart */
     margin: 0 auto;
-    /* shadows around  borders */
     -webkit-box-shadow: 0 10px 6px 6px #ecf2f5;
     -moz-box-shadow: 0 3px 6px 6px #ecf2f5;
          box-shadow: 0px 3px 6px 6px #ecf2f5;
   }
 
   /* button remove item */
+
   .remove-btn-position {
       margin-top: 5px;
       float: right;
@@ -35,6 +26,7 @@ html {
   }
 
   /* minus plus change quantity buttons */
+
   .quantity-btns {
       margin-top: 10px;
   }
@@ -67,14 +59,15 @@ html {
   legend {
       margin-bottom: 5px;
   }
-/* end of minus plus change quantity buttons */
 
 /* list */
+
 .details {
     list-style-type: none;
 }
 
 /* royal canin wet food image */
+
 .img-item {
     margin-top: 50px;
     margin-bottom: 20px;
@@ -87,6 +80,7 @@ html {
 }
 
 /* list li elements */
+
 .title, .brandName, .qty, .edit, .sub, .total, .shipping, .tax {
     font-family: 'Lexend', sans-serif;
     margin-top: 10px;
@@ -95,6 +89,10 @@ html {
 .title {
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+.brandName {
+    font-size: 1.2rem;
 }
 
 .qty, .sub, .shipping, .tax {
@@ -117,9 +115,10 @@ hr {
     margin-left: auto;
     margin-right: auto;
 }
-/* end of details list */
+
 
 /* button add items and button personal details */
+
 .btn-add-items, .btn-personal-details {
     font-size: 1.5rem;  
     display: block;
@@ -143,3 +142,61 @@ hr {
     background-color: #0f90db;
 }
 
+/********* RESPONSIVE VIEW **********/
+
+/********** MEDIUM SCREEN ***********/
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+/* cart */
+
+  .cart {
+    padding: 50px;
+    max-width: 80%;
+  }
+}
+
+/********** SMALL SCREEN **********/
+
+@media only screen and (min-width: 375px) and (max-width: 765px) { 
+
+/* cart */
+
+  .cart {
+    padding: 50px;
+    max-width: 90%;
+  }
+
+  .remove-item-btn {
+    font-size: 1rem;
+  }
+
+  .title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .brandName {
+    font-size: 1rem;
+  }
+
+  .img-item {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 140px;
+    height: 100px;
+  }
+
+  .qty, .sub, .shipping, .tax {
+    font-size: 1rem; 
+  }
+
+  .total {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .btn-add-items, .btn-personal-details {
+    font-size: 1.2rem;  
+  }
+}

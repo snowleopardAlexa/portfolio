@@ -1,14 +1,17 @@
-.card-title-design-project {
-    font-family: 'Hammersmith One', sans-serif;
-}
+/********** WWF **********/
 
 .card {
     background-color: var(--polar-bear);
 }
 
+.card-title-design-project {
+    font-size: 1.8rem;
+    font-family: 'Hammersmith One', sans-serif;
+}
+
 .card-text-design-project {
     font-family: 'Comfortaa';
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .btn-projects {
@@ -34,4 +37,33 @@
 a {
     text-decoration: none;
     margin-left: 5px;
+}
+
+/********** RESPONSIVE VIEW **********/
+
+/********** SMALL SCREEN ***********/
+
+@media only screen and (min-width: 375px) and (max-width: 765px) {
+ 
+    /* project */
+
+    .card-title-design-project {
+        font-family: 'Hammersmith One', sans-serif;
+        font-size: 1.5rem;
+    }
+    
+    .card-text-design-project {
+        font-family: 'Comfortaa';
+        font-size: 1.2rem;
+    }
+
+    .btn-projects {
+        font-size: 1rem;
+        padding: 16px 16px;
+    }
+    
+    .img-projects {
+        width: 17px;
+        height: 17px;
+    }
 }

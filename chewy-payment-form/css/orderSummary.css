@@ -1,17 +1,13 @@
-html {
-    margin: 0;
-    color: #1e535f;
-    font-family: 'Lexend', sans-serif;
-  }
+/********** SHIPPING **********/
 
-  .shipping {
-    margin-left: 50px;
+  #shipping {
+    margin-top: 40px;
   }
-  
+ 
   .entireShippingForm {
     padding: 50px;
     font-family: 'Lexend', sans-serif;
-    max-width: 100%;
+    max-width: 90%;
     margin: 0 auto;
     display: grid;
     grid-gap: 1rem;
@@ -31,27 +27,99 @@ html {
       list-style-type: none;
   }
 
-fieldset {
-    margin-top: 10px;
-    border: none;
-}  
+  fieldset {
+      margin-top: 10px;
+      border: none;
+  }  
 
-legend {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  legend {
     font-size: 1.3rem;
     font-weight: bold;
     margin-bottom: 5px;
-}
+  }
 
-::placeholder {
+  ::placeholder {
     color: #16aec9;
     font-family: 'Lexend', sans-serif;
+  }
+
+  label {
+    font-size: 1.2rem;
+  }
+
+/* PAYMENT FORM */
+
+.title-form {
+  margin-top: 25px;
+  font-size: 1.5rem;
 }
 
-label {
-    font-size: 1.2rem;
+.lock-text {
+  color: #16aec9;
+  font-size: 1rem;
 }
+
+.form {
+display: grid;
+grid-gap: 1rem;
+}
+
+.field {
+width: 100%;
+display: flex;
+flex-direction: column;
+border: 1px solid var(--color-light-blue);
+padding: .5rem;
+}
+
+.field-label {
+color: var(--color-lighter-blue);
+font-size: 0.6rem;
+font-weight: 300;
+text-transform: uppercase;
+margin-bottom: 0.25rem
+}
+
+.field-input {
+padding: 0;
+margin: 0;
+border: 0;
+outline: 0;
+font-weight: bold;
+font-size: 1rem;
+width: 100%;
+-webkit-appearance: none;
+appearance: none;
+background-color: transparent;
+}
+
+.field:focus-within {
+border-color: var(--color-medium-blue);
+}
+
+.fields {
+display: grid;
+grid-gap: 1rem;
+}
+
+.fields-2 {
+grid-template-columns: 1fr 1fr;
+}
+
+/* cards image */
+
+.cards-img {
+margin-top: 5px;
+width: 40px;
+height: 40px;
+}  
 
 /* date */
+
 input[type="date"] {
     color: #16aec9;
     font-family: 'Lexend', sans-serif;
@@ -61,43 +129,46 @@ input[type="date"] {
     color: #16aec9;
 }
 
-
 label {
     padding: 5px;
 }
 
 /* list */
+
 .details {
     font-size: 1.2rem;
     list-style-type: none;
     display: inline-block;
 }
 
-.qty {
-    margin-top: 20px;
-    font-size: 1.1rem;
-}
-
-.image {
-    margin-top: 30px;
-    margin-bottom: 20px;
-    display: block;
-    width: 160px;
-    height: 100px;
-}
-
 .side-info {
     float: right;
 }
 
-/* order total price */
+/* cart total */
+
+.brandName {
+  font-size: 1.2rem;
+}
+
+.image {
+  margin: 0 auto;
+  display: block;
+  width: 160px;
+  height: 100px;
+}
+
+.qty {
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+
 .total {
     font-size: 1.5rem;
     font-weight: bold;
     font-family: 'Lexend', sans-serif;
     margin-top: 10px;
 }
-
 
 hr {
     border: 1px solid #cdf2f8;
@@ -108,10 +179,10 @@ hr {
 }
 
 /* button edit and continue */
+
  .btn-complete-order, .btn-edit {
     margin-top: 20px;
     padding: 0.35em 1.2em;
-    font-size: 1.5rem;
     text-decoration: none;
     border: 0.1em solid #ffffff;
     border-radius: 0.12em;
@@ -123,88 +194,109 @@ hr {
     transition: all 0.2s;
     text-decoration: none;
     display: block;
-}
+ }
 
-a {
-    text-decoration: none;
-}
+  .btn-complete-order {
+    font-size: 1.5rem;
+ }
 
-.btn-edit {
+  .btn-edit {
     font-size: 1rem;
-}
+ }
+
+  a {
+    text-decoration: none;
+ }
 
 /* hover */
+
  .btn-complete-order:hover, .btn-edit:hover {
     background-color: #0f90db;
 }
 
-/* PAYMENT FORM */
-/* FORM */
-:root {
-    --color-blue: #0f90db;
-    --color-medium-blue: #16aec9;
-    --color-light-blue: #cdf2f8;
-  }
+/********* RESPONSIVE VIEW **********/
+  
+/********** SMALL SCREEN **********/
+  
+@media only screen and (min-width: 375px) and (max-width: 765px) { 
 
-  .title-form {
-      margin-top: 25px;
-      font-size: 1.5rem;
-  }
+/* shipping to */
 
-  .lock-text {
-      color: #16aec9;
-  }
-  
-  .form {
- 
-    display: grid;
-    grid-gap: 1rem;
-  }
-  
-  .field {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid var(--color-light-blue);
-    padding: .5rem;
-  }
-  
-  .field-label {
-    color: var(--color-lighter-blue);
-    font-size: 0.6rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    margin-bottom: 0.25rem
-  }
-  
-  .field-input {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    outline: 0;
-    font-weight: bold;
-    font-size: 1rem;
-    width: 100%;
-    -webkit-appearance: none;
-    appearance: none;
-    background-color: transparent;
-  }
-  .field:focus-within {
-    border-color: var(--color-medium-blue);
-  }
-  
-  .fields {
-    display: grid;
-    grid-gap: 1rem;
-  }
-  .fields-2 {
-    grid-template-columns: 1fr 1fr;
-  }
+.entireShippingForm {
+  padding: 20px;
+}
 
-   /* cards image */
-   .cards-img {
-    margin-top: 5px;
-    width: 40px;
-    height: 40px;
+.details {
+  font-size: 1rem;
+  list-style-type: none;
+  display: inline-block;
+}
 
-  }
+h2 {
+  font-size: 1.2rem;
+}
+
+legend {
+  font-size: 1.1rem;
+}
+
+.lock-text {
+  font-size: 0.9rem;
+}
+
+.cards-img {
+  margin-top: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+.field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--color-light-blue);
+  padding: .5rem;
+}
+
+.field-label {
+  font-size: 0.4rem;
+}
+
+.field-input {
+  font-size: 0.9rem;
+}
+
+.btn-complete-order {
+  font-size: 1rem;
+}
+
+/* cart total */
+
+.btn-edit {
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.brandName {
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+.qty {
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+.total {
+  font-size: 1.2rem;
+}
+
+.image {
+  margin-bottom: 20px;
+  margin: 0 auto;
+  display: block;
+  width: 140px;
+  height: 100px;
+ }
+}

@@ -1,15 +1,28 @@
-/* MAIN */
-/* FONTS - Chewy, Lexend */
+/********** FONTS *********/
+
 @import url('https://fonts.googleapis.com/css2?family=Chewy&family=Lexend&display=swap');
 
-/* HEADER */
-/* allows to include the padding and border in an element's 
-total width and height */
+
+/* basic reset */
+
 * {
-    box-sizing: border-box;
+    box-sizing: border-box; /* allows to include the padding and border in an element's total width and height */
     margin: 0;
     padding: 0;
 }
+
+html {
+    color: #1e535f;
+    font-family: 'Lexend', sans-serif;
+}
+
+/********** COLORS **********/
+
+:root {
+    --color-blue: #0f90db;
+    --color-medium-blue: #16aec9;
+    --color-light-blue: #cdf2f8;
+  }
 
 header {
      background-color: rgb(10, 129, 207);
@@ -30,30 +43,8 @@ header {
     font-size: 1.5rem;
 }
 
-/* FOOTER */
-footer {
-    position: relative;
-    background-color: rgb(10, 129, 207);
-    margin-top: 50px;
-    width: 100%;
-    padding: 10px;
-}
-
-#footer-title {
-    font-family: 'Chewy', cursive;
-    text-align: center;
-    color: #ffffff;
-    font-size: 1.5rem;
-}
-
-#footer-subtitle{
-    font-family: 'Lexend', sans-serif;
-    text-align: center;
-    color: #fff;
-    font-size: 1rem;
-}
-
 /* NAVIGATION */
+
 .checkoutStepper {
     margin-top: 25px;
 }
@@ -113,4 +104,33 @@ footer {
 
 .checkoutStepper .active a {
     color: #17bacf;
+}
+
+/********* RESPONSIVE VIEW **********/
+
+/********** SMALL SCREEN **********/
+
+@media only screen and (min-width: 375px) and (max-width: 765px) { 
+
+    /* header */
+
+    #header-title {
+       font-size: 4rem;
+    }
+
+    #header-subtitle {
+       font-size: 1.5rem;
+    }
+
+    /* stepper */
+
+    .checkoutStepper li {
+        font-size: 1rem;
+    }
+
+    .checkoutStepper li:before {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+  }
 }

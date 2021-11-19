@@ -9,66 +9,8 @@
     position: relative;
   }
   
-  /********** VIDEO **********/ 
-  
-  .video {
-    position: absolute;
-    margin-top: -100px;
-    overflow: hidden;
-    width: 800px;
-    height: 500px;
-  }
-  
-  .responsive-iframe {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 10px solid var(--black-city-smoke);
-  }
-  
   /********** RESPONSIVE VIEW ***********/
-  
-  /********** LARGE SCREEN **********/
 
-  @media only screen and (min-width: 1366px) {
-    
-    .video {
-        width: 800px;
-        height: 500px;
-    }
-    .responsive-iframe {
-        border: 10px solid var(--black-city-smoke);
-    }
-  }
-  
-  /********** BIG SCREEN **********/
-
-  @media only screen and (min-width: 1024px) and (max-width: 1366px) {
-   
-    .video {
-        width: 800px;
-        height: 500px;
-    }
-
-    .responsive-iframe {
-        border: 8px solid var(--black-city-smoke);
-    }
-  }
-  
-  /********** MEDIUM SCREEN **********/
-
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    
-    .video {
-        width: 600px;
-        height: 400px;
-    }
-
-    .responsive-iframe {
-        border: 6px solid var(--black-city-smoke);
-    }
-  }
-  
   /********** SMALL SCREEN **********/
 
   @media only screen and (min-width: 375px) and (max-width: 765px) {
@@ -77,16 +19,5 @@
 
     .check-btn {
         margin-top: 27px; /* written fix only for home page */
-    }
-    
-    /* video */
-
-    .video {
-        width: 350px;
-        height: 200px;
-    }
-
-    .responsive-iframe {
-        border: 6px solid var(--black-city-smoke);
     }
   }

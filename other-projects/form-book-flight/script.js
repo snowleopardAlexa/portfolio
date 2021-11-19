@@ -2,31 +2,31 @@
 
 // ADULTS
 
-function increment() {
+function incrementAdults() {
     document.getElementById('numOfAdults').stepUp();
 }
 
-function decrement() {
+function decrementAdults() {
     document.getElementById('numOfAdults').stepDown();
 }
 
 // KIDS
 
-function increment() {
+function incrementKids() {
     document.getElementById('numOfKids').stepUp();
 }
 
-function decrement() {
+function decrementKids() {
     document.getElementById('numOfKids').stepDown();
 }
 
 // PETS
 
-function increment() {
+function incrementPets() {
     document.getElementById('numOfPets').stepUp();
 }
 
-function decrement() {
+function decrementPets() {
     document.getElementById('numOfPets').stepDown();
 }
 

@@ -272,7 +272,7 @@ select {
 input[type="date"] { 
     background: transparent;
     color: white;
-  }
+}
 
 input[type="date"]::-webkit-calendar-picker-indicator {
     filter: invert(100%);
@@ -332,7 +332,6 @@ h3 {
     display: block;
     width: 100%;
 }
-
 #bookFlight .form-label {
     position: absolute;
 	top: 6px;

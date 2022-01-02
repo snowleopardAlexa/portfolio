@@ -324,8 +324,9 @@ input[type="email"] {
   margin-top: 5px; /* 0.3125rem; */
 }
 
-input[type="submit"] {
+.btn-subscribe {
   font-family: "Cinzel";
+  border: none;
   background-color: var(--heart-red);
   font-size: 1rem;
   color: #fff;
@@ -411,9 +412,14 @@ input[type="submit"] {
 /********** BIG, MEDIUM, SMALL SCREEN ***********/
 
 @media only screen and (min-width: 375px) and (max-width: 1366px) {
+
   .check-btn {
     display: block;
     margin-right: 20px;
+  }
+
+  .fa-bars {
+    margin-top: 20px;
   }
 
   .nav-list {
@@ -447,6 +453,11 @@ input[type="submit"] {
 /********** BIG SCREEN ***********/
 
 @media only screen and (max-width: 1366px) and (min-width: 1024px) {
+
+  .fa-bars {
+    margin-top: 20px;
+  }
+
   nav {
     z-index: 99;
     position: fixed;
@@ -478,7 +489,11 @@ input[type="submit"] {
 
 /********** MEDIUM SCREEN ***********/
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+
+  .check-btn {
+    margin-top: 20px;
+  }
 
    /* navbar */
 
@@ -524,6 +539,10 @@ input[type="submit"] {
 /********** SMALL SCREEN ***********/
 
 @media only screen and (min-width: 375px) and (max-width: 765px) {
+
+  .fa-bars {
+    margin-top: 0px;
+  }
 
   /* navbar */
 

@@ -220,7 +220,7 @@ select {
 }
 
 /* mid screen layout */
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 375px) {
     
     #bookFlight #tripType label+label { /* create some additional spacing between 2nd and 3d radio button labels. */
         margin-left: 15px;

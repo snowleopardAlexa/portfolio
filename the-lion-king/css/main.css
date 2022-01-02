@@ -412,9 +412,14 @@ input[type="email"] {
 /********** BIG, MEDIUM, SMALL SCREEN ***********/
 
 @media only screen and (min-width: 375px) and (max-width: 1366px) {
+
   .check-btn {
     display: block;
     margin-right: 20px;
+  }
+
+  .fa-bars {
+    margin-top: 20px;
   }
 
   .nav-list {
@@ -448,6 +453,11 @@ input[type="email"] {
 /********** BIG SCREEN ***********/
 
 @media only screen and (max-width: 1366px) and (min-width: 1024px) {
+
+  .fa-bars {
+    margin-top: 20px;
+  }
+
   nav {
     z-index: 99;
     position: fixed;
@@ -479,7 +489,11 @@ input[type="email"] {
 
 /********** MEDIUM SCREEN ***********/
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+
+  .check-btn {
+    margin-top: 20px;
+  }
 
    /* navbar */
 
@@ -525,6 +539,10 @@ input[type="email"] {
 /********** SMALL SCREEN ***********/
 
 @media only screen and (min-width: 375px) and (max-width: 765px) {
+
+  .fa-bars {
+    margin-top: 0px;
+  }
 
   /* navbar */
 

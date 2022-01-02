@@ -16,9 +16,9 @@ font-family: 'Lato', sans-serif;
 @font-face {
   font-family: "Waltograph";
   font-family: "Lion King";
-  /* src: url('waltograph42.otf'); */
-  src: local("fonts/waltographUI.ttf");
-  src: local("fonts/lion_king.ttf");
+  src: url('waltograph42.otf');
+  src: url("fonts/waltographUI.ttf");
+  src: url("fonts/lion_king.ttf");
 }
 
 /********** BASIC RESET **********/

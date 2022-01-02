@@ -326,6 +326,7 @@ input[type="email"] {
 
 .btn-subscribe {
   font-family: "Cinzel";
+  border: none;
   background-color: var(--heart-red);
   font-size: 1rem;
   color: #fff;
@@ -411,9 +412,14 @@ input[type="email"] {
 /********** BIG, MEDIUM, SMALL SCREEN ***********/
 
 @media only screen and (min-width: 375px) and (max-width: 1366px) {
+
   .check-btn {
     display: block;
     margin-right: 20px;
+  }
+
+  .fa-bars {
+    margin-top: 20px;
   }
 
   .nav-list {
@@ -533,6 +539,10 @@ input[type="email"] {
 /********** SMALL SCREEN ***********/
 
 @media only screen and (min-width: 375px) and (max-width: 765px) {
+
+  .fa-bars {
+    margin-top: 0px;
+  }
 
   /* navbar */
 

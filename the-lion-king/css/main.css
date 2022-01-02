@@ -324,8 +324,9 @@ input[type="email"] {
   margin-top: 5px; /* 0.3125rem; */
 }
 
-input[type="submit"] {
+.btn-subscribe {
   font-family: "Cinzel";
+  border: none;
   background-color: var(--heart-red);
   font-size: 1rem;
   color: #fff;

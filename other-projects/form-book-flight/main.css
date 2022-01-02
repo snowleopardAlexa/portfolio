@@ -272,7 +272,7 @@ select {
 input[type="date"] { 
     background: transparent;
     color: white;
-  }
+}
 
 input[type="date"]::-webkit-calendar-picker-indicator {
     filter: invert(100%);
@@ -292,7 +292,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .fas.fa-minus, .fas.fa-plus {
     color: white;
     background-color: #e08997;
-    padding: 10px;
+    padding: 5px;
 }
 /* remove border from plus and minus buttons */
 .minus, .plus {
@@ -332,11 +332,6 @@ h3 {
     display: block;
     width: 100%;
 }
-
-#detailsPassengers .form-group { /* seperate out the 'rows' of form inputs */
-    background-color: red;
-}
-
 #bookFlight .form-label {
     position: absolute;
 	top: 6px;

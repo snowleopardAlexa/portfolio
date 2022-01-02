@@ -48,6 +48,7 @@ body {
     padding: 20px;
     cursor: pointer;
 }
+
 #submit:hover {
     background-color: rgb(17, 177, 150);
 }
@@ -58,4 +59,48 @@ body {
     text-align: center;
     font-weight: bold;
     margin-top: 40px;
+}
+
+/********** RESPONSIVE VIEW ***********/
+
+/********** SMALL SCREEN ***********/
+
+@media only screen and (min-width: 375px) and (max-width: 765px) {
+
+    /* form */
+  
+    .entire-quiz {
+        border: 15px solid green;
+    }
+
+    #title {
+        margin: 50px 0 0 50px;
+        font-size: 1.5rem;
+    }
+    
+    #quiz {
+        margin: 30px 0 0 20px;
+    }
+    
+    .question {
+        font-weight: 600;
+        font-size: 1.3rem;
+    }
+    
+    .answers {
+        margin: 20px 0 30px 5px;
+        font-size: 1rem;
+    }
+
+    #submit {
+        margin: 10px 0 0 50px;
+        font-size: 1rem;
+        padding: 20px;
+    }
+
+    #results {
+        font-size: 1.5rem;
+    }
+    
+
 }

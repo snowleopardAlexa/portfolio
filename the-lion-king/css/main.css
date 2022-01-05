@@ -92,7 +92,7 @@ body {
 
 /********** MODAL TICKETS **********/
 
-.modal-content {
+.modal-body, .modal-header {
   background-color: var(--black-city-smoke);
 }
 
@@ -102,7 +102,7 @@ body {
 }
 
 .ticket-card {
-  margin-top: 40px;
+  margin-top: 60px;
   text-align: center;
   color: var(--polar-bear);
 }

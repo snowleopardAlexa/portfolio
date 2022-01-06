@@ -37,6 +37,9 @@
           <li class="nav-item">
             <a class="nav-link" href="cast.html">Cast</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Tickets</a>
+          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               More
@@ -53,23 +56,28 @@
     </div>
   </nav>
   
-<!--MODAL TICKETS-->
-<!-- modal -->
-<div id="myModal" class="modal">
-    <!-- modal content -->
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
       <div class="modal-content">
-        <span class="close">&times;</span>
-        <div class="ticket-card">
-            <h1 class="title">GET THE TICKETS TO THE MOVIE</h1>
-            <p class="subtitle">The legend returns July 19</p>
-            <p class="text">
-                Buy a few tickets and get the discount of 20%! 
-            </p>
-            <img class="poster-movie-img" src="img/photos/poster.jpeg" alt="movie poster">
-            <button class="btn btn-search-tickets">SEARCH TICKETS</button>
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">The Lion King Tickets</h5>
+          <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="ticket-card">
+                <h1 class="title">GET THE TICKETS TO THE MOVIE</h1>
+                <p class="subtitle">The legend returns July 19</p>
+                <p class="text">
+                    Buy a few tickets and get the discount of 20%! 
+                </p>
+                <img class="poster-movie-img" src="img/photos/poster.jpeg" alt="movie poster">
+                <button class="btn btn-search-tickets">SEARCH TICKETS</button>
+            </div>
         </div>
       </div>
     </div>
+  </div>
 
 <!--CHARACTERS IMG GALLERY-->
 <div class="wrapper">
@@ -177,6 +185,7 @@
                         <li><a href="about.html">About</a></li>
                         <li><a href="characters.html" class="active">Characters</a></li>
                         <li><a href="cast.html">Cast</a></li>
+                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Tickets</a></li>
                     </ul>
                 </div>
                 <div class="footer-item">

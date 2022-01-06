@@ -18,6 +18,8 @@ font-family: 'Lato', sans-serif;
   font-family: "Lion King";
   src: url("fonts/waltograph42.otf");
   src: url("fonts/waltographUI.ttf");
+  src: local("fonts/waltograph42.otf");
+  src: local("fonts/waltographUI.ttf");
   src: url("fonts/lion_king.ttf");
 }
 
@@ -265,7 +267,7 @@ input[type="email"] {
 /* footer legal */
 
 .footer-legal {
-  padding: 15px 30px; /* 0.9375rem 1.875rem; */
+  padding: 15px;
   background-color: var(--heart-red);
   font-family: "Lion King";
   letter-spacing: 1px;

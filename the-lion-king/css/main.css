@@ -81,6 +81,14 @@ body {
   color: var(--mandarin);
 }
 
+.dropdown-item #active {
+  color: red;
+}
+
+
+
+
+
 /********** MODAL TICKETS **********/
 
 .modal {

@@ -40,7 +40,7 @@
       border: 0;
   }
 
-  input[type="button"] {
+  .increase, .decrease {
       background-color: #16aec9;
       color: #fff;
       cursor: pointer;
@@ -143,12 +143,6 @@ hr {
     background-color: #0f90db;
 }
 
-.quantity-btns > #btn-increase, #btn-decrease {
-  width: 25px;
-  height: 25px;
-  background-color: #16aec9;
-  color: #ffffff;
-}
 
 /********* RESPONSIVE VIEW **********/
 

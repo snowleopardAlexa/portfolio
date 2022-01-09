@@ -1,3 +1,8 @@
+#body {
+    background-color: var(--black-smoke);
+}
+
+
 /********** TITLE **********/
 
 .title-music {

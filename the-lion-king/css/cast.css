@@ -1,3 +1,7 @@
+body {
+  background-color: var(--black-smoke);
+}
+
 /*********** IMG **********/
 
 .img-cast {
@@ -6,6 +10,15 @@
 }
 
 /*********** CAROUSEL CAST **********/
+
+#carousel-cast {
+  margin-top: -1px;
+  background-color: var(--black-smoke);
+}
+
+.carousel {
+  background-color: var(--black-smoke);
+}
 
 .carousel-cast {
   width: 100%;

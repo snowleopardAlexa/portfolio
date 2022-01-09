@@ -55,7 +55,10 @@ body {
 .navbar {
   font-family: "Lion King";
   background-color: var(--black-city-smoke);
-  color: var(--polar-bear);
+}
+
+.dropdown-menu {
+  background-color: var(--black-city-smoke);
 }
 
 .navbar-brand {
@@ -412,4 +415,5 @@ input[type="email"] {
   input[type="submit"] {
     font-size: 0.8rem;
   }
+ }
 }

@@ -2,11 +2,12 @@
 
 .wrapper {
   max-width: 100%;
-  margin: 10px auto;  /* bug, without 10px top the grid shrinks, it has something to do with nav .nav-list float:right */
+  margin: auto;
 }
 
+
 .gallery {
-  margin-top: -10px;
+  background-color: var(--black-smoke);
   border: 10px solid var(--black-smoke);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -160,10 +161,11 @@
    /* gallery */
 
     .gallery {
-      margin-top: 80px;
+      margin-top: 10px;
     }
+    
     .gallery__img {
-      margin-top: -2px;
+      margin-top: -3px;
     }
     .footer-container {
       margin-top: -10px;
@@ -185,11 +187,11 @@
   }
 
   .gallery {
-    margin-top: 80px;
+    margin-top: 10px;
   }
 
   .gallery__img {
-    margin-top: -2px;
+    margin-top: 0.5px;
   }
 
   /* footer */

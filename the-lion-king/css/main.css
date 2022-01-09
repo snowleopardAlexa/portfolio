@@ -52,13 +52,37 @@ body {
 
 .navbar {
   font-family: "Lion King";
-  height: 80px;
-  background-color:var(--black-city-smoke);
+  background-color: var(--black-city-smoke);
 }
 
 .dropdown-menu {
-  background-color:var(--black-city-smoke);
+  background-color: var(--black-city-smoke);
   color: var(--polar-bear);
+}
+
+.navbar-brand {
+  color: var(--polar-bear);
+}
+
+.navbar-nav > .nav-item > .nav-link {
+  color: var(--polar-bear);
+}
+
+.dropdown-menu {
+  border: none;
+}
+
+.navbar-nav > li > .dropdown-menu {
+  background-color: var(--black-city-smoke);
+  color: var(--polar-bear);
+}
+
+.dropdown-menu > ul > li > a  {
+  color: var(--polar-bear);
+}
+
+#active {
+  color: var(--mandarin);
 }
 
 /********** MODAL TICKETS **********/
@@ -318,8 +342,6 @@ input[type="email"] {
 }
 
 /********** RESPONSIVE VIEW ***********/
-
-/********** BIG SCREEN ***********/
 
 @media only screen and (max-width: 1366px) and (min-width: 1024px) {
 

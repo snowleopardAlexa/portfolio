@@ -2,6 +2,10 @@
     background-color: var(--black-smoke);
 }
 
+#container-movies {
+    background-color: var(--black-city-smoke);
+}
+
 /*********** VIDEO **********/
 
 .video {

@@ -47,7 +47,7 @@ font-family: 'Lato', sans-serif;
 }
 
 #bg {
-  background-color: var(--black-city-smoke);
+  background-color: var(--black-smoke);
 }
 
 /********** NAVBAR **********/
@@ -286,7 +286,7 @@ input[type="email"] {
 /* footer logo */
 
 .footer-logo-disney {
-  background-color: var(--black-smoke);
+  background-color: var(--black-city-smoke);
   list-style-type: none;
   text-align: center;
   padding: 20px;

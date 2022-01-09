@@ -53,7 +53,7 @@ body {
 .navbar {
   font-family: "Lion King";
   background-color: var(--black-city-smoke);
-  color: white;
+  color: var(--polar-bear);
 }
 
 .navbar-brand {

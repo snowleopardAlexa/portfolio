@@ -46,8 +46,8 @@ font-family: 'Lato', sans-serif;
   --dirty-grey: #332f2f;
 }
 
-body {
-  background-color: var(--black-smoke);
+#bg {
+  background-color: var(--black-city-smoke);
 }
 
 /********** NAVBAR **********/

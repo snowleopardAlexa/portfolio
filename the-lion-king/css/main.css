@@ -53,7 +53,11 @@ body {
 .navbar {
   font-family: "Lion King";
   background-color: var(--black-city-smoke);
-  color: white;
+}
+
+.dropdown-menu {
+  background-color: var(--black-city-smoke);
+  color: var(--polar-bear);
 }
 
 .navbar-brand {
@@ -339,24 +343,8 @@ input[type="email"] {
 
 /********** RESPONSIVE VIEW ***********/
 
-/********** BIG, MEDIUM, SMALL SCREEN ***********/
-
-/********** BIG SCREEN ***********/
-
 @media only screen and (max-width: 1366px) and (min-width: 1024px) {
 
-  .fa-bars {
-    margin-top: 20px;
-  }
-
-  nav {
-    z-index: 99;
-    position: fixed;
-  }
-  .dropdown-content {
-    margin-top: -55px;
-    margin-left: 450px;
-  }
   /* modal */
   .title {
     font-size: 1.6rem;
@@ -382,22 +370,6 @@ input[type="email"] {
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   
-  .fa-bars {
-    margin-top: 20px;
-  }
-
-   /* navbar */
-
-  nav {
-    z-index: 99;
-    position: fixed; /* keeps the slide navbar attached to the visible navbar while scrolling the page */
-  }
-
-  .dropdown-content {
-    margin-top: -55px;
-    margin-left: 320px; /* SPECIAL FIX - dropdown-content list must be given a different margin-left on different screens */
-  }
-
   /* modal */
 
   .modal {
@@ -430,26 +402,6 @@ input[type="email"] {
 /********** SMALL SCREEN ***********/
 
 @media only screen and (min-width: 375px) and (max-width: 765px) {
-
-  .fa-bars {
-    margin-top: 0px;
-  }
-
-  /* navbar */
-
-  nav {
-    z-index: 99;
-    position: fixed; /* keeps the slide navbar attached to the visible navbar while scrolling the page */
-  }
-
-  .check-btn {
-    margin-top: 0px;
-  }
-
-  .dropdown-content {
-    margin-top: -55px;
-    margin-left: 127px;
-  }
 
   /* modal */
 
@@ -493,4 +445,5 @@ input[type="email"] {
   input[type="submit"] {
     font-size: 0.8rem;
   }
+ }
 }

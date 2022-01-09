@@ -50,105 +50,15 @@ body {
 
 /********** NAVBAR **********/
 
-nav {
-  position: fixed;
-  z-index: 99;
-  top: 0;
-  background-color: #272222;
-  /* background-color: #a70202;*/
+.navbar {
+  font-family: "Lion King";
   height: 80px;
-  width: 100%;
+  background-color:var(--black-city-smoke);
 }
 
-a {
-  text-decoration: underline;
-  color: #fff;
-}
-
-label.logo {
-  color: #fff;
-  font-size: 1.2rem;
-  line-height: 80px;
-  margin-left: 20px;
-  margin-top: 20px;
-  font-family: "Lion King";
-  cursor: pointer;
-}
-
-nav .nav-list {
-  float: right;
-  margin-right: 0px;
-  font-family: "Lion King";
-}
-
-nav .nav-list li {
-  display: inline-block;
-  line-height: 75px;
-  letter-spacing: 2px;
-}
-
-nav .nav-list li a {
-  color: #fff;
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  /* 7, 13 */
-  padding: 17px 23px;
-  text-decoration: none;
-}
-
-nav .nav-list li a:hover {
-  color: var(--mandarin);
-}
-
-nav .nav-list li a.active {
-  color: var(--mandarin);
-}
-
-/* dropdown menu */
-
-.fa-angle-double-down {
-  margin-left: 3px;
-}
-
-.more {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  margin-top: -10px;
-  margin-left: -7.5px;
-  position: absolute;
-  background-color: var(--black-city-smoke);
-  z-index: 1;
-}
-
-.dropdown-content .more-dropdown-list li a {
-  font-size: 0.8rem;
-}
-
-.more:hover .dropdown-content {
-  display: block;
-  top: 80px;
-  text-align: center;
+.dropdown-menu {
+  background-color:var(--black-city-smoke);
   color: var(--polar-bear);
-}
-
-/* checkbox */
-
-.check-btn {
-  font-size: 1.5rem;
-  color: #fff;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
-}
-
-#check {
-  display: none;
 }
 
 /********** MODAL TICKETS **********/
@@ -409,63 +319,10 @@ input[type="email"] {
 
 /********** RESPONSIVE VIEW ***********/
 
-/********** BIG, MEDIUM, SMALL SCREEN ***********/
-
-@media only screen and (min-width: 375px) and (max-width: 1366px) {
-
-  .check-btn {
-    display: block;
-    margin-right: 20px;
-  }
-
-  .fa-bars {
-    margin-top: 20px;
-  }
-
-  .nav-list {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: var(--black-city-smoke);
-    top: 80px;
-    left: -100%;
-    transition: all 0.5s;
-    text-align: center;
-  }
-  nav .nav-list li {
-    display: block;
-    margin: 50px 0;
-    line-height: 10px;
-  }
-  nav .nav-list li a {
-    font-size: 1rem;
-  }
-  a:hover,
-  a.active {
-    background: none;
-    color: var(--mandarin);
-  }
-  #check:checked ~ .nav-list {
-    left: 0;
-  }
-}
-
 /********** BIG SCREEN ***********/
 
 @media only screen and (max-width: 1366px) and (min-width: 1024px) {
 
-  .fa-bars {
-    margin-top: 20px;
-  }
-
-  nav {
-    z-index: 99;
-    position: fixed;
-  }
-  .dropdown-content {
-    margin-top: -55px;
-    margin-left: 450px;
-  }
   /* modal */
   .title {
     font-size: 1.6rem;
@@ -491,22 +348,6 @@ input[type="email"] {
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   
-  .fa-bars {
-    margin-top: 20px;
-  }
-
-   /* navbar */
-
-  nav {
-    z-index: 99;
-    position: fixed; /* keeps the slide navbar attached to the visible navbar while scrolling the page */
-  }
-
-  .dropdown-content {
-    margin-top: -55px;
-    margin-left: 320px; /* SPECIAL FIX - dropdown-content list must be given a different margin-left on different screens */
-  }
-
   /* modal */
 
   .modal {
@@ -539,26 +380,6 @@ input[type="email"] {
 /********** SMALL SCREEN ***********/
 
 @media only screen and (min-width: 375px) and (max-width: 765px) {
-
-  .fa-bars {
-    margin-top: 0px;
-  }
-
-  /* navbar */
-
-  nav {
-    z-index: 99;
-    position: fixed; /* keeps the slide navbar attached to the visible navbar while scrolling the page */
-  }
-
-  .check-btn {
-    margin-top: 0px;
-  }
-
-  .dropdown-content {
-    margin-top: -55px;
-    margin-left: 127px;
-  }
 
   /* modal */
 
@@ -602,4 +423,5 @@ input[type="email"] {
   input[type="submit"] {
     font-size: 0.8rem;
   }
+ }
 }

@@ -38,14 +38,16 @@
 
   fieldset, input[type=button] {
       border: 0;
+      margin-top: 10px;
   }
 
   .increase, .decrease {
-      background-color: #16aec9;
-      color: #fff;
+      background-color: transparent;
+      color: #000000;
       cursor: pointer;
       width: 25px;
       height: 25px;
+      font-size: 1.2rem;
   }
 
   input[type="text"] {

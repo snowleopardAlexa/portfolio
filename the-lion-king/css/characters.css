@@ -14,6 +14,14 @@
   grid-template-rows: repeat(6, 300px);
 }
 
+.name {
+  color: var(--polar-bear);
+}
+
+.name:hover {
+  color: var(--mandarin);
+}
+
 .gallery__img {
   width: 100%;
   height: 100%;
@@ -148,10 +156,9 @@
 /********** MEDIUM SCREEN **********/
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    nav {
-      position: fixed;
-      z-index: 99; /* without z-index: 99, images will overlap the fixed navbar on scroll */  
-    }
+
+   /* gallery */
+
     .gallery {
       margin-top: 80px;
     }
@@ -166,13 +173,6 @@
 /********** SMALL SCREEN **********/
 
 @media only screen and (min-width: 375px) and (max-width: 765px) {
-
-  /* navbar */
-
-  nav {
-    position: fixed;
-    z-index: 99;
-  }
 
   /* gallery */
 

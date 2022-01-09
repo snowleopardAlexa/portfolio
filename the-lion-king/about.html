@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="the lion king, lions, kings, simba, nala, scar, mufasa, timon, pumba">
   <meta name="description" content="The Lion King World">
-  <!--bootstrap-->
+  <!--bootstap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css"/>
   <link rel="stylesheet" href="css/about.css"/>
@@ -17,38 +17,38 @@
 <body>
 
 <!--NAVBAR-->
-<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-  <div class="container-fluid">
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container-fluid mt-2 mb-2">
     <a class="navbar-brand" href="index.html">The Lion King</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse me-2" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          <a class="nav-link" aria-current="page" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" id="active" href="about.html">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="about.html">Characters</a>
+          <a class="nav-link" href="characters.html">Characters</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="about.html">Cats</a>
+          <a class="nav-link" href="cast.html">Cast</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" id="openModal">Tickets</a>
+          <a class="nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Tickets</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             More
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
-            <li><a class="dropdown-item" href="music.html">Music</a></li>
-            <li><a class="dropdown-item" href="movies.html">Movies</a></li>
-            <li><a class="dropdown-item" href="#">Store</a></li>
+          <ul class="dropdown-menu mt-2" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item text-light bg-transparent" href="gallery.html">Gallery</a></li>
+            <li><a class="dropdown-item text-light bg-transparent" href="music.html">Music</a></li>
+            <li><a class="dropdown-item text-light bg-transparent" href="movies.html">Movies</a></li>
+            <li><a class="dropdown-item text-light bg-transparent" href="#">Store</a></li>
           </ul>
         </li>
       </ul>
@@ -56,29 +56,38 @@
   </div>
 </nav>
 
-<!--MODAL TICKETS-->
-<!-- modal -->
-<div id="myModal" class="modal">
-  <!-- modal content -->
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
     <div class="modal-content">
-      <span class="close">&times;</span>
-      <div class="ticket-card">
-          <h1 class="title">GET THE TICKETS TO THE MOVIE</h1>
-          <p class="subtitle">The legend returns July 19</p>
-          <p class="text">
-              Buy a few tickets and get the discount of 20%! 
-          </p>
-          <img class="poster-movie-img" src="img/photos/poster.jpeg" alt="movie poster">
-          <button class="btn btn-search-tickets">SEARCH TICKETS</button>
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">The Lion King Tickets</h5>
+        <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div class="ticket-card">
+              <h1 class="title">GET THE TICKETS TO THE MOVIE</h1>
+              <p class="subtitle">The legend returns July 19</p>
+              <p class="text">
+                  Buy a few tickets and get the discount of 20%! 
+              </p>
+              <img class="poster-movie-img" src="img/photos/poster.jpeg" alt="movie poster">
+              <button class="btn btn-search-tickets">SEARCH TICKETS</button>
+          </div>
       </div>
     </div>
   </div>
+</div>
 
+<!--1st row-->
+<div class="title">
+    <h2 class="title-row">About</h2>
+</div>
+
+<div id="about">
 <main class="wrapper">
     <!--short description of the movie-->
-    <!--1st row-->
-    <h2 class="title-about">About</h2>
-    <section class="about" id="about">
+    <section class="about">
       <ul>
         <li>
           <p class="subtitle-about">Origin</p>  
@@ -103,8 +112,7 @@
     </section>
 
     <!--2nd row-->
-    <h2 class="title-timeline">Timeline</h2>
-    <section class="about" id="about">
+    <section class="about">
       <ul>
         <li>
           <figure>
@@ -138,7 +146,7 @@
     </section>
 
     <!--3rd row-->
-    <section class="about" id="about">
+    <section class="about">
         <ul>
           <li>
             <figure>
@@ -171,7 +179,7 @@
       </section>
 
       <!--4th row-->
-      <section class="about" id="about">
+      <section class="about">
         <ul>
           <li>
             <figure>
@@ -203,6 +211,7 @@
         </ul>
       </section>
   </main>
+</div>
     
  <!--FOOTER-->    
     <!--flexbox-->   
@@ -219,6 +228,7 @@
                       <li><a href="about.html" class="active">About</a></li>
                       <li><a href="characters.html">Characters</a></li>
                       <li><a href="cast.html">Cast</a></li>
+                      <li><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Tickets</a></li>
                   </ul>
               </div>
               <div class="footer-item">
@@ -282,7 +292,7 @@
               </section>
       </footer>
     </div>
-    <script type="text/javascript" src="js/script.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>

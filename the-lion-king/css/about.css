@@ -1,13 +1,22 @@
 body {
     background-color: var(--black-smoke);
 }
+
+.title {
+  margin-top: -50px;
+}
   
   /* ABOUT */
   /* section about */
-  .about {
-    padding: 2rem;
+
+  #about {
+    padding: 20px;
   }
-  
+
+  .wrapper {
+   margin-left: -30px;
+  }
+
   .about > ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -59,14 +68,16 @@ body {
     font-family: 'Lato', sans-serif;
   }
   
- .about > ul > li > a {
+  .about > ul > li > a {
     padding: .5rem 1rem;
     margin: .5rem;
 }
 
- .title-about, .title-timeline {
+.title-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 100px;
-  text-align: center;
   font-family: 'Cinzel';
   font-size: 2.5rem;
   color: var(--polar-bear);
@@ -94,18 +105,11 @@ body {
 /********** SMALL SCREEN **********/
 
 @media only screen and (min-width: 375px) and (max-width: 765px) { 
-  .title-about {
+
+  .title-row {
     margin-top: 120px;
-}
-
-  nav {
-    position: fixed;
-    z-index: 99; /* without z-index: 99, images will overlap the fixed navbar on scroll */  
-  }
-
-  .title-about {
     font-size: 1.5rem;
-  }
+}
 
   .about ul li .subtitle-about {
     font-size: 1.3rem;
@@ -118,11 +122,6 @@ body {
   .about ul li .text-timeline {
     font-size: 1rem;
  }
-
-  .title-timeline {
-    font-size: 1.5rem;
-    margin-top: 30px;
-  }
 
   .about> ul > li > figure > figcaption > h3 {
     font-size: 1.1rem;

@@ -143,9 +143,9 @@ hr {
     background-color: #0f90db;
 }
 
-.increase, .decrease {
-  width: 50px;
-  height: 50px;
+.quantity-btns > #btn-increase, #btn-decrease {
+  width: 25px;
+  height: 25px;
   background-color: #16aec9;
   color: #ffffff;
 }

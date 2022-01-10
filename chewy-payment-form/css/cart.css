@@ -126,7 +126,6 @@ hr {
     font-size: 1.5rem;  
     display: block;
     padding: 0.35em 1.5em;
-    background-color: #16aec9;
     color: #ffffff;
     font-family: 'Chewy', cursive;
     text-align: center;
@@ -135,10 +134,12 @@ hr {
 
 .btn-add-items {
     margin-top: 50px;
+    background-color: #16aec9;
 }
 
 .btn-personal-details {
     margin-top: 10px;
+    background-color: #097d92;
 }
 
 .btn-add-items:hover, .btn-personal-details:hover {

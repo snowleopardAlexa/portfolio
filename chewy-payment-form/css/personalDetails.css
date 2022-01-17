@@ -189,9 +189,6 @@ hr {
   .fields-2 {
     grid-template-columns: 1fr 1fr;
   }
-  .fields-3 {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
   
   .button {
     margin-top: 20px;
@@ -306,8 +303,4 @@ hr {
   .fields-2 {
     grid-template-columns: 1fr;
   }
-  .fields-3 {
-    grid-template-columns: 1fr;
-  }
-
 }

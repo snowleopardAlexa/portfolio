@@ -274,10 +274,10 @@ body {
     .gallery {
         display: block;
     }
-    .gallery__link:hover {
-        display: none;
+    .gallery__link {
+        height: 90vw;
     }
-    .gallery__overlay:hover {
-        display: none;
+    .gallery__overlay {
+        font-size: 1rem;
     }
 }

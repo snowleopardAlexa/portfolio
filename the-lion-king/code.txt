@@ -1,0 +1,37 @@
+<!--NAVBAR-->
+<nav>
+    <!--checkbox-->
+    <input type="checkbox" id="check">
+    <!--menu bars-->
+    <label for="check" class="check-btn">
+        <img src="img/icons/whitelion.png" class="logo" />
+    </label>
+    <a href="index.html"><label class="logo">The Lion King</label></a>
+    <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="characters.html">Characters</a></li>
+        <li><a href="cast.html">Cast</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="movies.html">Movies</a></li>
+    </ul>
+</nav>
+
+<!--CAST-->
+<!--simba-->
+<section>
+    <img class="cast-img" src="img/photos/simbacast.jpg" width="100%" height="100%" alt="simba cast" />
+</section>
+<!--nala-->
+<section>
+    <img class="cast-img" src="img/photos/nalacast.jpg" width="100%" height="100%" alt="simba cast" />
+</section>
+<!--scar-->
+<section>
+    <img class="cast-img" src="img/photos/scarcast.jpg" width="100%" height="100%" alt="simba cast" />
+</section>
+<!--timon, pumba, zazu-->
+<section>
+    <img class="cast-img" src="img/photos/timonpumbazazu.jpg" width="100%" height="100%" alt="simba cast" />
+</section>

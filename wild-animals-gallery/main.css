@@ -269,7 +269,7 @@ body {
     width: 100%;
 }
 
-/* MAKE IT RESPONSIVE */
+/********** RESPONSIVE VIEW **********/
 @media screen and (max-width: 560px) {
     .gallery {
         display: block;

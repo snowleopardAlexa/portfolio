@@ -189,9 +189,6 @@ hr {
   .fields-2 {
     grid-template-columns: 1fr 1fr;
   }
-  .fields-3 {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
   
   .button {
     margin-top: 20px;
@@ -289,5 +286,21 @@ hr {
 
   .btn-shipping {
     font-size: 1.2rem;  
+  }
+}
+
+/********** RESPONSIVE VIEW **********/
+
+/********** SMALL SCREEN **********/
+
+@media only screen and (min-width: 375px) and (max-width: 765px) { 
+
+/* form */
+  .fields {
+    display: grid;
+    grid-gap: 1rem;
+  }
+  .fields-2 {
+    grid-template-columns: 1fr;
   }
 }

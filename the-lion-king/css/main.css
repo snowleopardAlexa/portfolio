@@ -281,6 +281,10 @@ input[type="email"] {
   text-decoration: underline;
 }
 
+.footer-legal-list .underline a:hover {
+  color: rgb(236, 195, 9) !important;
+}
+
 /* footer logo */
 
 .footer-logo-disney {

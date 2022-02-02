@@ -1,12 +1,90 @@
 /*********** IMG **********/
 
-  .intro-img {
+.intro-img {
     width: 100%;
-    height: auto; /* makes img responsive on every screen size */
-  }
+    height: 0 auto; /* makes img responsive on every screen size */
+}
   
-  .container-img {
+.container-img {
     position: relative;
+}
+
+.centered {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 8rem;
+  color: white;
+  font-family: "Lion King";
+  font-size: 6rem;
+}
+
+.centered-subtitle {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: white;
+  font-family: "Lion King";
+}
+
+.centered, .centered-subtitle {
+  background-image: url("https://media.giphy.com/media/f9R6g4jpmcwuDBD8lN/giphy.gif");
+  background-size: cover;
+  color: transparent;
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+}
+
+
+/********** LARGE SCREEN **********/
+
+@media only screen and (min-width: 1366px) {
+
+  iframe {
+      border: 10px solid var(--black-city-smoke);
   }
-  
+
+  .video {
+      width: 800px;
+      height: 500px;
+  }
+
+  .title-movie {
+      margin-bottom: 50px;
+  }
+
+  .subtitle-movie {
+      font-size: 2rem;
+      margin: 25px 25px;
+  }
+}
+
+/********** MEDIUM SCREEN **********/
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+  .centered {
+    font-size: 3.5rem;
+   }
  
+   .centered-subtitle {
+     display: none;
+   }
+}
+
+/********** SMALL SCREEN **********/
+
+@media only screen and (min-width: 375px) and (max-width: 765px) {
+
+  .centered {
+   font-size: 1.75rem;
+  }
+
+  .centered-subtitle {
+    display: none;
+  }
+}

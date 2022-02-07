@@ -240,7 +240,7 @@ input[type="email"] {
 }
 
 .footer-social-media {
-  padding: 0 30px 20px;
+  margin-right: 30px;
 }
 
 .footer-social-media-list {
@@ -252,7 +252,7 @@ input[type="email"] {
 }
 
 .footer-social-media-list li {
-  margin: 16px;
+  margin: 15px;
 }
 
 /* footer legal */

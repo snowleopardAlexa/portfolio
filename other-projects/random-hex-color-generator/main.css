@@ -114,3 +114,10 @@ input[type="text"]::selection {
     transform: translateX(cal(100% + 10px));
 }
 
+@media screen and (min-width: 1400px) {
+    .container {
+      max-width: 30%;
+      margin: 0 auto;
+    }
+  }
+

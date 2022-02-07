@@ -39,7 +39,6 @@
 }
 
  .music-list {
-    border: 10px solid var(--bloody-red);
     border-radius: 20px;
     width: 70%;
     margin: 0 auto 100px;
@@ -56,7 +55,6 @@
     font-size: 1.3rem;
     font-family: 'Cinzel';
     padding: 20px;
-    border-radius: 20%;
 }
 
 .box-one {

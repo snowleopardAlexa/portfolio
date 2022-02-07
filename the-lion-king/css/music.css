@@ -39,7 +39,6 @@
 }
 
  .music-list {
-    border-radius: 20px;
     width: 70%;
     margin: 0 auto 100px;
 }
@@ -171,3 +170,12 @@ audio::-webkit-media-controls-volume-slider {
         margin-top: -50px;
     }
 }
+
+
+/********** LARGE SCREEN **********/
+
+@media screen and (min-width: 1400px) {
+    .music-list {
+      max-width: 50%;
+    }
+  }

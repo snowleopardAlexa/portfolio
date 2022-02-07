@@ -304,3 +304,12 @@ hr {
     grid-template-columns: 1fr;
   }
 }
+
+/********** LARGE SCREEN **********/
+
+@media screen and (min-width: 1400px) {
+  .entireForm {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}

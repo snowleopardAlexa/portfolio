@@ -205,3 +205,11 @@ hr {
     font-size: 1.2rem;  
   }
 }
+
+/********** LARGE SCREEN **********/
+
+@media screen and (min-width: 1400px) {
+  .cart {
+    max-width: 50%;
+  }
+}
